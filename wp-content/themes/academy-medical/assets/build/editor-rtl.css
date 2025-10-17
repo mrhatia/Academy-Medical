@@ -504,7 +504,7 @@ Mixin for transition
   /*
   >> Base Colors
   */
-  --gb_color_primary: #00a4eb;
+  --gb_color_primary: #121f6b;
   --gb_color_on_primary: #ffffff;
   --gb_color_secondary: #0013ff;
   --gb_black: #000000;
@@ -517,7 +517,7 @@ Mixin for transition
   --gb_gray_1: #e6e6e6;
   --gb_gray_2: #eee;
   --gb_blue: #0013ff;
-  --gb_blue_1: #00a4eb;
+  --gb_blue_1: #121f6b;
   --gb_blue_2: #2ca8dd;
   --gb_navy: #091a17;
   --gb_navy_1: #15332e;
@@ -714,7 +714,7 @@ Mixin for transition
   --gb_style_bg: #821212;
   --gb_style_text: #000000;
   --gb_style_link: #000000;
-  --gb_style_button: #00a4eb;
+  --gb_style_button: #121f6b;
 }
 
 .wp-block-spacer .components-resizable-box__handle {
