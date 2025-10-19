@@ -42,17 +42,17 @@
 }
 
 
-a,
-button,
-input[type="submit"],
-[tabindex="0"] {
-	outline: 2px dotted transparent;
-	outline-offset: 5px;
+// a,
+// button,
+// input[type="submit"],
+// [tabindex="0"] {
+// 	outline: 2px dotted transparent;
+// 	outline-offset: 5px;
 
-	&:focus-visible {
-		outline-color: var(--am_acc_outline) !important;
-	}
-}
+// 	&:focus-visible {
+// 		outline-color: var(--am_acc_outline) !important;
+// 	}
+// }
 
 .contact-details {
 

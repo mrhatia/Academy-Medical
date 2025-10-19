@@ -1,5 +1,5 @@
 .footer-cta{
-	padding: 50px 0;
+	padding: 10% 0;
 	.cta-heading{
 		text-align: center;
 		width:60%;
@@ -7,13 +7,43 @@
 }
 
 .cta-btn{
-	button{
-		border-radius: 5px;
+	.cta-btn{
+		box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 22px;
+    text-decoration: none;
+    margin-right: 9px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-family: "Axiforma-Bold", arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--am_font_size_16);
 	}
 	.cta-white-btn{
-		background: white;
-    	color: black;
-    	border: transparent;
+    	color: var(--am_theme_btn_bgcolor);
+    	background-color: var(--am_white);
+    	border: 2px solid var(--am_white);
+		transition: all 0.35s ease-in-out;
+		&:hover{
+			background-color: var(--am_blue_5);
+			color: var(--am_white);
+			border: 2px solid var(--am_blue_5);
+		}
+	}
+	.cta-blue-btn{
+    	background-color: var(--am_blue_5);
+			color: var(--am_white);
+			border: 2px solid var(--am_blue_5);
+			transition: all 0.35s ease-in-out;
+			&:hover{
+				color: var(--am_theme_btn_bgcolor);
+    		background-color: var(--am_white);
+    		border: 2px solid var(--am_white);
+			}
 	}
 }
 // .cta-btn{
