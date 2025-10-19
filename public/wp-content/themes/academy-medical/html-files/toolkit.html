@@ -80,89 +80,250 @@
 				</div>
 			</div>
 			<div class="header-btns">
-				<a href="#" class="search-icon"><img src="../assets/src/images/search-icon.svg" alt=""></a>
-				<a href="#" class="trans-btn button" title="Get In touch">Get In touch</a>
+				<a href="#" class="search-icon top-search"><img src="../assets/src/images/search-icon.svg" alt=""></a>
 				<a href="#" class="button" title="Get In touch">Get In touch</a>
 
+			</div>
+		</div>
+		<div class="search-form-new">
+			<div class="search-inner-content">
+				<div class="search-inner-content--text">
+					SEARCH SITE </div>
+				<form role="search" method="get" id="searchform" action="#">
+					<div id="search-top">
+						<input type="text" name="s" class="keyword" onkeyup="fetch()" autocomplete="off"
+							autofocus="autofocus" aria-label="Search" placeholder="Search">
+						<div class="clear"></div>
+					</div>
+				</form>
+				<div class="search-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+						<rect class="bg-path" x="0.922852" y="28.5" width="39" height="39" rx="19.5"
+							transform="rotate(-45 0.922852 28.5)" fill="#F1EEE2"></rect>
+						<g opacity="0.5">
+							<rect class="bg-path-white" x="22.8432" y="23.5503" width="1" height="15"
+								transform="rotate(-45 22.8432 23.5503)" fill="#141414"></rect>
+							<rect class="bg-path-white" x="23.5503" y="34.1567" width="1" height="15"
+								transform="rotate(-135 23.5503 34.1567)" fill="#141414"></rect>
+						</g>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</header>
 	<main id="main-section" class="main-section">
 		<section id="" class="page-section">
-			<section class="ctn-760">
-				<div class="am-s128"></div>
-				<!-- hero start -->
+			<section class="ctn-light-blue">
 				<div class="wrapper">
-					<div class="hero-default">
-						<div class="hero-default-inner">
-							<div class="hero-default-content">
-								<h1 class="heading-1">Toolkit</h1>
-								<div class="hero-default-text">
-									<p> Vitae morbi donec in sed eget sit consectetur cursus. Sit dictum sagittis
-										egestas
-										felis
-										sed
-										viverra
-										libero vitae. Phasellus a, ullamcorper in nulla viverra arcu. Sed scelerisque
-										ornare
-										auctor
-										sed neque.
-									</p>
+					<div class="hero-home">
+						<div class="hero-home-content">
+							<h1 class="heading-1">
+								Simplifying the federal procurement process for suppliers and federal agencies.
+							</h1>
+							<h2 class="heading-5">
+								"As a service-disabled veteran-owned business, Academy Medical makes the complex federal
+								procurement process easier for
+								both suppliers and federal agencies."
+							</h2>
+							<p>
+								"Whether you're a supplier looking to sell or a federal agency ready to purchase,
+								Academy Medical helps simplify the
+								journey. We connect the right solutions with the right partners, making the procurement
+								process smooth, efficient, and
+								tailored to your needs."
+							</p>
+							<form class="selector-form">
+								<div class="single-field">
+									<label for="role">I am a:</label>
+									<select id="role" name="role">
+										<option value="supplier">Supplier</option>
+										<option value="buyer">Buyer</option>
+									</select>
 								</div>
-								<div class="hero-default-button">
-									<a href="#" class="button">CTA Button</a>
+								<div class="single-field">
+
+									<label for="action">And I would like to:</label>
+									<select id="action" name="action">
+										<option value="view">View Benefits</option>
+										<option value="start-selling">Start Selling</option>
+										<option value="start-buying">Start Buying</option>
+									</select>
+
 								</div>
-							</div>
-							<!-- <div class="hero-default-image image-cover">
-								<img src="../assets/src/images/uploads/default-image.webp" alt="">
-							</div> -->
-						</div>
+								<button type="submit">Go</button>
+							</form>
 
-
-					</div>
-				</div>
-				<!-- hero end -->
-			</section>
-			<div class="am-s72"></div>
-			<!-- image-at-right variation -->
-			<section>
-				<div class="wrapper">
-					<div class="iat-section two-columns justify-content-between align-items-center image-at-right">
-						<div class="iat-image column" tabindex="0" role="img"
-							aria-label="Image illustrating the content of this block">
-							<img src="../assets/src/images/uploads/default-image.webp" alt="">
 						</div>
-						<div class="iat-text column">
-							<h2>Enrollment</h2>
-							<!-- <h2 style="visibility: hidden; opacity: 0;">iat heading</h2> -->
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint ad aperiam atque
-								eos quaerat
-								quod nemo fugiat consequatur alias?</p>
-							<a href="#" class="button">Get in Touch</a>
+						<div class="hero-home-image image-cover">
+							<img src="../assets/src/images/uploads/hero-home.jpg" alt="">
 						</div>
 					</div>
 				</div>
 			</section>
 			<div class="am-s96"></div>
-			<!-- image-at-left variation-->
+
 			<section>
 				<div class="wrapper">
-					<div class="iat-section two-columns justify-content-between align-items-center image-at-left">
-						<div class="iat-image column" tabindex="0" role="img"
-							aria-label="Image illustrating the content of this block">
-							<img src="../assets/src/images/admin/defaults/default-image.webp" alt="">
+					<link rel="stylesheet"
+						href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+					<div class="splide info-slider" aria-label="Info Slider">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide card">
+									<div class="icon"><i class="ph ph-globe"></i></div>
+									<h3>Supplier Network</h3>
+									<p>Explore our partners</p>
+								</li>
+								<li class="splide__slide card">
+									<div class="icon"><i class="ph ph-users"></i></div>
+									<h3>Leadership & Staff</h3>
+									<p>Meet the team</p>
+								</li>
+								<li class="splide__slide card">
+									<div class="icon"><i class="ph ph-megaphone"></i></div>
+									<h3>Industry News</h3>
+									<p>Stay informed</p>
+								</li>
+							</ul>
 						</div>
-						<div class="iat-text column">
-							<h2>iat heading</h2>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint ad aperiam atque
-								eos quaerat
-								quod nemo fugiat consequatur alias?</p>
-							<a href="#" class="button">Get in Touch</a>
+					</div>
+
+					<script src="https://unpkg.com/phosphor-icons"></script>
+					<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+					<script
+						src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							new Splide('.info-slider', {
+								type: 'loop',
+								perPage: 3,
+								gap: '2rem',
+								arrows: false,
+								pagination: false,
+								drag: 'free',
+								focus: 'center',
+								autoScroll: {
+									speed: 1,
+									pauseOnHover: false,
+									pauseOnFocus: false,
+								},
+								breakpoints: {
+									1024: { perPage: 2 },
+									640: { perPage: 1 },
+								},
+							}).mount(window.splide.Extensions);
+						});
+					</script>
+
+				</div>
+			</section>
+
+			<div class="am-s128"></div>
+			<section>
+				<div class="wrapper">
+					<div class="who-we-are">
+						<div class="who-we-are-content">
+							<h2>
+								Who we Are
+							</h2>
+							<p>TrillaMed, founded by U.S. Army Airborne Ranger Veterans, is a Service-Disabled
+								Veteran-Owned Small Business
+								specializing in distributing medical and facility products. Our value-added approach
+								combines expert support, logistics,
+								and post-sale service to deliver efficient, mission-driven solutions.
+							</p>
+							<div class="who-we-are-items">
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+										Advancing Federal Healthcare
+									</h3>
+									<p>
+										We serve over 700 federal healthcare facilities worldwide, including those
+										operated by the Dept of Veterans Affairs,
+										Dept of Defense, National Institutes of Health, and Bureau of Indian Affairs..
+									</p>
+								</div>
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+										World-Class OEMs
+
+									</h3>
+									<p>
+										We source products exclusively from industry-leading Original Equipment
+										Manufacturers (OEMs), such as GE HealthCare and
+										Stryker, ensuring the highest quality standards.
+
+									</p>
+								</div>
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+										Beyond the Transaction
+									</h3>
+									<p>
+										We use a value-added approach to ensure federal healthcare partners receive not
+										just products, but comprehensive,
+										mission-focused solutions that enhance care and efficiency.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="who-we-are-image image-cover">
+							<img src="../assets/src/images/uploads/who-we-are.jpg" alt="">
 						</div>
 					</div>
 				</div>
 			</section>
-			<div class="am-s72"></div>
+
+			<div class="am-s128"></div>
+			<section class="ctn-light-gray">
+				<div class="wrapper">
+					<section class="category-teaser">
+						<div class="category-header">
+							<h2 class="title">Explore Medical Categories</h2>
+							<p class="text">Find specialized medical solutions and products by category</p>
+						</div>
+
+						<div class="category-slider four-columns">
+							<div class="category-item" data-category="cardiology">
+								<div class="image-wrap">
+									<img src="../assets/src/images/uploads/Cardiology.jpg" alt="">
+								</div>
+								<span>Cardiology</span>
+							</div>
+
+							<div class="category-item" data-category="orthopedic">
+								<div class="image-wrap">
+									<img src="../assets/src/images/uploads/Orthopedic.jpg" alt="">
+								</div>
+								<span>Orthopedic</span>
+							</div>
+
+							<div class="category-item" data-category="dental">
+								<div class="image-wrap">
+									<img src="../assets/src/images/uploads/Dental.jpg" alt="">
+
+								</div>
+								<span>Dental</span>
+							</div>
+
+							<div class="category-item" data-category="surgical">
+								<div class="image-wrap">
+									<img src="../assets/src/images/uploads/Surgical.jpg" alt="">
+
+								</div>
+								<span>Surgical</span>
+							</div>
+
+
+						</div>
+					</section>
+
+				</div>
+			</section>
+			<div class="am-s128"></div>
+
 
 		</section>
 	</main>

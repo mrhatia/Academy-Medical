@@ -75,10 +75,24 @@ jQuery( function() {
 	jQuery( '.sub-menu a, .mega-menu a' ).on( 'focus blur', function( event ) {
 		jQuery( this ).closest( '.sub-menu, .mega-menu' ).toggleClass( 'focused', event.type === 'focus' );
 	} );
-
 	/**
-	 * Script for Accessibility of html Tags
+	 * Search Script
 	 */
+
+	jQuery( '.top-search' ).on( 'click', function() {
+		jQuery( '.search-form-new' ).toggleClass( 'open' );
+		jQuery( '.header-section' ).toggleClass( 'open' );
+		jQuery( '#search-top .keyword' ).focus();
+	} );
+
+	jQuery( '.search-close' ).on( 'click keypress', function( e ) {
+		if ( e.which === 13 || e.which === 1 ) {
+			jQuery( '.search-form-new' ).removeClass( 'open' );
+			jQuery( '.header-section' ).removeClass( 'open' );
+			document.activeElement.blur();
+		}
+	} );
+
 	jQuery( 'h1, h2, h3, h4, h5, h6,p,li,blockquote,cite,strong,dt,dd,th,td,b,i,u,s,em,small,sup,del,ins,abbr,mark,details,pre,kbd,samp,var,address,code,q,figure,figcaption,caption,.top-bar-text,.top-bar-cross,.copy-right,.post-author-img,.post-author-name,.post-meta-date,.post-date' ).each( function() {
 		jQuery( this ).attr( {
 			tabindex: 0,

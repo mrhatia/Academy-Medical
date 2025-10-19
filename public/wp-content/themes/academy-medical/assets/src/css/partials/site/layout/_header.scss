@@ -102,7 +102,7 @@ header {
 	position: relative;
 	z-index: 9;
 	line-height: 0;
-	width: 230px;
+	width: 260px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -163,7 +163,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 10px;
+	gap: 20px;
 	a,
 	a:visited {
 		color: var(--am_white);
@@ -171,11 +171,117 @@ header {
 		text-underline-offset: 3px;
 		background-image: url(../images/catalog-icon.svg);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 12px;
+		background-position: center left;
 		padding-left: 20px;
+		font-size: 14px;
 		&:hover,
 		&:focus-visible {
 			text-decoration-color: transparent;
+		}
+	}
+}
+
+
+
+.search-form-new {
+	position: fixed;
+	overflow: hidden;
+	height: 91px;
+	top: 128px;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+	transition: 0.3s all ease-in-out;
+	border: transparent;
+	background-color: var(--am_color_on_primary);
+	display: none;
+	border-top: 1px solid var(--am_border_5);
+	border-bottom: 1px solid var(--am_border_5);
+	pointer-events: none;
+
+	input {
+		line-height: 1.2;
+		letter-spacing: -0.72px;
+		margin-bottom: 0;
+		border: none;
+		font-size: var(--am_font_size_32);
+		height: 91px;
+		padding-left: 0;
+		color: var(--am_color_primary);
+
+		&:focus {
+			border: none;
+		}
+
+		&::placeholder {
+			color: var(--cph_black_30);
+		}
+	}
+
+	&.open {
+		display: block;
+		pointer-events: initial;
+	}
+
+	form {
+		width: 95%;
+		margin-bottom: 0;
+	}
+
+	.search-inner-content {
+		max-width: 1300px;
+		width: 90%;
+		margin: auto;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&--text {
+			font-size: 14px;
+			@include font(mont, med);
+			letter-spacing: -0.28px;
+			line-height: 1.2;
+			display: none;
+		}
+	}
+}
+
+.search-close {
+	width: 39px;
+	height: 39px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	line-height: 0.65;
+	position: relative;
+	top: -9px;
+	right: 9px;
+
+	svg {
+		margin-bottom: 0;
+
+		.bg-path,
+		.bg-path-white,
+		g {
+			transition: 0.3s all ease-in-out;
+		}
+	}
+
+	&:hover {
+		svg {
+			g {
+				opacity: 1;
+			}
+
+			.bg-path {
+				fill: var(--am_color_primary);
+			}
+
+			.bg-path-white {
+				fill: var(--am_color_on_primary);
+			}
 		}
 	}
 }

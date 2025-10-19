@@ -297,8 +297,8 @@ span.button,
 	padding: 8px 22px;
 	text-decoration: none;
 	color: var(--am_theme_btn_color);
-	background-color: var(--am_theme_btn_bgcolor);
-	border: 2px solid var(--am_button_border_color);
+	background-color: var(--am_blue_3);
+	border: 2px solid var(--am_blue_3);
 	transition: all 0.35s ease-in-out;
 	margin-right: 9px;
 	text-align: center;
@@ -306,6 +306,7 @@ span.button,
 	line-height: 1.5;
 	@include font(axi, bold);
 	font-size: var(--am_font_size_16);
+	border-radius: 100px;
 
 	&:last-child {
 		margin-right: 0;

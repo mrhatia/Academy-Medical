@@ -36,7 +36,7 @@
 	@include font_size(--am_font_size_32, 32, 24);
 	@include font_size(--am_font_size_40, 40, 26);
 	@include font_size(--am_font_size_48, 48, 30);
-	@include font_size(--am_font_size_60, 60, 45);
+	@include font_size(--am_font_size_60, 54, 45);
 	@include font_size(--am_font_size_68, 68, 55);
 
 
@@ -73,6 +73,7 @@
 	--am_blue: #0013ff;
 	--am_blue_1: #121f6b;
 	--am_blue_2: #2ca8dd;
+	--am_blue_3: #55A1D3;
 
 	--am_navy: #091a17;
 	--am_navy_1: #15332e;
@@ -112,6 +113,7 @@
 	--am_border_2: #adadad;
 	--am_border_3: #e0e0e0;
 	--am_border_4: #14191f;
+	--am_border_5: rgb(0, 0, 0,0.2);
 
 
 	/* -------------------------------------------------
