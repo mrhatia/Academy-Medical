@@ -5010,6 +5010,15 @@ a.event-teaser__item:visited:hover .event-teaser__inner {
   color: var(--am_white_text);
   transition: all 0.5s ease-in-out;
 }
+a.event-teaser__item:hover .event-teaser__inner .outer-circle,
+a.event-teaser__item:visited:hover .event-teaser__inner .outer-circle {
+  border-color: var(--am_white);
+}
+a.event-teaser__item:hover .event-teaser__inner .inner-circle,
+a.event-teaser__item:visited:hover .event-teaser__inner .inner-circle {
+  background-color: var(--am_white);
+  color: var(--am_topbar_bgcolor);
+}
 a.event-teaser__item:hover .event-teaser__date,
 a.event-teaser__item:hover .event-teaser__title,
 a.event-teaser__item:visited:hover .event-teaser__date,
@@ -5048,12 +5057,14 @@ a.event-teaser__item:visited:hover .event-teaser__title {
   border: 1px solid var(--am_topbar_bgcolor);
   border-radius: 50%;
   padding: 2px;
+  transition: all 0.5s ease-in-out;
 }
 .event-teaser__inner .outer-circle .inner-circle {
   background: var(--am_topbar_bgcolor);
   border-radius: 50%;
   padding: 10px;
   color: var(--am_white_text);
+  transition: all 0.5s ease-in-out;
 }
 .event-teaser__inner h3 {
   margin-bottom: 0;

@@ -65,6 +65,14 @@ a.event-teaser__item:visited {
 			color: var(--am_white_text);
 			transition: all 0.5s ease-in-out;
 
+			.outer-circle{
+				border-color: var(--am_white);
+			}
+			.inner-circle{
+				background-color: var(--am_white);
+				color: var(--am_topbar_bgcolor);
+			}
+
 
 		}
 
@@ -107,11 +115,15 @@ a.event-teaser__item:visited {
 			    border: 1px solid var(--am_topbar_bgcolor);
     			border-radius: 50%;
     			padding: 2px;
+			transition: all 0.5s ease-in-out;
+
 			.inner-circle{
 				background: var(--am_topbar_bgcolor);
     			border-radius: 50%;
     			padding: 10px;
 				color: var(--am_white_text);
+			transition: all 0.5s ease-in-out;
+
 			}
 		}
 		h3{
