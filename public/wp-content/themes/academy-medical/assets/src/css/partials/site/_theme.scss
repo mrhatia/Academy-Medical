@@ -324,19 +324,16 @@ span.button,
 	}
 }
 
-.header-btns{
-	.trans-btn{
-		background-color: var(--am_transparent);
-		color: var(--am_theme_btn_bgcolor);
-		transition: all 0.3s ease-in-out;
+.trans-btn{
+	background-color: var(--am_transparent);
+	color: var(--am_theme_btn_bgcolor);
+	transition: all 0.3s ease-in-out;
 
-		&:hover{
-			background-color: var(--am_theme_btn_bgcolor);
-			color: var(--am_theme_btn_color);
+	&:hover{
+		background-color: var(--am_theme_btn_bgcolor);
+		color: var(--am_theme_btn_color);
 
-		}
 	}
-
 }
 
 

@@ -1,0 +1,27 @@
+.footer-cta{
+	padding: 50px 0;
+	.cta-heading{
+		text-align: center;
+		width:60%;
+	}
+}
+
+.cta-btn{
+	button{
+		border-radius: 5px;
+	}
+	.cta-white-btn{
+		background: white;
+    	color: black;
+    	border: transparent;
+	}
+}
+// .cta-btn{
+// 	position: relative;
+
+// 	.cta-white-btn::after{
+// 		position: absolute;
+// 		content: "Hello";
+
+// 	}
+// }
