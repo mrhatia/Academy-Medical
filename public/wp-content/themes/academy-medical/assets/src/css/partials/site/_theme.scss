@@ -141,6 +141,16 @@
 	align-content: stretch;
 }
 
+.gap-10{
+	gap: 10px;
+}
+.gap-20{
+	gap: 20px;
+}
+.gap-30{
+	gap: 30px;
+}
+
 // flex items
 .align-self-auto {
 	align-self: auto;
@@ -325,19 +335,16 @@ span.button,
 	}
 }
 
-.header-btns{
-	.trans-btn{
-		background-color: var(--am_transparent);
-		color: var(--am_theme_btn_bgcolor);
-		transition: all 0.3s ease-in-out;
+.trans-btn{
+	background-color: var(--am_transparent);
+	color: var(--am_theme_btn_bgcolor);
+	transition: all 0.3s ease-in-out;
 
-		&:hover{
-			background-color: var(--am_theme_btn_bgcolor);
-			color: var(--am_theme_btn_color);
+	&:hover{
+		background-color: var(--am_theme_btn_bgcolor);
+		color: var(--am_theme_btn_color);
 
-		}
 	}
-
 }
 
 
