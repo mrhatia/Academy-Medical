@@ -6,37 +6,37 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-BaseTheme::block(
+AcademyMedical ::block(
 	$block,
-	function ( $bst_block_id, $bst_block_name, $bst_block_fields, $bst_option_fields ) {
+	function ( $bst_block_id, $bst_block_name, $bst_block_fields, $am_option_fields ) {
 
 		// Block variables.
-		$bst_var_blk_mat_title        = $bst_block_fields['bst_var_blk_mat_title'] ?? null;
-		$bst_var_blk_mat_text        = $bst_block_fields['bst_var_blk_mat_text'] ?? null;
-		$bst_var_blk_mat_button        = $bst_block_fields['bst_var_blk_mat_button'] ?? null;
-		$bst_var_blk_mat_image        = $bst_block_fields['bst_var_blk_mat_image'] ?? null;
-		$bst_var_blk_mat_img_location        = ("left" === $bst_block_fields['bst_var_blk_mat_img_location']) ? "image-at-left" : "image-at-right";
+		$am_var_blk_mat_title        = $bst_block_fields['am_var_blk_mat_title'] ?? null;
+		$am_var_blk_mat_text        = $bst_block_fields['am_var_blk_mat_text'] ?? null;
+		$am_var_blk_mat_button        = $bst_block_fields['am_var_blk_mat_button'] ?? null;
+		$am_var_blk_mat_image        = $bst_block_fields['am_var_blk_mat_image'] ?? null;
+		$am_var_blk_mat_img_location        = ("left" === $bst_block_fields['am_var_blk_mat_img_location']) ? "image-at-left" : "image-at-right";
 		?>
 
-			<div class="iat-section two-columns justify-content-between align-items-center <?php echo $bst_var_blk_mat_img_location; ?>">
+			<div class="iat-section two-columns justify-content-between align-items-center <?php echo $am_var_blk_mat_img_location; ?>">
 				<div class="iat-image column" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
-					<?php if ( $bst_var_blk_mat_image ) { ?>
-						<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
+					<?php if ( $am_var_blk_mat_image ) { ?>
+						<?php AcademyMedical ::the_attachment_image( $am_var_blk_mat_image, 1000 ); ?>
 					<?php } ?>
 				</div>
 				<div class="iat-text column">
-					<?php if ( BaseTheme::is_block_title( $bst_var_blk_mat_title ) ) { ?>
-						<?php BaseTheme::the_block_title( $bst_var_blk_mat_title, 'heading-2' ); ?>
+					<?php if ( AcademyMedical ::is_block_title( $am_var_blk_mat_title ) ) { ?>
+						<?php AcademyMedical ::the_block_title( $am_var_blk_mat_title, 'heading-2' ); ?>
 					<?php } ?>
-					<?php if ( $bst_var_blk_mat_text ) {  ?>
-						<?php echo html_entity_decode( $bst_var_blk_mat_text ); ?>
+					<?php if ( $am_var_blk_mat_text ) {  ?>
+						<?php echo html_entity_decode( $am_var_blk_mat_text ); ?>
 					<?php } ?>
-					<?php if ( $bst_var_blk_mat_button ) { ?>
-						<?php echo BaseTheme::button( $bst_var_blk_mat_button, 'button' ); ?>
+					<?php if ( $am_var_blk_mat_button ) { ?>
+						<?php echo AcademyMedical ::button( $am_var_blk_mat_button, 'button' ); ?>
 					<?php } ?>
 				</div>
 			</div>

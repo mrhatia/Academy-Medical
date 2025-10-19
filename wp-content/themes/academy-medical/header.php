@@ -4,28 +4,28 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
 
 // Page Tags - Advanced custom fields variables.
-$bst_var_tracking = $bst_option_fields['custom_scripts'] ?? '';
-$bst_var_ccss     = $bst_option_fields['custom_css'] ?? '';
-$bst_var_hscripts = $bst_option_fields['head_scripts'] ?? '';
-$bst_var_bscripts = $bst_option_fields['body_scripts'] ?? '';
+$am_var_tracking = $am_option_fields['custom_scripts'] ?? '';
+$am_var_ccss     = $am_option_fields['custom_css'] ?? '';
+$am_var_hscripts = $am_option_fields['head_scripts'] ?? '';
+$am_var_bscripts = $am_option_fields['body_scripts'] ?? '';
 
-$bst_var_tbar_vsblty     = $bst_option_fields['bst_var_tbar_vsblty'] ?? null;
-$bst_var_tbar_btn     = $bst_option_fields['bst_var_tbar_btn'] ?? null;
-$bst_var_tbar_text    = $bst_option_fields['bst_var_tbar_text'] ?? null;
+$am_var_tbar_vsblty     = $am_option_fields['am_var_tbar_vsblty'] ?? null;
+$am_var_tbar_btn     = $am_option_fields['am_var_tbar_btn'] ?? null;
+$am_var_tbar_text    = $am_option_fields['am_var_tbar_text'] ?? null;
 
 
-$bst_var_tohdr_btn     = $bst_option_fields['bst_var_tohdr_btn'] ?? null;
-$bst_var_tohdr_btn_two = $bst_option_fields['bst_var_tohdr_btn_two'] ?? null;
-$bst_var_tbar_vsblty   = $bst_option_fields['bst_var_tbar_vsblty'] ?? null;
-$bst_var_tbar_text     = $bst_option_fields['bst_var_tbar_text'] ?? null;
-$bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
+$am_var_tohdr_btn     = $am_option_fields['am_var_tohdr_btn'] ?? null;
+$am_var_tohdr_btn_two = $am_option_fields['am_var_tohdr_btn_two'] ?? null;
+$am_var_tbar_vsblty   = $am_option_fields['am_var_tbar_vsblty'] ?? null;
+$am_var_tbar_text     = $am_option_fields['am_var_tbar_text'] ?? null;
+$am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 // Page variables - Advanced custom fields variables.
 
 ?>
@@ -40,10 +40,10 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 
 	<?php
 		// Add Head Scripts.
-	if ( BaseTheme::if_live() ) {
+	if ( AcademyMedical ::if_live() ) {
 
-		if ( '' !== $bst_var_hscripts ) {
-			echo html_entity_decode( $bst_var_hscripts, ENT_QUOTES );
+		if ( '' !== $am_var_hscripts ) {
+			echo html_entity_decode( $am_var_hscripts, ENT_QUOTES );
 		}
 	}
 	?>
@@ -61,7 +61,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/site.webmanifest">
 	<meta name="theme-color" content="#0047FE">
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="Base Theme Package">
+	<meta name="application-name" content="Academy Medical">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton_color" content="#0047FE">
 	<meta name="msapplication-TileColor" content="#0047FE">
@@ -72,14 +72,14 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0047FE">
 	<?php
 		// Tracking Code.
-	if ( '' !== $bst_var_tracking ) {
-		echo html_entity_decode( $bst_var_tracking, ENT_QUOTES );
+	if ( '' !== $am_var_tracking ) {
+		echo html_entity_decode( $am_var_tracking, ENT_QUOTES );
 	}
 
 		// Custom CSS.
-	if ( '' !== $bst_var_ccss ) {
+	if ( '' !== $am_var_ccss ) {
 		echo '<style type="text/css">';
-		echo html_entity_decode( $bst_var_ccss, ENT_QUOTES );
+		echo html_entity_decode( $am_var_ccss, ENT_QUOTES );
 		echo '</style>';
 	}
 	?>
@@ -102,32 +102,32 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 
 <body <?php body_class(); ?>> <?php wp_body_open(); ?>
 	<?php
-	if ( BaseTheme::if_live() ) {
-		if ( '' !== $bst_var_bscripts ) {
+	if ( AcademyMedical ::if_live() ) {
+		if ( '' !== $am_var_bscripts ) {
 			?>
 			<div style="display: none;">
-				<?php echo html_entity_decode( $bst_var_bscripts, ENT_QUOTES ); ?>
+				<?php echo html_entity_decode( $am_var_bscripts, ENT_QUOTES ); ?>
 			</div>
 		<?php }
 	}
 	?>
 
 	<a class="skip-link screen-reader-text"
-		href="#page-section"><?php esc_html_e( 'Skip to content', 'basetheme_td' ); ?></a>
+		href="#page-section"><?php esc_html_e( 'Skip to content', 'AcademyMedical _td' ); ?></a>
 	<header id="header-section" class="header-section">
 		<!-- Header Start -->
-		<?php if ( $bst_var_tbar_vsblty ) { ?>
+		<?php if ( $am_var_tbar_vsblty ) { ?>
 			<div class="top-bar" id="top-bar-ajax" style="display:none;">
 				<div class="header-wrapper">
 					<div class="top-bar-text">
 						<?php
-						if ( $bst_var_tbar_text ) {
-							echo html_entity_decode( $bst_var_tbar_text );
+						if ( $am_var_tbar_text ) {
+							echo html_entity_decode( $am_var_tbar_text );
 						}
 						?>
 						<?php
-						if ( $bst_var_tbar_btn ) {
-							echo BaseTheme::button( $bst_var_tbar_btn, '' );
+						if ( $am_var_tbar_btn ) {
+							echo AcademyMedical ::button( $am_var_tbar_btn, '' );
 						}
 						?>
 					</div>
@@ -135,7 +135,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 				<div class="top-bar-cross">
 					<span>
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/topbar-cross-icon.svg"
-							width="16" height="16" alt="<?php esc_attr_e( 'Top bar', 'basetheme_td' ); ?>">
+							width="16" height="16" alt="<?php esc_attr_e( 'Top bar', 'AcademyMedical _td' ); ?>">
 					</span>
 				</div>
 			</div>
@@ -154,22 +154,22 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 							wp_nav_menu(
 								array(
 									'theme_location' => 'header-nav',
-									'fallback_cb'    => 'BaseTheme::nav_fallback',
-									'walker'         => new BaseTheme\Walker\WP_Theme_Walker_Nav(),
+									'fallback_cb'    => 'AcademyMedical ::nav_fallback',
+									'walker'         => new AcademyMedical \Walker\Academy_Medical _Walker_Nav(),
 									'container'      => 'nav',
 								)
 							);
 							?>
 						</div>
-						<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
+						<?php if ( $am_var_tohdr_btn || $am_var_tohdr_btn_two ) { ?>
 						<div class="header-btns desktop-hide">
 							<?php
-							if ( $bst_var_tohdr_btn ) {
-								echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
+							if ( $am_var_tohdr_btn ) {
+								echo AcademyMedical ::button( $am_var_tohdr_btn, 'button' );
 							}
 
-							if ( $bst_var_tohdr_btn_two ) {
-								echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
+							if ( $am_var_tohdr_btn_two ) {
+								echo AcademyMedical ::button( $am_var_tohdr_btn_two, 'button' );
 							}
 							?>
 
@@ -183,15 +183,15 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 					<span class="bottom"></span>
 				</div>
 			</div>
-			<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
+			<?php if ( $am_var_tohdr_btn || $am_var_tohdr_btn_two ) { ?>
 			<div class="header-btns">
 				<?php
-				if ( $bst_var_tohdr_btn ) {
-					echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
+				if ( $am_var_tohdr_btn ) {
+					echo AcademyMedical ::button( $am_var_tohdr_btn, 'button' );
 				}
 
-				if ( $bst_var_tohdr_btn_two ) {
-					echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
+				if ( $am_var_tohdr_btn_two ) {
+					echo AcademyMedical ::button( $am_var_tohdr_btn_two, 'button' );
 				}
 				?>
 			</div>

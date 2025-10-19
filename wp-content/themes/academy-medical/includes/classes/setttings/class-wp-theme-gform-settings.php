@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Settings;
+namespace AcademyMedical \Settings;
 
 /**
  * Template Class For Theme Settings
@@ -16,9 +16,9 @@ namespace BaseTheme\Settings;
  * Template Class
  *
  * @category Gform_Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_GForm_Settings {
+class Academy_Medical _GForm_Settings {
 
 	/**
 	 * Define class Constructor
@@ -85,4 +85,4 @@ class WP_Theme_GForm_Settings {
 	}
 
 }
-new WP_Theme_GForm_Settings();
+new Academy_Medical _GForm_Settings();

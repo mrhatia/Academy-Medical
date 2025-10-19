@@ -4,11 +4,11 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Acf\Acf_Fields;
+namespace AcademyMedical \Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Title Field
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
 class Acf_Field_Date_Range_Picker extends \acf_field {
 	/**
@@ -49,7 +49,7 @@ class Acf_Field_Date_Range_Picker extends \acf_field {
 		 *
 		 * For public-facing UI. May contain spaces.
 		 */
-		$this->label = __( 'Date Range Picker', 'basetheme_td' );
+		$this->label = __( 'Date Range Picker', 'AcademyMedical _td' );
 
 		/**
 		 * The category the field appears within in the field type picker.
@@ -60,7 +60,7 @@ class Acf_Field_Date_Range_Picker extends \acf_field {
 			'instructions_title_tag' => '',
 			'is_h1'                  => 'no',
 		);
-		$this->l10n     = array( 'error' => __( 'Error! Please enter a higher value', 'basetheme_td' ) );
+		$this->l10n     = array( 'error' => __( 'Error! Please enter a higher value', 'AcademyMedical _td' ) );
 
 		$this->env = array(
 			'url'     => site_url( str_replace( ABSPATH, '', __DIR__ ) ), // URL to the acf-FIELD-NAME directory.
@@ -73,7 +73,7 @@ class Acf_Field_Date_Range_Picker extends \acf_field {
 	 * Admin Scripts
 	 */
 	public function input_admin_enqueue_scripts() {
-		\BaseTheme::enqueue_scripts( array( 'assets/build/vendors/moment.min.js', 'assets/build/vendors/daterangepicker.min.js' ) );
+		\AcademyMedical ::enqueue_scripts( array( 'assets/build/vendors/moment.min.js', 'assets/build/vendors/daterangepicker.min.js' ) );
 	}
 
 

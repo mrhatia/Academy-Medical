@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Setup;
+namespace AcademyMedical \Setup;
 
 /**
  * Template Class For Theme Setup
@@ -16,9 +16,9 @@ namespace BaseTheme\Setup;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Setup {
+class Academy_Medical _Setup {
 	/**
 	 * Define class Constructor
 	 **/
@@ -31,7 +31,7 @@ class WP_Theme_Setup {
 	 */
 	public function setup_function() {
 		// Make theme available for translation.
-		load_theme_textdomain( 'basetheme_td' );
+		load_theme_textdomain( 'AcademyMedical _td' );
 
 		// Let WordPress manage the document title.
 		add_theme_support( 'title-tag' );
@@ -68,11 +68,11 @@ class WP_Theme_Setup {
 		// Register wp_nav_menu() menus.
 		register_nav_menus(
 			array(
-				'header-nav'       => __( 'Header Nav', 'basetheme_td' ),
-				'footer-nav-one'   => __( 'Footer Nav One', 'basetheme_td' ),
-				'footer-nav-two'   => __( 'Footer Nav Two', 'basetheme_td' ),
-				'footer-nav-three' => __( 'Footer Nav Three', 'basetheme_td' ),
-				'legal-nav'        => __( 'Legal Nav', 'basetheme_td' ),
+				'header-nav'       => __( 'Header Nav', 'AcademyMedical _td' ),
+				'footer-nav-one'   => __( 'Footer Nav One', 'AcademyMedical _td' ),
+				'footer-nav-two'   => __( 'Footer Nav Two', 'AcademyMedical _td' ),
+				'footer-nav-three' => __( 'Footer Nav Three', 'AcademyMedical _td' ),
+				'legal-nav'        => __( 'Legal Nav', 'AcademyMedical _td' ),
 			)
 		);
 
@@ -105,4 +105,4 @@ class WP_Theme_Setup {
 	}
 
 }
-new WP_Theme_Setup();
+new Academy_Medical _Setup();

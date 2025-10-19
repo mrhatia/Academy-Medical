@@ -5,7 +5,7 @@
         {
             "key": "field_6266ffadbf2f3",
             "label": "Designation",
-            "name": "bst_var_cpt_team_designation",
+            "name": "am_var_cpt_team_designation",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -25,7 +25,7 @@
         {
             "key": "field_6266ffc1bf2f4",
             "label": "Text",
-            "name": "bst_var_cpt_team_text",
+            "name": "am_var_cpt_team_text",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",

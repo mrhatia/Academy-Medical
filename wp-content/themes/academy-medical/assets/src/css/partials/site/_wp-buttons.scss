@@ -11,19 +11,19 @@
 		overflow: hidden;
 		padding: 11px 30px;
 		text-decoration: none;
-		color: var(--gb_theme_btn_color);
-		background-color: var(--gb_theme_btn_bgcolor);
-		border: 2px solid var(--gb_theme_btn_border_color);
+		color: var(--am_theme_btn_color);
+		background-color: var(--am_theme_btn_bgcolor);
+		border: 2px solid var(--am_theme_btn_border_color);
 		transition: all 0.35s ease-in-out;
 		border-radius: 0;
 		@include font(axi, bold);
-		font-size: var(--gb_font_size_16);
+		font-size: var(--am_font_size_16);
 
 		&:hover,
 		&:focus-visible {
-			background-color: var(--gb_theme_btn_bgcolor_hover);
-			border: 2px solid var(--gb_theme_btn_border_color_hover);
-			color: var(--gb_theme_btn_color_hover);
+			background-color: var(--am_theme_btn_bgcolor_hover);
+			border: 2px solid var(--am_theme_btn_border_color_hover);
+			color: var(--am_theme_btn_color_hover);
 		}
 
 		&.has-background {
@@ -50,12 +50,12 @@
 
 	&.is-style-outline-boxed {
 		.wp-block-button__link {
-			background-color: var(--gb_transparent);
-			color: var(--gb_theme_btn_color_hover);
+			background-color: var(--am_transparent);
+			color: var(--am_theme_btn_color_hover);
 
 			&:hover,
 			&:focus-visible {
-				color: var(--gb_wp_outline_btn_color);
+				color: var(--am_wp_outline_btn_color);
 			}
 		}
 	}

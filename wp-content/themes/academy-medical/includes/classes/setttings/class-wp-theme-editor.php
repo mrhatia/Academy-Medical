@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Editor;
+namespace AcademyMedical \Editor;
 
 /**
  * Template Class For Acf Settings
@@ -16,9 +16,9 @@ namespace BaseTheme\Editor;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Editor {
+class Academy_Medical _Editor {
 	/**
 	 * Define class Constructor
 	 **/
@@ -49,4 +49,4 @@ class WP_Theme_Editor {
 	}
 
 }
-new WP_Theme_Editor();
+new Academy_Medical _Editor();

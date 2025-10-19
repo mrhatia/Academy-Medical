@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
 get_header();
-	list( $bst_var_post_id, $bst_fields, $bst_option_fields,$bst_query_object ) = BaseTheme::defaults();
+	list( $am_var_post_id, $bst_fields, $am_option_fields,$bst_query_object ) = AcademyMedical ::defaults();
 
 ?>
 <section id="hero-section" class="hero-section hero-section-default">
@@ -24,9 +24,9 @@ get_header();
 </section>
 <section id="page-section" class="page-section">
 	<div class="wrapper">
-		<div class="<?php BaseTheme::have_post_class( 'three-columns' ); ?>">
+		<div class="<?php AcademyMedical ::have_post_class( 'three-columns' ); ?>">
 			<!-- Content Start -->
-			<?php $bst_query = BaseTheme::query(); ?>
+			<?php $bst_query = AcademyMedical ::query(); ?>
 			<div class="ts-80"></div>
 			<!-- Content End -->
 		</div>

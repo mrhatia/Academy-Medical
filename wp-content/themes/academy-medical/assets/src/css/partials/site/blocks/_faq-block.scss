@@ -58,7 +58,7 @@
 	display: none;
 	border-top: 0;
 	color: var(--wp--preset--color--black);
-	font-size: var(--gb_font_size_16);
+	font-size: var(--am_font_size_16);
 	line-height: 32px;
 	padding-bottom: 48px;
 	max-width: 716px;
@@ -82,7 +82,7 @@
 		border-radius: 50%;
 		border: 1px solid rgb(40 28 60 / 0.2);
 		text-transform: uppercase;
-		font-size: var(--gb_font_size_16);
+		font-size: var(--am_font_size_16);
 		line-height: 22px;
 
 		@include font(axi, reg);

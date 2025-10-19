@@ -19,15 +19,15 @@ input[type="reset"] {
 
 	@include transition(all, 0.4s, ease-in-out);
 
-	background-color: var(--gb_button_bgcolor);
-	border: 1px solid var(--gb_button_bgcolor);
-	color: var(--gb_button_color);
+	background-color: var(--am_button_bgcolor);
+	border: 1px solid var(--am_button_bgcolor);
+	color: var(--am_button_color);
 	outline: none;
 
 
 	@include font(axi, bold);
 
-	font-size: var(--gb_font_size_16);
+	font-size: var(--am_font_size_16);
 	height: 50px;
 	outline: none;
 	cursor: pointer;
@@ -37,24 +37,24 @@ input[type="reset"] {
 input[type="submit"]:hover,
 button:hover,
 input[type="button"]:hover {
-	color: var(--gb_button_color_hover);
-	background-color: var(--gb_button_bgcolor_hover);
+	color: var(--am_button_color_hover);
+	background-color: var(--am_button_bgcolor_hover);
 }
 
 input[type="submit"]:focus-visible,
 button:focus-visible,
 input[type="button"]:focus-visible {
-	color: var(--gb_button_color_hover);
-	background-color: var(--gb_button_bgcolor_hover);
+	color: var(--am_button_color_hover);
+	background-color: var(--am_button_bgcolor_hover);
 }
 
 input[type="reset"] {
-	background-color: var(--gb_theme_btn_bgcolor);
-	color: var(--gb_theme_btn_color);
+	background-color: var(--am_theme_btn_bgcolor);
+	color: var(--am_theme_btn_color);
 
 	&:hover,
 	&:focus-visible {
-		color: var(--gb_theme_btn_color);
-		background-color: var(--gb_theme_btn_bgcolor_hover);
+		color: var(--am_theme_btn_color);
+		background-color: var(--am_theme_btn_bgcolor_hover);
 	}
 }

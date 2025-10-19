@@ -4,11 +4,11 @@
  *
  * @link
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Blog;
+namespace AcademyMedical \Blog;
 
 /**
  * Template Class For Custom
@@ -16,9 +16,9 @@ namespace BaseTheme\Blog;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Blog_Url {
+class Academy_Medical _Blog_Url {
 
 	/**
 	 * Define class Constructor
@@ -186,4 +186,4 @@ class WP_Theme_Blog_Url {
 
 
 }
-new WP_Theme_Blog_Url();
+new Academy_Medical _Blog_Url();

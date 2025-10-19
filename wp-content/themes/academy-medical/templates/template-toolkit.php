@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
@@ -22,7 +22,7 @@ get_header();
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Toolkit - BaseTheme</title>
+	<title>Toolkit - AcademyMedical </title>
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/styles.min.css" />
 </head>
 
@@ -53,26 +53,26 @@ get_header();
 								<li class="menu-item current-menu-item menu-item-has-children">
 									<a href="#">Forms</a>
 									<ul>
-										<li><a href="./basetheme/gravity-form.html">Gravity Form</a></li>
-										<li><a href="./basetheme/hubspot-form.html">Hubspot Form</a></li>
+										<li><a href="./AcademyMedical /gravity-form.html">Gravity Form</a></li>
+										<li><a href="./AcademyMedical /hubspot-form.html">Hubspot Form</a></li>
 									</ul>
 								</li>
-								<li><a href="./basetheme/html-formatting-tags.html">Html Tags</a></li>
-								<li><a href="./basetheme/wordpress-blocks.html">WordPress Blocks</a></li>
+								<li><a href="./AcademyMedical /html-formatting-tags.html">Html Tags</a></li>
+								<li><a href="./AcademyMedical /wordpress-blocks.html">WordPress Blocks</a></li>
 								<li class="menu-item current-menu-item menu-item-has-children">
-									<a href="./basetheme/#">Default Pages</a>
+									<a href="./AcademyMedical /#">Default Pages</a>
 									<ul>
 										<li class="menu-item current-menu-item">
-											<a href="./basetheme/blog-template.html">Blog
+											<a href="./AcademyMedical /blog-template.html">Blog
 												Template</a>
 										</li>
-										<li><a href="./basetheme/default-archive.html">Default Archive</a></li>
-										<li><a href="./basetheme/default-index.html">Default index</a></li>
-										<li><a href="./basetheme/default-page.html">Default Page</a></li>
-										<li><a href="./basetheme/default-post.html">Default post</a></li>
-										<li><a href="./basetheme/404.html">404</a></li>
+										<li><a href="./AcademyMedical /default-archive.html">Default Archive</a></li>
+										<li><a href="./AcademyMedical /default-index.html">Default index</a></li>
+										<li><a href="./AcademyMedical /default-page.html">Default Page</a></li>
+										<li><a href="./AcademyMedical /default-post.html">Default post</a></li>
+										<li><a href="./AcademyMedical /404.html">404</a></li>
 
-										<li><a href="./basetheme/default-archive.html">Default Archive</a></li>
+										<li><a href="./AcademyMedical /default-archive.html">Default Archive</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -114,7 +114,7 @@ get_header();
 		<section id="" class="page-section">
 
 
-			<div class="gl-s72"></div>
+			<div class="am-s72"></div>
 			<!-- image-at-right variation -->
 			<section>
 				<div class="wrapper">
@@ -133,7 +133,7 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<div class="gl-s96"></div>
+			<div class="am-s96"></div>
 			<!-- image-at-left variation-->
 			<section>
 				<div class="wrapper">
@@ -151,7 +151,7 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<div class="gl-s60"></div>
+			<div class="am-s60"></div>
 
 		</section>
 	</main>
@@ -202,7 +202,7 @@ get_header();
 								<ul id="menu-footer-nav-two" class="menu">
 									<li id="menu-item-1901"
 										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home first-menu-item menu-item-1901">
-										<a href="http://basethemedevcause.local/">Home</a>
+										<a href="http://AcademyMedical devcause.local/">Home</a>
 									</li>
 									<li><a href="#">Sample Page</a></li>
 									<li><a href="#">Level 2a</a></li>
@@ -229,7 +229,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="gl-s72"></div>
+				<div class="am-s72"></div>
 				<div class="footer-bottom d-flex align-items-center justify-content-between">
 					<div class="copy-right">Copyright © 2024 By Glidedesign</div>
 					<div class="legal-nav">

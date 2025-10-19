@@ -4,17 +4,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-box column' ); ?>>
 	<div class="post-box-img post-image">
 		<a href="<?php echo esc_url( get_the_permalink() ); ?>">
-			<?php BaseTheme::the_featured_image( $bst_var_post_id, 900 ); ?>
+			<?php AcademyMedical ::the_featured_image( $am_var_post_id, 900 ); ?>
 		</a>
 	</div>
 	<div class="post-content">
@@ -25,8 +25,8 @@ list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults(
 			</h4>
 		</div>
 		<div class="post-box-excerpt">
-			<p><?php echo BaseTheme::excerpt_nomore( 130 ); ?> </p>
+			<p><?php echo AcademyMedical ::excerpt_nomore( 130 ); ?> </p>
 		</div>
-		<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="learn-more"><?php esc_html_e( 'Learn More', 'basetheme_td' ); ?></a>
+		<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="learn-more"><?php esc_html_e( 'Learn More', 'AcademyMedical _td' ); ?></a>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

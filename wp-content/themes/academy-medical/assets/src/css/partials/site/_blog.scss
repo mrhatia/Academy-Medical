@@ -55,7 +55,7 @@
 		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
-		color: var(--gb_body_color);
+		color: var(--am_body_color);
 		border-bottom: none;
 
 		&:last-child {
@@ -85,7 +85,7 @@
 			margin-left: 30px;
 
 			h2 a {
-				color: var(--gb_body_color);
+				color: var(--am_body_color);
 			}
 		}
 
@@ -104,8 +104,8 @@
 	}
 
 	.post-meta-date {
-		color: var(--gb_dark-gray);
-		font-size: var(--gb_font_size_16);
+		color: var(--am_dark-gray);
+		font-size: var(--am_font_size_16);
 	}
 }
 
@@ -114,11 +114,11 @@
 
 	.post-date {
 		margin-right: 20px;
-		font-size: var(--gb_font_size_14);
+		font-size: var(--am_font_size_14);
 	}
 
 	.ac-post-cat {
-		font-size: var(--gb_font_size_14);
+		font-size: var(--am_font_size_14);
 	}
 
 	a {
@@ -153,13 +153,13 @@
 		border-bottom: none;
 		padding: 3px 10px;
 		display: inline-block;
-		background-color: var(--gb_theme_btn_bgcolor);
-		color: var(--gb_white);
+		background-color: var(--am_theme_btn_bgcolor);
+		color: var(--am_white);
 
 		&:hover,
 		&:focus-visible {
-			color: var(--gb_black);
-			background-color: var(--gb_white_2);
+			color: var(--am_black);
+			background-color: var(--am_white_2);
 		}
 	}
 }
@@ -181,15 +181,15 @@
 
 		a {
 			margin: 0 5px;
-			background-color: var(--gb_theme_btn_bgcolor);
+			background-color: var(--am_theme_btn_bgcolor);
 			padding: 10px 20px;
-			font-size: var(--gb_font_size_16);
-			color: var(--gb_white);
+			font-size: var(--am_font_size_16);
+			color: var(--am_white);
 
 			&:hover,
 			&:focus-visible {
-				color: var(--gb_black);
-				background-color: var(--gb_white_2);
+				color: var(--am_black);
+				background-color: var(--am_white_2);
 			}
 		}
 	}

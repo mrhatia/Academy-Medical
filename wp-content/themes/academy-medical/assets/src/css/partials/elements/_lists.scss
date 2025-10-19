@@ -71,7 +71,7 @@ ol ul {
 				height: 5px;
 				background-position: left top;
 				position: absolute;
-				background-color: var(--gb_list_marker_bgcolor);
+				background-color: var(--am_list_marker_bgcolor);
 				left: 0;
 				top: 8px;
 				border-radius: 50%;
@@ -109,7 +109,7 @@ ol ul {
 			}
 
 			&::before {
-				color: var(--gb_ol_list_marker_color);
+				color: var(--am_ol_list_marker_color);
 
 				@include font(axi, reg);
 
@@ -152,7 +152,7 @@ ol ul {
 					height: 6px;
 					background-position: left top;
 					position: absolute;
-					background-color: var(--gb_list_marker_bgcolor);
+					background-color: var(--am_list_marker_bgcolor);
 					left: 0;
 					top: 9px;
 				}

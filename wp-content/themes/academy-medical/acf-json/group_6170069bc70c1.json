@@ -5,7 +5,7 @@
         {
             "key": "field_617007cdbe35b",
             "label": "Custom Author Avatar",
-            "name": "bst_var_author_avatar",
+            "name": "am_var_author_avatar",
             "aria-label": "",
             "type": "image",
             "instructions": "",

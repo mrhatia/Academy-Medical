@@ -4,11 +4,11 @@
  *
  * @link https://codex.wordpress.org/AJAX#Ajax_in_WordPress
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Core;
+namespace AcademyMedical \Core;
 
 /**
  * Template Class For Ajax
@@ -16,7 +16,7 @@ namespace BaseTheme\Core;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
 class WP_Core_Blocks {
 	/**

@@ -4,11 +4,11 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Acf;
+namespace AcademyMedical \Acf;
 
 /**
  * Template Class For Acf Settings
@@ -16,9 +16,9 @@ namespace BaseTheme\Acf;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Acf {
+class Academy_Medical _Acf {
 	/**
 	 * Define class Constructor
 	 **/
@@ -30,8 +30,8 @@ class WP_Theme_Acf {
 		if ( function_exists( 'acf_add_options_page' ) ) {
 			$option_page = acf_add_options_page(
 				array(
-					'page_title' => __( 'Theme Options', 'basetheme_td' ),
-					'menu_title' => __( 'Theme Options', 'basetheme_td' ),
+					'page_title' => __( 'Theme Options', 'AcademyMedical _td' ),
+					'menu_title' => __( 'Theme Options', 'AcademyMedical _td' ),
 					'menu_slug'  => 'acf-options',
 					'capability' => 'edit_posts',
 					'redirect'   => false,
@@ -60,7 +60,7 @@ class WP_Theme_Acf {
 	public function blocks_category( $categories ) {
 		$custom_block = array(
 			'slug'  => 'theme-blocks',
-			'title' => __( 'Theme Blocks', 'basetheme_td' ),
+			'title' => __( 'Theme Blocks', 'AcademyMedical _td' ),
 			'icon'  => 'theme-blocks',
 		);
 
@@ -167,8 +167,8 @@ class WP_Theme_Acf {
 		acf_render_field_setting(
 			$field,
 			array(
-				'label'        => __( 'Height of Editor', 'basetheme_td' ),
-				'instructions' => __( 'Height of Editor after Init', 'basetheme_td' ),
+				'label'        => __( 'Height of Editor', 'AcademyMedical _td' ),
+				'instructions' => __( 'Height of Editor after Init', 'AcademyMedical _td' ),
 				'name'         => 'wysiwyg_height',
 				'type'         => 'number',
 			)
@@ -195,16 +195,16 @@ class WP_Theme_Acf {
 		require_once __DIR__ . '/acf-field-types/class-acf-field-date-range-picker.php';
 		require_once __DIR__ . '/acf-field-types/class-acf-field-media-box.php';
 
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Block_Label' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Headings' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Spacer' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Spacers' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Block_Title' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Relational_Taxonomy' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Advance_Form' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Advance_Video' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Field_Date_Range_Picker' );
-		acf_register_field_type( '\BaseTheme\Acf\Acf_Fields\Acf_Media_Box' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Block_Label' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Headings' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Spacer' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Spacers' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Block_Title' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Relational_Taxonomy' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Advance_Form' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Advance_Video' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Field_Date_Range_Picker' );
+		acf_register_field_type( '\AcademyMedical \Acf\Acf_Fields\Acf_Media_Box' );
 	}
 
 
@@ -213,5 +213,5 @@ if ( ! function_exists( 'is_plugin_active' ) ) {
 	include_once ABSPATH . 'wp-admin/includes/plugin.php';
 }
 if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
-	new WP_Theme_Acf();
+	new Academy_Medical _Acf();
 }

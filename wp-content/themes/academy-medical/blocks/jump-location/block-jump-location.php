@@ -6,13 +6,13 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-BaseTheme::block(
+AcademyMedical ::block(
 	$block,
-	function ( $bst_block_id, $bst_block_name,$bst_block_fields, $bst_option_fields ) {
+	function ( $bst_block_id, $bst_block_name,$bst_block_fields, $am_option_fields ) {
 
 		// Block variables.
 		$bst_blkjmplctn_hashid = $bst_block_fields['bst_blkjmplctn_hashid'] ?? '';

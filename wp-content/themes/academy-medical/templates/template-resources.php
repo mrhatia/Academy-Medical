@@ -7,17 +7,17 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
 // Include header.
 get_header();
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
 
-$bst_var_pagetitle          = $bst_fields['bst_var_pagetitle'] ?? get_the_title();
-$bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
+$am_var_pagetitle          = $bst_fields['am_var_pagetitle'] ?? get_the_title();
+$am_var_trcho_feature_post = $bst_fields['am_var_trcho_feature_post'] ?? null;
 
 ?>
 
@@ -26,20 +26,20 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 	<div class="blog-hero">
 		<div class="wrapper">
 			<div class="banner-content">
-				<h1><?php echo esc_html( $bst_var_pagetitle ); ?></h1>
+				<h1><?php echo esc_html( $am_var_pagetitle ); ?></h1>
 			</div>
-			<div class="gl-s72"></div>
+			<div class="am-s72"></div>
 			<?php
-			if ( $bst_var_trcho_feature_post ) {
+			if ( $am_var_trcho_feature_post ) {
 				?>
 				<?php
-				foreach ( $bst_var_trcho_feature_post as $bst_var_post_id ) {
+				foreach ( $am_var_trcho_feature_post as $am_var_post_id ) {
 
-					$bst_var_post_title     = get_the_title( $bst_var_post_id );
-					$bst_var_post_excerpt   = get_the_excerpt( $bst_var_post_id );
-					$bst_var_post_date      = get_the_date( 'M d Y', $bst_var_post_id );
-					$bst_var_post_parmalink = get_the_permalink( $bst_var_post_id );
-					$bst_var_post_tags      = get_the_tags( $bst_var_post_id );
+					$am_var_post_title     = get_the_title( $am_var_post_id );
+					$am_var_post_excerpt   = get_the_excerpt( $am_var_post_id );
+					$am_var_post_date      = get_the_date( 'M d Y', $am_var_post_id );
+					$am_var_post_parmalink = get_the_permalink( $am_var_post_id );
+					$am_var_post_tags      = get_the_tags( $am_var_post_id );
 					?>
 
 				<div class="resources-post-box featured-post">
@@ -48,11 +48,11 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 							<div class="rc-post-img post-image rs-view-100">
 								<a href="<?php echo esc_url( $post_parmalink ); ?>">
 									<?php
-									if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
+									if ( ! has_post_thumbnail( $am_var_post_id ) ) {
 										echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
 									} else {
 										echo get_the_post_thumbnail(
-											$bst_var_post_id,
+											$am_var_post_id,
 											'thumb_900',
 										);
 									}
@@ -90,7 +90,7 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 	<div class="wrapper">
 		<?php
 			// WP_Query.
-			$bst_query = BaseTheme::query(
+			$bst_query = AcademyMedical ::query(
 				array(
 					'post_type'     => 'resource',
 					'template'      => 'archive-resource',

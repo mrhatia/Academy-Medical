@@ -1,8 +1,8 @@
 {
-	"name": "basethemepack",
+	"name": "academymedicalpack",
 	"version": "1.0.0",
 	"theme-version": "2.2.3",
-	"class-prefix":"BaseTheme",
+	"class-prefix":"AcademyMedical ",
 	"description": "A wordpress custom theme",
 	"scripts": {
 		"build": "bash nvm.sh && wp-scripts build",

@@ -4,17 +4,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields, $bst_queried_object ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields, $bst_queried_object ) = AcademyMedical ::defaults();
 
 // Post Tags & Categories.
-$bst_var_post_categories = get_categories( $bst_var_post_id );
+$am_var_post_categories = get_categories( $am_var_post_id );
 
 
-$bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
+$am_var_posttitle = $bst_fields['am_var_posttitle'] ?? get_the_title();
 
 
 ?>
@@ -22,7 +22,7 @@ $bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
 	<!-- Hero Start -->
 	<div class="hero-ctn">
 		<div class="wrapper">
-			<h1><?php echo esc_html( $bst_var_posttitle ); ?></h1>
+			<h1><?php echo esc_html( $am_var_posttitle ); ?></h1>
 		</div>
 	</div>
 	<!-- Hero End -->
@@ -30,15 +30,15 @@ $bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
 <section id="page-section" class="page-section">
 	<div class="wrapper">
 		<div class="wrapper">
-			<div class="gl-s60"></div>
+			<div class="am-s60"></div>
 			<div class="post-box-img post-image">
 				<a href="<?php the_permalink(); ?>">
 					<?php
-					if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
+					if ( ! has_post_thumbnail( $am_var_post_id ) ) {
 						echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
 					} else {
 						echo get_the_post_thumbnail(
-							$bst_var_post_id,
+							$am_var_post_id,
 							'thumb_900',
 						);
 					}
@@ -47,10 +47,10 @@ $bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
 			</div>
 			<div class="post-meta d-flex align-items-center justify-content-between">
 				<!-- /.post-tags -->
-				<?php if ( $bst_var_post_categories ) { ?>
+				<?php if ( $am_var_post_categories ) { ?>
 					<div class="post-cat">
-						<?php foreach ( $bst_var_post_categories as $bst_var_category ) { ?>
-							<a href="<?php echo esc_url( get_category_link( $bst_var_category ) ); ?>"><?php echo esc_html( $bst_var_category->name ); ?></a>
+						<?php foreach ( $am_var_post_categories as $am_var_category ) { ?>
+							<a href="<?php echo esc_url( get_category_link( $am_var_category ) ); ?>"><?php echo esc_html( $am_var_category->name ); ?></a>
 						<?php } ?>
 					</div>
 					<!-- /.post-cat -->
@@ -94,8 +94,8 @@ $bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
 				<?php
 				wp_reset_postdata();
 
-				$bst_var_rp_selection_criteria = isset( $bst_fields['bst_var_rp_selection_criteria'] ) ? $bst_fields['bst_var_rp_selection_criteria'] : null;
-				if ( 'random' === $bst_var_rp_selection_criteria ) {
+				$am_var_rp_selection_criteria = isset( $bst_fields['am_var_rp_selection_criteria'] ) ? $bst_fields['am_var_rp_selection_criteria'] : null;
+				if ( 'random' === $am_var_rp_selection_criteria ) {
 
 					$bst_args = array(
 						'posts_per_page' => 3,
@@ -117,21 +117,21 @@ $bst_var_posttitle = $bst_fields['bst_var_posttitle'] ?? get_the_title();
 					}
 				} else {
 					global $post;
-					$bst_var_selected_posts = array();
-					$bst_var_selected_posts = isset( $bst_fields['bst_var_rp_selected_posts'] ) ? $bst_fields['bst_var_rp_selected_posts'] : null;
-					if ( $bst_var_selected_posts ) {
+					$am_var_selected_posts = array();
+					$am_var_selected_posts = isset( $bst_fields['am_var_rp_selected_posts'] ) ? $bst_fields['am_var_rp_selected_posts'] : null;
+					if ( $am_var_selected_posts ) {
 
 						?>
 					<div class="related-posts ">
-					<h3><?php esc_html__( 'Related Posts', 'basetheme_td' ); ?></h3>
+					<h3><?php esc_html__( 'Related Posts', 'AcademyMedical _td' ); ?></h3>
 						<?php
-						foreach ( $bst_var_selected_posts as $bst_var_post ) {
+						foreach ( $am_var_selected_posts as $am_var_post ) {
 							setup_postdata( $post );
 
-							$bst_post_fields = get_fields( get_the_ID() );
-							$bst_var_src     = wp_get_attachment_image_url( get_post_thumbnail_id( $bst_var_post_id ), 'thumb_600', false );
-							if ( ! $bst_var_src ) {
-								$bst_var_src = get_template_directory_uri() . '/assets/build/images/admin/defaults/default-image.webp';
+							$am_post_fields = get_fields( get_the_ID() );
+							$am_var_src     = wp_get_attachment_image_url( get_post_thumbnail_id( $am_var_post_id ), 'thumb_600', false );
+							if ( ! $am_var_src ) {
+								$am_var_src = get_template_directory_uri() . '/assets/build/images/admin/defaults/default-image.webp';
 							}
 								get_template_part( 'partials/content', 'archive-post' );
 						}

@@ -4,22 +4,22 @@
  *
  * @link
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Boilerplate;
+namespace AcademyMedical \Boilerplate;
 
-use BaseTheme;
+use AcademyMedical ;
 /**
  * Template Class For Custom
  *
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Boilerplate {
+class Academy_Medical _Boilerplate {
 
 	/**
 	 * Block Render Boilerplate.
@@ -28,12 +28,12 @@ class WP_Theme_Boilerplate {
 	 * @param mixed $callback_function callback function.
 	 */
 	public static function block( $block, $callback_function ) {
-		list( $bst_block_id, $bst_block_fields,$bst_option_fields ) = BaseTheme::defaults( $block['id'] );
+		list( $bst_block_id, $bst_block_fields,$am_option_fields ) = AcademyMedical ::defaults( $block['id'] );
 
 		// Set the block name for it's ID & class from it's file name.
 		$bst_block_name   = $block['name'];
 		$bst_block_name   = str_replace( 'acf/', '', $bst_block_name );
-		$bst_block_styles = BaseTheme::convert_to_css( $block );
+		$bst_block_styles = AcademyMedical ::convert_to_css( $block );
 		// Set the preview thumbnail for this block for gutenberg editor view.
 		if ( isset( $block['data']['preview'] ) && 'preview' === $block['mode'] && isset( $block['data']['preview'] ) ) {
 			$version = filemtime( get_template_directory() . '/blocks/' . $bst_block_name . '/' . $block['data']['preview'] );
@@ -41,10 +41,10 @@ class WP_Theme_Boilerplate {
 		}
 
 		// create align class ("alignwide") from block setting ("wide").
-		$bst_var_align_class = $block['align'] ? 'align' . $block['align'] : '';
+		$am_var_align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 		// Get the class name for the block to be used for it.
-		$bst_var_class_name = ( isset( $block['className'] ) ) ? $block['className'] : null;
+		$am_var_class_name = ( isset( $block['className'] ) ) ? $block['className'] : null;
 
 		// Making the unique ID for the block.
 		$bst_block_html_id = 'block-' . $bst_block_name . '-' . $block['id'];
@@ -53,14 +53,14 @@ class WP_Theme_Boilerplate {
 		if ( $block['name'] ) {
 			$bst_block_name = $block['name'];
 			$bst_block_name = str_replace( '/', '-', $bst_block_name );
-			$bst_var_name   = 'block-' . $bst_block_name;
+			$am_var_name   = 'block-' . $bst_block_name;
 		}
-		echo '<div id="' . esc_html( $bst_block_html_id ) . '" class="' . esc_html( $bst_var_align_class . ' ' . $bst_var_class_name . ' ' . $bst_var_name ) . ' block-' . esc_html( $bst_block_name ) . '" style="' . esc_html( $bst_block_styles ) . '"> ';
+		echo '<div id="' . esc_html( $bst_block_html_id ) . '" class="' . esc_html( $am_var_align_class . ' ' . $am_var_class_name . ' ' . $am_var_name ) . ' block-' . esc_html( $bst_block_name ) . '" style="' . esc_html( $bst_block_styles ) . '"> ';
 
 		$spacers = self::get_spacer( $bst_block_fields );
-		BaseTheme::the_spacer( $spacers, 'top' );
-		$callback_function( $bst_block_id, $bst_block_name, $bst_block_fields, $bst_option_fields );
-		BaseTheme::the_spacer( $spacers, 'bottom' );
+		AcademyMedical ::the_spacer( $spacers, 'top' );
+		$callback_function( $bst_block_id, $bst_block_name, $bst_block_fields, $am_option_fields );
+		AcademyMedical ::the_spacer( $spacers, 'bottom' );
 		echo '</div>';
 		wp_enqueue_script( 'wp-theme-' . str_replace( 'acf-', '', $bst_block_name ) );
 	}
@@ -356,14 +356,14 @@ class WP_Theme_Boilerplate {
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post();
-					$bst_var_post_id = get_the_ID();
+					$am_var_post_id = get_the_ID();
 
-					list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults( $bst_var_post_id );
+					list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults( $am_var_post_id );
 					// Include specific template for the content.
 					if ( isset( $template ) ) {
 						get_template_part( 'partials/content', $template );
 					} else {
-						$render_fun( $bst_var_post_id, $bst_fields, $bst_option_fields );
+						$render_fun( $am_var_post_id, $bst_fields, $am_option_fields );
 					}
 				}
 			} else {
@@ -373,7 +373,7 @@ class WP_Theme_Boilerplate {
 			echo '</div>';
 			if ( $query->have_posts() && $query->max_num_pages > 1 && $pagination ) {
 				echo '<div class="ts-40"></div><div class="center-align">';
-				BaseTheme::$pagination_fun( $query->max_num_pages );
+				AcademyMedical ::$pagination_fun( $query->max_num_pages );
 				echo '</div>';
 			}
 			return $query;
@@ -404,4 +404,4 @@ class WP_Theme_Boilerplate {
 }
 
 
-class_alias( 'BaseTheme\Boilerplate\WP_Theme_Boilerplate', 'Boilerplate' );
+class_alias( 'AcademyMedical \Boilerplate\Academy_Medical _Boilerplate', 'Boilerplate' );

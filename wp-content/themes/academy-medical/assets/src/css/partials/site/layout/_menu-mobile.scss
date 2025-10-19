@@ -30,7 +30,7 @@
 
 				a,
 				a:visited {
-					color: var(--gb_header_mobile_color);
+					color: var(--am_header_mobile_color);
 					line-height: 1;
 					display: inline-block;
 					border-bottom: none;
@@ -73,7 +73,7 @@
 
 					&.current-menu-item > a,
 					&.current-menu-parent > a {
-						color: var(--gb_header_mobile_submenu_color);
+						color: var(--am_header_mobile_submenu_color);
 					}
 				}
 
@@ -91,7 +91,7 @@
 
 	.nav-overlay {
 		position: fixed;
-		background-color: var(--gb_nav_overlay_bgcolor);
+		background-color: var(--am_nav_overlay_bgcolor);
 		left: 0;
 		width: 100%;
 		height: 100vh;
@@ -101,7 +101,7 @@
 		box-sizing: border-box;
 		z-index: 8;
 		@include transition(all, 0.3s, ease-in-out);
-		top: var(--gb_header-wrapper-default);
+		top: var(--am_header-wrapper-default);
 		display: none;
 
 		.nav-container {
@@ -112,7 +112,7 @@
 	body.have-topbar {
 		.nav-overlay {
 			top: calc(
-				var(--gb_header-height) + var(--gb_header-wrapper-default)
+				var(--am_header-height) + var(--am_header-wrapper-default)
 			);
 		}
 	}
@@ -213,7 +213,7 @@
 		span {
 			height: 2px;
 			width: 100%;
-			background-color: var(--gb_mobile_nav_icon_bgcolor);
+			background-color: var(--am_mobile_nav_icon_bgcolor);
 			opacity: 1;
 
 			@include transition(all, 0.3s, ease-in-out);
@@ -263,12 +263,12 @@
 		&.have-topbar {
 			.nav-overlay {
 				top: calc(
-					var(--wp-admin--admin-bar--height) + var(--gb_header-height) +
-						var(--gb_header-wrapper-default)
+					var(--wp-admin--admin-bar--height) + var(--am_header-height) +
+						var(--am_header-wrapper-default)
 				);
 				height: calc(
 					100vh - var(--wp-admin--admin-bar--height) - var(
-							--gb_header-height
+							--am_header-height
 						)
 				);
 			}
@@ -277,7 +277,7 @@
 		.nav-overlay {
 			top: calc(
 				var(--wp-admin--admin-bar--height) +
-					var(--gb_header-wrapper-default)
+					var(--am_header-wrapper-default)
 			);
 			height: calc(100vh - var(--wp-admin--admin-bar--height));
 		}

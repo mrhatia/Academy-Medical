@@ -4,11 +4,11 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Acf\Acf_Fields;
+namespace AcademyMedical \Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Field Reusable
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
 class Acf_Field_Spacers extends \acf_field {
 	/**
@@ -214,8 +214,8 @@ class Acf_Field_Spacers extends \acf_field {
 		acf_render_field_setting(
 			$field,
 			array(
-				'label'        => __( 'Instructions (Margin From Top)', 'basetheme_td' ),
-				'instructions' => __( 'Customize the Margin From Top input instructions', 'basetheme_td' ),
+				'label'        => __( 'Instructions (Margin From Top)', 'AcademyMedical _td' ),
+				'instructions' => __( 'Customize the Margin From Top input instructions', 'AcademyMedical _td' ),
 				'type'         => 'text',
 				'name'         => 'instructions_top',
 				'append'       => '',
@@ -225,8 +225,8 @@ class Acf_Field_Spacers extends \acf_field {
 		acf_render_field_setting(
 			$field,
 			array(
-				'label'        => __( 'Instructions ( Margin From Bottom)', 'basetheme_td' ),
-				'instructions' => __( 'Customize the Margin From Bottom input instructions', 'basetheme_td' ),
+				'label'        => __( 'Instructions ( Margin From Bottom)', 'AcademyMedical _td' ),
+				'instructions' => __( 'Customize the Margin From Bottom input instructions', 'AcademyMedical _td' ),
 				'type'         => 'text',
 				'name'         => 'instructions_bottom',
 				'append'       => '',

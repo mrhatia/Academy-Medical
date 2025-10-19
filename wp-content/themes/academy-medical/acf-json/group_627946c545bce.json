@@ -21,7 +21,7 @@
         {
             "key": "field_66f3ca2838c7c",
             "label": "Media Alongside Text",
-            "name": "bst_var_blk_mat_title",
+            "name": "am_var_blk_mat_title",
             "aria-label": "",
             "type": "block_title",
             "instructions": "",
@@ -58,7 +58,7 @@
         {
             "key": "field_62794734c50ea",
             "label": "Text",
-            "name": "bst_var_blk_mat_text",
+            "name": "am_var_blk_mat_text",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -79,7 +79,7 @@
         {
             "key": "field_6279476dc50eb",
             "label": "Button",
-            "name": "bst_var_blk_mat_button",
+            "name": "am_var_blk_mat_button",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -95,7 +95,7 @@
         {
             "key": "field_65254d0d506e8",
             "label": "Media Type",
-            "name": "bst_var_blk_mat_mediatype",
+            "name": "am_var_blk_mat_mediatype",
             "aria-label": "",
             "type": "button_group",
             "instructions": "",
@@ -118,7 +118,7 @@
         {
             "key": "field_62794da70c37b",
             "label": "Image Location",
-            "name": "bst_var_blk_mat_img_location",
+            "name": "am_var_blk_mat_img_location",
             "aria-label": "",
             "type": "button_group",
             "instructions": "",
@@ -167,7 +167,7 @@
         {
             "key": "field_62794780c50ec",
             "label": "Image",
-            "name": "bst_var_blk_mat_image",
+            "name": "am_var_blk_mat_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -200,7 +200,7 @@
         {
             "key": "field_65254d7ac90d3",
             "label": "Video",
-            "name": "bst_var_blk_mat_video",
+            "name": "am_var_blk_mat_video",
             "aria-label": "",
             "type": "group",
             "instructions": "",

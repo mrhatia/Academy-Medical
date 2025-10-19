@@ -4,11 +4,11 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Acf\Acf_Fields;
+namespace AcademyMedical \Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Title Field
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
 class Acf_Field_Relational_Taxonomy extends \acf_field {
 
@@ -295,7 +295,7 @@ class Acf_Field_Relational_Taxonomy extends \acf_field {
 			// if called directly from frontend update_field().
 			if ( ! did_action( 'acf/save_post' ) ) {
 
-				$this->save_post( $bst_var_post_id );
+				$this->save_post( $am_var_post_id );
 
 				return $value;
 

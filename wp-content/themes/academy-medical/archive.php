@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
 // Include header.
 get_header();
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
 
 ?>
 <section id="hero-section" class="hero-section hero-section-default">
@@ -26,7 +26,7 @@ list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults(
 <section id="page-section" class="page-section">
 	<!-- Content Start -->
 	<div class="wrapper">
-		<div class="<?php BaseTheme::have_post_class( 'three-columns' ); ?>">
+		<div class="<?php AcademyMedical ::have_post_class( 'three-columns' ); ?>">
 			<?php
 			global $wp_query;
 			if ( have_posts() ) {
@@ -44,10 +44,10 @@ list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults(
 		<div class="ts-40"></div>
 		<?php
 		if ( have_posts() ) {
-			if ( class_exists( 'BaseTheme' ) && $wp_query->max_num_pages > 1 ) {
+			if ( class_exists( 'AcademyMedical ' ) && $wp_query->max_num_pages > 1 ) {
 				?>
 				<div class="center-align">
-					<?php BaseTheme::pagination( $wp_query->max_num_pages ); ?>
+					<?php AcademyMedical ::pagination( $wp_query->max_num_pages ); ?>
 				</div>
 				<?php
 			}

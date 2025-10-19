@@ -10,13 +10,13 @@
 	width: 1px;
 	position: absolute !important;
 	word-wrap: normal !important;
-	color: var(--gb_acc_btn_color);
-	background-color: var(--gb_acc_btn_bgcolor);
+	color: var(--am_acc_btn_color);
+	background-color: var(--am_acc_btn_bgcolor);
 	clip: auto !important;
 	border: unset !important;
 	border-radius: 0;
 	left: -100%;
-	font-size: var(--gb_font_size_14);
+	font-size: var(--am_font_size_14);
 
 	clip-path: none;
 	font-weight: 700;
@@ -50,7 +50,7 @@ input[type="submit"],
 	outline-offset: 5px;
 
 	&:focus-visible {
-		outline-color: var(--gb_acc_outline) !important;
+		outline-color: var(--am_acc_outline) !important;
 	}
 }
 
@@ -70,6 +70,6 @@ input[type="submit"],
 .header-nav ul li {
 
 	a:focus-visible {
-		outline-color: var(--gb_acc_outline);
+		outline-color: var(--am_acc_outline);
 	}
 }

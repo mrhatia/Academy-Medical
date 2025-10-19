@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/including-css-javascript/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Script;
+namespace AcademyMedical \Script;
 
-use BaseTheme;
+use AcademyMedical ;
 /**
  * Theme assets
  *
@@ -20,13 +20,13 @@ use BaseTheme;
  */
 
 // Time format for the_time().
-define( 'BASETHEME_PROJECT_DTFORMAT', 'F j, Y' );
+define( 'AcademyMedical _PROJECT_DTFORMAT', 'F j, Y' );
 /**
  * Theme assets
  *
  * Enqueue and Dequeue required files
  */
-class WP_Theme_Scripts {
+class Academy_Medical _Scripts {
 	/**
 	 * Define class Constructor
 	 **/
@@ -41,9 +41,9 @@ class WP_Theme_Scripts {
 	 */
 	public function theme_assets() {
 		// Enqueue theme styles.
-		BaseTheme::enqueue_style( 'assets/build/styles.min.css' );
+		AcademyMedical ::enqueue_style( 'assets/build/styles.min.css' );
 		if ( wp_is_mobile() ) {
-			BaseTheme::enqueue_style( 'assets/build/mobile.min.css' );
+			AcademyMedical ::enqueue_style( 'assets/build/mobile.min.css' );
 		}
 		// Eliminate the emoji script.
 		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -60,7 +60,7 @@ class WP_Theme_Scripts {
 
 		wp_enqueue_script( 'jquery' );
 		// Register project scripts.
-		BaseTheme::enqueue_script(
+		AcademyMedical ::enqueue_script(
 			'assets/build/scripts.min.js',
 			array( 'jquery' ),
 			'localVars',
@@ -73,7 +73,7 @@ class WP_Theme_Scripts {
 				'strategy'  => 'defer',
 			)
 		);
-		BaseTheme::enqueue_script(
+		AcademyMedical ::enqueue_script(
 			'assets/build/header.min.js',
 			array( 'jquery' ),
 			args:array(
@@ -88,7 +88,7 @@ class WP_Theme_Scripts {
 	 * @return void
 	 */
 	public function admin_assets() {
-		BaseTheme::enqueue_script(
+		AcademyMedical ::enqueue_script(
 			'assets/build/vendors/admin-scripts.js',
 			array( 'jquery' ),
 			'localVars',
@@ -97,8 +97,8 @@ class WP_Theme_Scripts {
 				'nonce'    => esc_html( wp_create_nonce( 'admin_ajax_nonce' ) ),
 			)
 		);
-		BaseTheme::enqueue_style( 'assets/build/editor.min.css' );
+		AcademyMedical ::enqueue_style( 'assets/build/editor.min.css' );
 	}
 }
-new WP_Theme_Scripts();
+new Academy_Medical _Scripts();
 

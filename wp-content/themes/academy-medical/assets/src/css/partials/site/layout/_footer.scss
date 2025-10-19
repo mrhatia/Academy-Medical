@@ -1,5 +1,5 @@
 .footer-ctn {
-	background-color: var(--gb_footer_bgcolor);
+	background-color: var(--am_topbar_bgcolor);
 	padding: 80px 0 0;
 	box-sizing: border-box;
 
@@ -12,7 +12,7 @@
 	p,
 	ul,
 	a {
-		color: var(--gb_footer_color);
+		color: var(--am_footer_color);
 	}
 }
 
@@ -56,11 +56,11 @@
 			a,
 			a:visited {
 				padding-bottom: 2px;
-				font-size: 14px;
+				font-size: 12px;
 				line-height: 1;
 				position: relative;
 				display: inline-block;
-				color: var(--gb_f_nav_color);
+				color: var(--am_f_nav_color);
 
 				&::after {
 					content: "";
@@ -69,7 +69,7 @@
 					height: 1px;
 					bottom: 0;
 					left: 0;
-					background-color: var(--gb_legal_nav_border_color_hover);
+					background-color: var(--am_legal_nav_border_color_hover);
 					opacity: 0.8;
 					transform: scaleX(0);
 					transform-origin: bottom right;
@@ -108,12 +108,12 @@
 
 .footer-bottom {
 	padding: 30px 0 40px;
-	border-top: 1px solid var(--gb_border_3);
+	border-top: 1px solid var(--am_border_3);
 }
 
 .copy-right {
 	width: 45%;
-	color: var(--gb_copyright_color);
+	color: var(--am_copyright_color);
 	font-size: 14px;
 }
 
@@ -141,7 +141,7 @@
 			a:visited {
 				line-height: 1;
 				padding-bottom: 2px;
-				color: var(--gb_legal_nav_color);
+				color: var(--am_legal_nav_color);
 				position: relative;
 				display: block;
 
@@ -152,7 +152,7 @@
 					height: 1px;
 					bottom: 0;
 					left: 0;
-					background-color: var(--gb_legal_nav_border_color);
+					background-color: var(--am_legal_nav_border_color);
 					transform: scaleX(0);
 					transform-origin: bottom right;
 					transition: transform 0.3s;
@@ -183,7 +183,7 @@
 
 .legal-text {
 	font-size: 15px;
-	color: var(--gb_legal_text_color);
+	color: var(--am_legal_text_color);
 
 	@include font(axi, reg);
 
@@ -192,14 +192,14 @@
 
 .social-icons {
 	a {
-		background-color: var(--gb_white);
+		background-color: var(--am_white);
 		width: 30px;
 		height: 30px;
 		margin-right: 20px;
 
 		&:hover,
 		&:focus-visible {
-			background-color: var(--gb_white_2);
+			background-color: var(--am_white_2);
 		}
 	}
 }

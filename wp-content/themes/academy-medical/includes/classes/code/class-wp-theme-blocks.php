@@ -4,13 +4,13 @@
  *
  * @link
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Blocks;
+namespace AcademyMedical \Blocks;
 
-use BaseTheme;
+use AcademyMedical ;
 
 /**
  * Template Class For Blocks
@@ -18,9 +18,9 @@ use BaseTheme;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Blocks {
+class Academy_Medical _Blocks {
 	/**
 	 * Define class Constructor
 	 **/
@@ -35,7 +35,7 @@ class WP_Theme_Blocks {
 	 */
 	public function register_acf_blocks() {
 
-		register_block_type( BASETHEME_BLOCK_DIR . '/section-container' );
+		register_block_type( AcademyMedical _BLOCK_DIR . '/section-container' );
 		// Register a block - FAQ.
 		self::register_acf_block( 'faqs' );
 		// Register a block - Media Alongside Text.
@@ -66,10 +66,10 @@ class WP_Theme_Blocks {
 			$block_script_order = array( 'jquery' );
 			$dependencies       = array();
 			if ( $block_scripts ) {
-				$dependencies = BaseTheme::register_scripts( $block_scripts );
+				$dependencies = AcademyMedical ::register_scripts( $block_scripts );
 			}
 			$block_script_order = array_merge( $block_script_order, $dependencies );
-			BaseTheme::register_script(
+			AcademyMedical ::register_script(
 				'blocks/' . $block_name . '/' . $block_name . '.js',
 				$block_script_order,
 				args:array(
@@ -78,7 +78,7 @@ class WP_Theme_Blocks {
 				),
 			);
 		}
-		register_block_type( BASETHEME_BLOCK_DIR . '/' . $block_name );
+		register_block_type( AcademyMedical _BLOCK_DIR . '/' . $block_name );
 	}
 }
-new WP_Theme_Blocks();
+new Academy_Medical _Blocks();

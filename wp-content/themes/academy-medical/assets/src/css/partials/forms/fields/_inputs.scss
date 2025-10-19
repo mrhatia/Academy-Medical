@@ -45,12 +45,12 @@ textarea,
 .gform-text-input-reset {
 	@include font(axi, reg);
 
-	font-size: var(--gb_font_size_18);
+	font-size: var(--am_font_size_18);
 	height: 50px;
 	width: 100%;
-	border: 1px solid var(--gb_input_border_color);
-	background-color: var(--gb_input_bgcolor);
-	color: var(--gb_input_color);
+	border: 1px solid var(--am_input_border_color);
+	background-color: var(--am_input_bgcolor);
+	color: var(--am_input_color);
 	outline: none;
 	padding: 0 0 0 12px;
 	margin: 0;
@@ -60,27 +60,27 @@ textarea,
 	@include transition(all, 0.4s, ease-in-out);
 
 	&:focus {
-		border: 1px solid var(--gb_input_focus_border_color);
+		border: 1px solid var(--am_input_focus_border_color);
 	}
 }
 
 // Placeholder Style
 
 ::input-placeholder {
-	color: var(--gb_placeholder_color);
+	color: var(--am_placeholder_color);
 }
 
 ::input-placeholder {
-	color: var(--gb_placeholder_color);
+	color: var(--am_placeholder_color);
 }
 
 ::placeholder {
-	color: var(--gb_placeholder_color);
+	color: var(--am_placeholder_color);
 }
 
 input[type="text"]:disabled {
-	background-color: var(--gb_disabled_input_bgcolor);
-	border: 1px solid var(--gb_disabled_input_border_color);
+	background-color: var(--am_disabled_input_bgcolor);
+	border: 1px solid var(--am_disabled_input_border_color);
 }
 
 input[type="hidden"],
@@ -123,8 +123,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 input[type="color"] {
-	border: 1px solid var(--gb_color_field_border_color);
-	background-color: var(--gb_color_field_bgcolor);
+	border: 1px solid var(--am_color_field_border_color);
+	background-color: var(--am_color_field_bgcolor);
 	height: 25px;
 	width: 50px;
 	margin: 0 0 20px;

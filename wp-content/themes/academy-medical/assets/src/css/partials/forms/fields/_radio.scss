@@ -19,7 +19,7 @@
 	cursor: pointer;
 	line-height: 20px;
 	display: inline-block;
-	color: var(--gb_radio_color);
+	color: var(--am_radio_color);
 	box-sizing: border-box;
 	margin: 0 20px 10px 0;
 }
@@ -34,9 +34,9 @@
 	top: 0;
 	width: 18px;
 	height: 18px;
-	border: 1px solid var(--gb_radio_border_color);
+	border: 1px solid var(--am_radio_border_color);
 	border-radius: 100%;
-	background-color: var(--gb_radio_bgcolor);
+	background-color: var(--am_radio_bgcolor);
 }
 
 [type="radio"]:checked+label::after,
@@ -46,7 +46,7 @@
 	content: "";
 	width: 10px;
 	height: 10px;
-	background-color: var(--gb_radio_after_bgcolor);
+	background-color: var(--am_radio_after_bgcolor);
 	position: absolute;
 	top: 4px;
 	left: 4px;

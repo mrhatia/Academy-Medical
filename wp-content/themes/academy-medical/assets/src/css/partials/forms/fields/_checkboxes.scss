@@ -19,7 +19,7 @@
 	cursor: pointer;
 	line-height: 20px;
 	display: inline-block;
-	color: var(--gb_checkbox_color);
+	color: var(--am_checkbox_color);
 	box-sizing: border-box;
 	margin: 0 20px 10px 0;
 }
@@ -34,8 +34,8 @@
 	top: 0;
 	width: 18px;
 	height: 18px;
-	border: 1px solid var(--gb_checkbox_border_color);
-	background-color: var(--gb_checkbox_bgcolor);
+	border: 1px solid var(--am_checkbox_border_color);
+	background-color: var(--am_checkbox_bgcolor);
 }
 
 [type="checkbox"]:checked+label::after,
@@ -45,7 +45,7 @@
 	content: "";
 	width: 10px;
 	height: 10px;
-	background-color: var(--gb_checkbox_after_bgcolor);
+	background-color: var(--am_checkbox_after_bgcolor);
 	position: absolute;
 	top: 4px;
 	left: 4px;

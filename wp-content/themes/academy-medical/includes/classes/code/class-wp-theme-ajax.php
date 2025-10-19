@@ -4,11 +4,11 @@
  *
  * @link https://codex.wordpress.org/AJAX#Ajax_in_WordPress
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Ajax;
+namespace AcademyMedical \Ajax;
 
 /**
  * Template Class For Ajax
@@ -16,9 +16,9 @@ namespace BaseTheme\Ajax;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Ajax {
+class Academy_Medical _Ajax {
 	/**
 	 * Define class Constructor
 	 **/
@@ -37,4 +37,4 @@ class WP_Theme_Ajax {
 	}
 
 }
-new WP_Theme_Ajax();
+new Academy_Medical _Ajax();

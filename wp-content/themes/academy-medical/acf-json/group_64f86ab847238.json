@@ -5,7 +5,7 @@
         {
             "key": "field_64f86ab84b3f2",
             "label": "Title",
-            "name": "bst_var_tmp_home_title",
+            "name": "am_var_tmp_home_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -25,7 +25,7 @@
         {
             "key": "field_64f86b1c63530",
             "label": "Text",
-            "name": "bst_var_tmp_home_text",
+            "name": "am_var_tmp_home_text",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -46,7 +46,7 @@
         {
             "key": "field_64f86b2763531",
             "label": "Button",
-            "name": "bst_var_tmp_home_button",
+            "name": "am_var_tmp_home_button",
             "aria-label": "",
             "type": "link",
             "instructions": "",

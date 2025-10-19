@@ -21,7 +21,7 @@
         {
             "key": "field_6458e2a7434c3",
             "label": "Title",
-            "name": "bst_var_faq_title",
+            "name": "am_var_faq_title",
             "aria-label": "",
             "type": "block_title",
             "instructions": "",
@@ -58,7 +58,7 @@
         {
             "key": "field_6458dbef63903",
             "label": "Spacers",
-            "name": "bst_var_faq_sp",
+            "name": "am_var_faq_sp",
             "aria-label": "",
             "type": "spacers",
             "instructions": "",
@@ -126,7 +126,7 @@
         {
             "key": "field_6458db3a638fe",
             "label": "Text",
-            "name": "bst_var_faq_text",
+            "name": "am_var_faq_text",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
@@ -146,7 +146,7 @@
         {
             "key": "field_6458db4f638ff",
             "label": "FAQs",
-            "name": "bst_var_faq_faqs",
+            "name": "am_var_faq_faqs",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",

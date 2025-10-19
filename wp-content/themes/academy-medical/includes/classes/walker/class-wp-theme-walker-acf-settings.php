@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Walker\Settings\ACF;
+namespace AcademyMedical \Walker\Settings\ACF;
 
 if ( ! class_exists( 'ACF_Location' ) ) {
 	return;
@@ -21,9 +21,9 @@ use \ACF_Location;
  * Template Class
  *
  * @category Walker_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Walker_Acf_Settings extends \ACF_Location {
+class Academy_Medical _Walker_Acf_Settings extends \ACF_Location {
 	/**
 	 * Initialize the basic acf values
 	 *

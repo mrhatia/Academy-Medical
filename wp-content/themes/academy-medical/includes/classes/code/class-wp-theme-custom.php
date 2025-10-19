@@ -4,11 +4,11 @@
  *
  * @link
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Custom;
+namespace AcademyMedical \Custom;
 
 /**
  * Template Class For Custom
@@ -16,9 +16,9 @@ namespace BaseTheme\Custom;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Custom extends \Boilerplate {
+class Academy_Medical _Custom extends \Boilerplate {
 
 
 
@@ -248,7 +248,7 @@ class WP_Theme_Custom extends \Boilerplate {
 		if ( is_user_logged_in() ) {
 			?>
 			<ul>
-				<li> <?php echo esc_html__( 'Go to admin area to create navigation menu', 'basetheme_td' ); ?></li>
+				<li> <?php echo esc_html__( 'Go to admin area to create navigation menu', 'AcademyMedical _td' ); ?></li>
 			</ul>
 			<?php
 		}
@@ -403,7 +403,7 @@ class WP_Theme_Custom extends \Boilerplate {
 	public static function get_author_data( $post_id ) {
 		$author_id = (int) get_post_field( 'post_author', $post_id );
 		if ( function_exists( 'get_field' ) ) {
-			$avatar = get_field( 'bst_var_author_avatar', 'user_' . $author_id );
+			$avatar = get_field( 'am_var_author_avatar', 'user_' . $author_id );
 		}
 		if ( ! $avatar ) {
 			$avatar = get_avatar_url( $author_id );
@@ -548,7 +548,7 @@ class WP_Theme_Custom extends \Boilerplate {
 			if ( $default_image_id ) {
 				echo html_entity_decode( $default_image );
 			} else {
-				echo html_entity_decode( '<img class="is-default-image" loading="lazy" src="' . BASETHEME_DEFAULT_IMAGE . '" />' );
+				echo html_entity_decode( '<img class="is-default-image" loading="lazy" src="' . AcademyMedical _DEFAULT_IMAGE . '" />' );
 			}
 		} else {
 			// Output the attachment image.
@@ -601,7 +601,7 @@ class WP_Theme_Custom extends \Boilerplate {
 				if ( $default_image_id ) {
 					$post_image = $default_image;
 				} else {
-					$post_image = '<img class="is-default-image" loading="lazy" src="' . BASETHEME_DEFAULT_IMAGE . '" />';
+					$post_image = '<img class="is-default-image" loading="lazy" src="' . AcademyMedical _DEFAULT_IMAGE . '" />';
 				}
 			}
 		}
@@ -909,4 +909,4 @@ class WP_Theme_Custom extends \Boilerplate {
 
 }
 
-class_alias( 'BaseTheme\Custom\WP_Theme_Custom', 'BaseTheme' );
+class_alias( 'AcademyMedical \Custom\Academy_Medical _Custom', 'AcademyMedical ' );

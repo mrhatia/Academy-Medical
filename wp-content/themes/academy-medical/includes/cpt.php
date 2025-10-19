@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/post-types/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-use BaseTheme\CPT\WP_Theme_CPT;
+use AcademyMedical \CPT\Academy_Medical _CPT;
 
-new WP_Theme_CPT(
+new Academy_Medical _CPT(
 	array(
 		'labels'       => array(
 			'singular_capital'   => 'Testimonial',
@@ -45,7 +45,7 @@ new WP_Theme_CPT(
 		),
 	)
 );
-new WP_Theme_CPT(
+new Academy_Medical _CPT(
 	array(
 		'labels'    => array(
 			'singular_capital'   => 'Team Member',
@@ -61,7 +61,7 @@ new WP_Theme_CPT(
 		'public'    => false,
 	)
 );
-new WP_Theme_CPT(
+new Academy_Medical _CPT(
 	array(
 		'labels'    => array(
 			'singular_capital'   => 'Resource',

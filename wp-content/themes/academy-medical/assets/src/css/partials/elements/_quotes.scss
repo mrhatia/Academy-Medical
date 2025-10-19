@@ -11,8 +11,8 @@ q {
 
 blockquote {
 	position: relative;
-	color: var(--gb_blockquote_color);
-	border-left: 3px solid var(--gb_blockquote_border_color);
+	color: var(--am_blockquote_color);
+	border-left: 3px solid var(--am_blockquote_border_color);
 	padding: 5px 0 5px 20px;
 	margin: 0 0 30px;
 
@@ -29,7 +29,7 @@ blockquote {
 
 	&.has-text-align-right {
 		border-left: none;
-		border-right: 3px solid var(--gb_blockquote_border_color);
+		border-right: 3px solid var(--am_blockquote_border_color);
 		padding: 5px 20px 5px 0;
 
 		&.is-style-plain {
@@ -59,8 +59,8 @@ blockquote {
 figure {
 
 	&.wp-block-pullquote {
-		border-top: 3px solid var(--gb_blockquote_border_color);
-		border-bottom: 3px solid var(--gb_blockquote_border_color);
+		border-top: 3px solid var(--am_blockquote_border_color);
+		border-bottom: 3px solid var(--am_blockquote_border_color);
 		padding-left: 10px;
 		padding-right: 10px;
 
@@ -79,7 +79,7 @@ figure {
 
 q {
 	quotes: "\201C" "\201D";
-	color: var(--gb_quote_color);
+	color: var(--am_quote_color);
 	position: relative;
 }
 
@@ -89,7 +89,7 @@ cite {
 	font-size: 80%;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: var(--gb_blockqoute_cite_color);
+	color: var(--am_blockqoute_cite_color);
 	font-family: "IBM Plex Mono", monospace;
 	font-style: italic;
 	position: relative;

@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Walker\Settings;
+namespace AcademyMedical \Walker\Settings;
 
 use \Walker_Nav_Menu_Checklist;
 /**
@@ -17,9 +17,9 @@ use \Walker_Nav_Menu_Checklist;
  * Template Class
  *
  * @category Walker_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Walker_Settings {
+class Academy_Medical _Walker_Settings {
 	/**
 	 * Define class Constructor
 	 **/
@@ -142,7 +142,7 @@ class WP_Theme_Walker_Settings {
 		return $menu_item;
 	}
 	/**
-	 * Init WP_Theme_Walker_Acf_Settings Class.
+	 * Init Academy_Medical _Walker_Acf_Settings Class.
 	 *
 	 * @return void
 	 */
@@ -150,11 +150,11 @@ class WP_Theme_Walker_Settings {
 
 		// Check function exists, then include and register the custom location type class.
 		if ( function_exists( 'acf_register_location_type' ) ) {
-			acf_register_location_type( '\BaseTheme\Walker\Settings\ACF\WP_Theme_Walker_Acf_Settings' );
+			acf_register_location_type( '\AcademyMedical \Walker\Settings\ACF\Academy_Medical _Walker_Acf_Settings' );
 			if ( is_multisite() ) {
-				acf_register_location_type( '\BaseTheme\Walker\Settings\ACF\WP_Theme_Acf_Multisite_Support' );
+				acf_register_location_type( '\AcademyMedical \Walker\Settings\ACF\Academy_Medical _Acf_Multisite_Support' );
 			}
 		}
 	}
 }
-new WP_Theme_Walker_Settings();
+new Academy_Medical _Walker_Settings();

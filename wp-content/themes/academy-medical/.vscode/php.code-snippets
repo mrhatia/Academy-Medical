@@ -13,7 +13,7 @@
 	"Variable call with null as fallback using ternary condition.": {
 		"prefix": "acfVariableCall",
 		"body": [
-			"$${1:var_name} = $${2|bst_fields,bst_option_fields,bst_block_fields,bst_post_field|}['${1:var_name}'] ?? null;"
+			"$${1:var_name} = $${2|bst_fields,am_option_fields,bst_block_fields,am_post_field|}['${1:var_name}'] ?? null;"
 		],
 		"description": "Use this to get the value of a variable with fallback to null value if not value found."
 	},
@@ -24,25 +24,25 @@
 	},
 	"Translation function": {
 		"prefix": "translationFun",
-		"body": ["esc_html_e( '${1:String to translate}', 'basetheme_td' );"],
+		"body": ["esc_html_e( '${1:String to translate}', 'AcademyMedical _td' );"],
 		"description": "inserts code for WordPress translation in HTML document."
 	},
 	"Translation function for HTML": {
 		"prefix": "phpTranslationFun",
 		"body": [
-			"<?php esc_html_e( '${1:String to translate}', 'basetheme_td' ); ?>"
+			"<?php esc_html_e( '${1:String to translate}', 'AcademyMedical _td' ); ?>"
 		],
 		"description": "inserts code for WordPress translation in HTML document."
 	},
 	"Output a variable if condition": {
 		"prefix": "ifCheck",
-		"body": ["\tif($${1:bst_var_name}){\r", "", "\t}\r"],
+		"body": ["\tif($${1:am_var_name}){\r", "", "\t}\r"],
 		"description": "Used to output a variable if condition check."
 	},
 	"Output variable with condition output": {
 		"prefix": "ifOutput",
 		"body": [
-			"if ( $${1:bst_var_name} ) {\r",
+			"if ( $${1:am_var_name} ) {\r",
 			"\techo ${2|esc_html,esc_url,html_entity_decode,html_entity_remove|}( $${1:html_entity_remove} );\r",
 			"}\r"
 		],
@@ -51,8 +51,8 @@
 	"Output variable with condition output HTML": {
 		"prefix": "ifOutputHtml",
 		"body": [
-			"if ( $${1:bst_var_name} ) {  ?>",
-			"\t<${3:html_tag} class=\"${4:class_name}\"> <?php echo ${2|esc_html,esc_url,html_entity_decode,html_entity_remove|}( $${1:bst_var_name} ); ?>  </${3:html_tag}>",
+			"if ( $${1:am_var_name} ) {  ?>",
+			"\t<${3:html_tag} class=\"${4:class_name}\"> <?php echo ${2|esc_html,esc_url,html_entity_decode,html_entity_remove|}( $${1:am_var_name} ); ?>  </${3:html_tag}>",
 			"<?php } "
 		],
 		"description": "Used to output variable with condition check if there is value of in it then print it with html."
@@ -73,7 +73,7 @@
 			"if ( ! has_post_thumbnail() ) {",
 			"\techo '<img class=\"\" title=\"' . esc_html( get_the_title() ) . '\" alt=\"' . esc_html( get_the_title() ) . '\" src=\"' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp\" >';",
 			"} else {",
-			"\techo get_the_post_thumbnail( \\$bst_var_post_id, '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}');",
+			"\techo get_the_post_thumbnail( \\$am_var_post_id, '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}');",
 			"}"
 		],
 		"description": "Add default featured image if post does not have one"
@@ -85,7 +85,7 @@
 			"if ( ! has_post_thumbnail() ) {",
 			"\techo '<img class=\"\" src=\"' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp\" >';",
 			"} else {",
-			"\ttecho get_the_post_thumbnail( \\$bst_var_post_id,  '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', array( 'class' => '', 'alt' => get_the_title(), 'title' => get_the_title(), ) );",
+			"\ttecho get_the_post_thumbnail( \\$am_var_post_id,  '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', array( 'class' => '', 'alt' => get_the_title(), 'title' => get_the_title(), ) );",
 			"}",
 			"?>"
 		],
@@ -107,33 +107,33 @@
 	"PHP ACF Gravity Form output with ID.": {
 		"prefix": "gravityForm",
 		"body": [
-			"echo do_shortcode( '[gravityform id=\"' . $${1:bst_var_gform} . '\" title=false description=false ajax=true]' );"
+			"echo do_shortcode( '[gravityform id=\"' . $${1:am_var_gform} . '\" title=false description=false ajax=true]' );"
 		],
 		"description": "Used to display the code that outputs the Gravity form."
 	},
 	"Telephone number without Symbols": {
 		"prefix": "stripPhone",
-		"body": ["echo preg_replace( '/[^0-9]/', '', $${1:bst_var_phone} );"],
+		"body": ["echo preg_replace( '/[^0-9]/', '', $${1:am_var_phone} );"],
 		"description": "Used to display telephone number without symbols"
 	},
 	"Default Image with Get Attachment Image Single": {
 		"prefix": "postImageSingle",
 		"body": [
-			"\\$src = wp_get_attachment_image( get_post_thumbnail_id( \\$bst_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', null, array( 'class' => '${2:class_name}', 'alt'  => '${3:alt_text}' ) );"
+			"\\$src = wp_get_attachment_image( get_post_thumbnail_id( \\$am_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', null, array( 'class' => '${2:class_name}', 'alt'  => '${3:alt_text}' ) );"
 		],
 		"description": "Default Image with Get Attachment Image"
 	},
 	"Default Image with Get Attachment Image URL Single": {
 		"prefix": "postImageURLSingle",
 		"body": [
-			"\\$src = wp_get_attachment_image_url( get_post_thumbnail_id( \\$bst_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}' );"
+			"\\$src = wp_get_attachment_image_url( get_post_thumbnail_id( \\$am_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}' );"
 		],
 		"description": "Default Image with Get Attachment Image URL"
 	},
 	"Default Image with Get Attachment Image": {
 		"prefix": "postImage",
 		"body": [
-			"\\$src = wp_get_attachment_image( get_post_thumbnail_id( \\$bst_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', null, array( 'class' => '${2:class_name}', 'alt'  => '${3:alt_text}' ) );",
+			"\\$src = wp_get_attachment_image( get_post_thumbnail_id( \\$am_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}', null, array( 'class' => '${2:class_name}', 'alt'  => '${3:alt_text}' ) );",
 			"if ( ! has_post_thumbnail() ) {",
 			"\t\\$src = '<img class=\"${2:class_name}\" alt=\"${3:alt_text}\"  src=\"' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp\" >';",
 			"}"
@@ -143,7 +143,7 @@
 	"Default Image with Get Attachment Image URL": {
 		"prefix": "postImageURL",
 		"body": [
-			"\\$src = wp_get_attachment_image_url( get_post_thumbnail_id( \\$bst_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}' );",
+			"\\$src = wp_get_attachment_image_url( get_post_thumbnail_id( \\$am_var_post_id ), '${1|thumb_100,thumb_200,thumb_300,thumb_400,thumb_500,thumb_600,thumb_700,thumb_800,thumb_900,thumb_1000,thumb_1200,thumb_1400,thumb_1600,thumb_2000|}' );",
 			"if ( ! has_post_thumbnail() ) {",
 			"\t\\$src = esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp';",
 			"}"
@@ -174,14 +174,14 @@
 		"prefix": "globalVars",
 		"body": [
 			"// Global variables.\r",
-			"list( \\$bst_var_post_id, \\$bst_fields, \\$bst_option_fields ) = BaseTheme::defaults();"
+			"list( \\$am_var_post_id, \\$bst_fields, \\$am_option_fields ) = AcademyMedical ::defaults();"
 		],
 		"description": "Use this to display the global variables being used in default theme."
 	},
 	"Var Dump a variable in PHP": {
 		"prefix": "varDump",
 		"body": [
-			"var_dump($${1|bst_fields,bst_option_fields,bst_block_fields,bst_post_field|});"
+			"var_dump($${1|bst_fields,am_option_fields,bst_block_fields,am_post_field|});"
 		],
 		"description": "Use to var dump a variable in a php code."
 	},
@@ -217,8 +217,8 @@
 	"BlockTitle": {
 		"prefix": "BlockTitle",
 		"body": [
-			"<?php if ( BaseTheme::is_block_title( $${1:bst_var_blkfetrdtxt_title} ) ) { ?>",
-			"\t<?php BaseTheme::the_block_title( $${1:bst_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
+			"<?php if ( AcademyMedical ::is_block_title( $${1:am_var_blkfetrdtxt_title} ) ) { ?>",
+			"\t<?php AcademyMedical ::the_block_title( $${1:am_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display block title if it exists"
@@ -227,8 +227,8 @@
 	"BlockButton": {
 		"prefix": "BlockButton",
 		"body": [
-			"<?php if ( $${1:bst_var_blkfetrdtxt_btn} ) { ?>",
-			"\t<?php BaseTheme::button( $${1:bst_var_blkfetrdtxt_btn}, 'button' ); ?>",
+			"<?php if ( $${1:am_var_blkfetrdtxt_btn} ) { ?>",
+			"\t<?php AcademyMedical ::button( $${1:am_var_blkfetrdtxt_btn}, 'button' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display a button if variable exists"
@@ -245,8 +245,8 @@
 	"FeaturedImage": {
 		"prefix": "FeaturedImage",
 		"body": [
-			"<?php if ( $${1:bst_var_img} ) { ?>",
-			"\t<?php BaseTheme::the_featured_image( $${1:bst_var_img}, 1000 ); ?>",
+			"<?php if ( $${1:am_var_img} ) { ?>",
+			"\t<?php AcademyMedical ::the_featured_image( $${1:am_var_img}, 1000 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display featured image if variable exists"
@@ -255,8 +255,8 @@
 	"AttachmentImage": {
 		"prefix": "AttachmentImage",
 		"body": [
-			"<?php if ( $${1:bst_var_img} ) { ?>",
-			"\t<?php BaseTheme::the_attachment_image( $${1:bst_var_img}, 500 ); ?>",
+			"<?php if ( $${1:am_var_img} ) { ?>",
+			"\t<?php AcademyMedical ::the_attachment_image( $${1:am_var_img}, 500 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display Attachment  image if variable exists"

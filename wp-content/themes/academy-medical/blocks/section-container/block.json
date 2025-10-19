@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "basethemepack/section-container",
+  "name": "academymedicalpack/section-container",
   "version": "1.0.0",
   "title": "Section Container",
   "category": "theme-blocks",

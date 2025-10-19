@@ -4,22 +4,22 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-box column' ); ?>>
 		<div class="post-box-img post-image">
 		<a href="<?php the_permalink(); ?>">
 			<?php
-			if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
+			if ( ! has_post_thumbnail( $am_var_post_id ) ) {
 				echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
 			} else {
 				echo get_the_post_thumbnail(
-					$bst_var_post_id,
+					$am_var_post_id,
 					'thumb_900',
 				);
 			}

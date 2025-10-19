@@ -5,7 +5,7 @@
         {
             "key": "field_62651a1fb45be",
             "label": "Title",
-            "name": "bst_var_tblgho_title",
+            "name": "am_var_tblgho_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -25,7 +25,7 @@
         {
             "key": "field_62651a1fb81bf",
             "label": "Feature Post",
-            "name": "bst_var_tblgho_feature_post",
+            "name": "am_var_tblgho_feature_post",
             "aria-label": "",
             "type": "relationship",
             "instructions": "",

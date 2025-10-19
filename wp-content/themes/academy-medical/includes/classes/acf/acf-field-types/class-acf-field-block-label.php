@@ -4,11 +4,11 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Acf\Acf_Fields;
+namespace AcademyMedical \Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Title Field
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
 class Acf_Field_Block_Label extends \acf_field {
 	/**
@@ -49,13 +49,13 @@ class Acf_Field_Block_Label extends \acf_field {
 		 *
 		 * For public-facing UI. May contain spaces.
 		 */
-		$this->label = __( 'Block Label', 'basetheme_td' );
+		$this->label = __( 'Block Label', 'AcademyMedical _td' );
 
 		/**
 		 * The category the field appears within in the field type picker.
 		 */
 		$this->category = 'basic'; // basic | content | choice | relational | jquery | layout | CUSTOM GROUP NAME.
-		$this->l10n     = array( 'error' => __( 'Error! Please enter a higher value', 'basetheme_td' ) );
+		$this->l10n     = array( 'error' => __( 'Error! Please enter a higher value', 'AcademyMedical _td' ) );
 
 		$this->env = array(
 			'url'     => site_url( str_replace( ABSPATH, '', __DIR__ ) ), // URL to the acf-FIELD-NAME directory.

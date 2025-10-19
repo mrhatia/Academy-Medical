@@ -1,7 +1,7 @@
 .hero-section {
 	transition: all 0.3s ease-in-out;
-	background-color: var(--gb_white_1);
-	padding-top: var(--gb_space_128);
+	background-color: var(--am_white_1);
+	padding-top: var(--am_space_128);
 }
 
 .hero-ctn {
@@ -11,7 +11,7 @@
 // Hero default & with image
 
 .hero-default {
-	padding: var(--gb_space_72) 0 var(--gb_space_96);
+	padding: var(--am_space_72) 0 var(--am_space_96);
 	text-align: center;
 
 	&.with-image {
@@ -21,7 +21,7 @@
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			gap: var(--gb_space_30);
+			gap: var(--am_space_30);
 		}
 
 		.hero-default-content,

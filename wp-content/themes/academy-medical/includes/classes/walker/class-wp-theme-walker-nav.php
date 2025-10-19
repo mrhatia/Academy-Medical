@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 
-namespace BaseTheme\Walker;
+namespace AcademyMedical \Walker;
 
 use \Walker_Nav_Menu;
 
@@ -19,9 +19,9 @@ use \Walker_Nav_Menu;
  * Template Class
  *
  * @category Walker_Class
- * @package  Base Theme Package
+ * @package  Academy Medical
  */
-class WP_Theme_Walker_Nav extends \Walker_Nav_Menu {
+class Academy_Medical _Walker_Nav extends \Walker_Nav_Menu {
 
 	/**
 	 * Starts the list before the elements are added.

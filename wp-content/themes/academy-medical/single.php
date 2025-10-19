@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Base Theme Package
+ * @package Academy Medical
  * @since 1.0.0
  */
 

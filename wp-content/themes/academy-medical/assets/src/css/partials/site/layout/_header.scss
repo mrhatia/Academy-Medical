@@ -17,27 +17,27 @@ header {
 
 .top-bar {
 	padding: 10px 0;
-	background-color: var(--gb_topbar_bgcolor);
-	color: var(--gb_topbar_color);
+	background-color: var(--am_topbar_bgcolor);
+	color: var(--am_topbar_color);
 	transition: all 0.4s ease-in-out;
 }
 
 .top-bar-text {
-	font-size: var(--gb_font_size_16);
+	font-size: var(--am_font_size_16);
 	padding: 0 20px 0 0;
 
 	&:focus-visible {
-		outline-color: var(--gb_white) !important;
+		outline-color: var(--am_white) !important;
 	}
 
 	a,
 	a:visited {
-		font-size: var(--gb_font_size_16);
-		color: var(--gb_topbar_color);
+		font-size: var(--am_font_size_16);
+		color: var(--am_topbar_color);
 		display: inline-block;
 
 		&:focus-visible {
-			outline-color: var(--gb_white) !important;
+			outline-color: var(--am_white) !important;
 		}
 
 		&::after {
@@ -47,7 +47,7 @@ header {
 			height: 1px;
 			bottom: 0px;
 			left: 0;
-			background-color: var(--gb_white);
+			background-color: var(--am_white);
 			transition: all 0.3s ease-in-out;
 		}
 
@@ -74,12 +74,13 @@ header {
 	}
 
 	&:focus-visible {
-		outline-color: var(--gb_white) !important;
+		outline-color: var(--am_white) !important;
 	}
 
 	img {
 		width: 14px;
-		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(220deg) brightness(102%) contrast(103%);
+		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(220deg)
+			brightness(102%) contrast(103%);
 	}
 }
 
@@ -113,15 +114,15 @@ header {
 }
 
 .header-section {
-	background-color: var(--gb_header_bgcolor);
+	background-color: var(--am_header_bgcolor);
 	z-index: 9;
 	width: 100%;
 	position: fixed;
 	transition: all 0.3s ease-in-out;
-	top: var(--gb_header-top-default);
+	top: var(--am_header-top-default);
 
 	&.shrink {
-		background-color: var(--gb_header_bgcolor_sticky);
+		background-color: var(--am_header_bgcolor_sticky);
 		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
 	}
 }
@@ -138,15 +139,43 @@ header {
 	z-index: 1;
 	display: flex;
 	align-items: center;
-}
 
+	.search-icon{
+		margin-right: 15px;
+		img{
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
 
 .hide-topbar {
 	header {
-		top: var(--gb_header-top);
+		top: var(--am_header-top);
 	}
 }
 
 .desktop-hide {
 	display: none;
+}
+
+.catalogs {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	a,
+	a:visited {
+		color: var(--am_white);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		background-image: url(../images/catalog-icon.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		padding-left: 20px;
+		&:hover,
+		&:focus-visible {
+			text-decoration-color: transparent;
+		}
+	}
 }

@@ -20,7 +20,7 @@
         {
             "key": "field_6458e34eb2aff",
             "label": "Title",
-            "name": "bst_var_blkacf_title",
+            "name": "am_var_blkacf_title",
             "aria-label": "",
             "type": "block_title",
             "instructions": "Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis quis, parturient laoreet habitant in mi hendrerit inceptos augue aliquet netus",
@@ -56,7 +56,7 @@
         {
             "key": "field_6458e34eb2cc4",
             "label": "Spacers",
-            "name": "bst_var_blkacf_spcr",
+            "name": "am_var_blkacf_spcr",
             "aria-label": "",
             "type": "spacers",
             "instructions": "Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet libero aliquet ridiculus, quis dui inceptos facilisi sagittis odio curabitur ante arcu.",
@@ -124,7 +124,7 @@
         {
             "key": "field_6458e34eb325f",
             "label": "Text",
-            "name": "bst_var_blkacf_text",
+            "name": "am_var_blkacf_text",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -145,7 +145,7 @@
         {
             "key": "field_6458e3d1646ec",
             "label": "Button",
-            "name": "bst_var_blkacf_btn",
+            "name": "am_var_blkacf_btn",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -161,7 +161,7 @@
         {
             "key": "field_64dcc2777c103",
             "label": "Image",
-            "name": "bst_var_blkacf_image",
+            "name": "am_var_blkacf_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -186,7 +186,7 @@
         {
             "key": "field_653bf81f839cd",
             "label": "Advance Form",
-            "name": "bst_var_blkacf_advance_form",
+            "name": "am_var_blkacf_advance_form",
             "aria-label": "",
             "type": "advance_form",
             "instructions": "",
@@ -204,7 +204,7 @@
         {
             "key": "field_65575a9f47827",
             "label": "Video",
-            "name": "bst_var_blkacf_video",
+            "name": "am_var_blkacf_video",
             "aria-label": "",
             "type": "advance_video",
             "instructions": "",
