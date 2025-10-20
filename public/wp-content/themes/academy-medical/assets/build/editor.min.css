@@ -2161,6 +2161,9 @@ Mixin for transition
   /*-------------------------------------------------
   >> Basic styles for Image Alongside Text Block
   -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Image Alongside Text Block
+  -------------------------------------------------*/
   /* Forms */
   /* -------------------------------------------------
   >> Styles for form fields
@@ -2750,6 +2753,11 @@ Mixin for transition
 .acf-block-preview body #daextlwcnf-cookie-notice-button-2:hover,
 .acf-block-preview body #daextlwcnf-cookie-settings-button-2:hover {
   border-color: var(--am_black_1) !important;
+}
+.acf-block-preview .kicker {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 .acf-block-preview .two-columns {
   display: grid;
@@ -3678,6 +3686,57 @@ Mixin for transition
 }
 .acf-block-preview .numbers-section .numbers-items .item-4 {
   right: 15%;
+}
+.acf-block-preview .case-study-block a {
+  font-size: 14px;
+}
+.acf-block-preview .case-study-heading {
+  text-align: center;
+}
+.acf-block-preview .case-study-heading h2 {
+  margin-bottom: 10px;
+}
+.acf-block-preview .case-study-heading p {
+  margin: 0 auto;
+  width: 34%;
+}
+.acf-block-preview .case-study-items {
+  padding: 50px 0;
+}
+.acf-block-preview .case-study-items .cs-item-content {
+  text-align: center;
+}
+.acf-block-preview .case-study-items .cs-item-content h3,
+.acf-block-preview .case-study-items .cs-item-content a {
+  text-transform: uppercase;
+}
+.acf-block-preview .case-study-items .cs-item-image {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.acf-block-preview .case-study-items .cs-item-image a {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  border-bottom: none;
+}
+.acf-block-preview .case-study-items .cs-item-image a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.acf-block-preview .case-study-items .cs-item-image a img:hover {
+  transform: scale(1.2);
+}
+.acf-block-preview .case-study-btn {
+  text-align: center;
+}
+.acf-block-preview .case-study-btn a {
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 10px 5%;
 }
 .acf-block-preview form {
   margin: 0 0 20px;
