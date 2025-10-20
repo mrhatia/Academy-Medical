@@ -3735,10 +3735,13 @@ header {
 }
 
 .footer-widgets .single-widget {
-  width: 20%;
+  width: 14%;
 }
 .footer-widgets .single-widget:first-child {
   width: 38%;
+}
+.footer-widgets .single-widget:last-child {
+  text-align: center;
 }
 
 .footer-nav ul {
@@ -5693,9 +5696,12 @@ a.event-teaser__item:visited:hover .event-teaser__title {
 .numbers-section {
   position: relative;
 }
+.numbers-section .number-heading span {
+  color: var(--am_topbar_bgcolor);
+}
 .numbers-section .number-heading h2 {
   font-size: 90px;
-  font-weight: 500;
+  font-weight: 600;
   width: 38%;
   margin: 0 auto;
   text-align: center;
@@ -5704,32 +5710,42 @@ a.event-teaser__item:visited:hover .event-teaser__title {
 }
 .numbers-section .numbers-items .item {
   position: absolute;
-  background-color: var(--am_blue_4);
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   width: 20%;
+  color: var(--am_white_text);
 }
 .numbers-section .numbers-items .item h3 {
   margin-bottom: 0;
 }
 .numbers-section .numbers-items .item .number-item-btn a {
-  border: 1px solid black;
+  border: 1px solid var(--am_white);
+  color: var(--am_white_text);
   padding: 6px;
   border-radius: 50px;
+  font-size: 12px;
+}
+.numbers-section .numbers-items .item .number-item-btn img {
+  filter: invert(1);
+  rotate: -45deg;
 }
 .numbers-section .numbers-items .item-1 {
-  top: -50%;
-  left: 20%;
+  top: -40%;
+  left: 10%;
+  background-color: var(--am_blue_5);
 }
 .numbers-section .numbers-items .item-2 {
   top: -40%;
-  right: 18%;
+  right: 10%;
+  background-color: var(--am_topbar_bgcolor);
 }
 .numbers-section .numbers-items .item-3 {
-  right: 25%;
+  right: 10%;
+  background-color: var(--am_blue_5);
 }
 .numbers-section .numbers-items .item-4 {
-  left: 15%;
+  left: 10%;
+  background-color: var(--am_topbar_bgcolor);
 }
 
 /*-------------------------------------------------
