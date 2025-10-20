@@ -3082,14 +3082,19 @@ Mixin for transition
   margin-bottom: 1rem;
   transition: transform 0.3s ease-in-out;
 }
+.acf-block-preview .info-slider .card .icon img {
+  width: 60px;
+}
 .acf-block-preview .info-slider .card h3 {
   font-size: var(--am_font_size_26);
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #000;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .info-slider .card p {
   color: #555;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .info-slider .card:hover {
   background: #55A1D3;

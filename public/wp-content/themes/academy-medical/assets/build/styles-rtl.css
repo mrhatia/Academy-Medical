@@ -3791,6 +3791,16 @@ header {
   transform-origin: bottom right;
   transform: scaleX(1);
 }
+.footer-nav ul li a span {
+  font-weight: 800;
+}
+.footer-nav ul li .fs-icon {
+  text-decoration: none;
+}
+.footer-nav ul li .fs-icon img {
+  filter: invert(1);
+  padding-left: 12px;
+}
 .footer-nav ul ul {
   padding: 20px 0 10px;
 }
@@ -5103,14 +5113,19 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   margin-bottom: 1rem;
   transition: transform 0.3s ease-in-out;
 }
+.info-slider .card .icon img {
+  width: 60px;
+}
 .info-slider .card h3 {
   font-size: var(--am_font_size_26);
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #000;
+  transition: all 0.3s ease-in-out;
 }
 .info-slider .card p {
   color: #555;
+  transition: all 0.3s ease-in-out;
 }
 .info-slider .card:hover {
   background: #55A1D3;
