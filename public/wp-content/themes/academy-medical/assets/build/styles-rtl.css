@@ -792,10 +792,6 @@ p {
   background-color: var(--am_highlight_bg);
 }
 
-strong {
-  color: var(--am_text_strong) !important;
-}
-
 /*-------------------------------------------------
 >> Styles for links
 -------------------------------------------------*/
@@ -3722,11 +3718,14 @@ header {
 .footer-ctn a {
   color: var(--am_footer_color);
 }
+.footer-ctn p {
+  font-size: 14px;
+}
 
 .footer-logo {
   line-height: 0.65;
   margin-bottom: 40px;
-  max-width: 210px;
+  max-width: 100%;
 }
 .footer-logo a,
 .footer-logo a:visited {
@@ -3734,16 +3733,22 @@ header {
   display: inline-block;
 }
 
+.footer-widgets strong {
+  color: var(--am_white);
+}
 .footer-widgets .single-widget {
   width: 14%;
 }
 .footer-widgets .single-widget:first-child {
   width: 38%;
-}
-.footer-widgets .single-widget:last-child {
   text-align: center;
 }
-
+.footer-widgets .single-widget:nth-child(2) {
+  width: 25%;
+}
+.footer-widgets .single-widget:nth-child(2) ul {
+  margin-top: 50px;
+}
 .footer-nav ul {
   padding: 0;
   margin: 0;
@@ -3754,13 +3759,16 @@ header {
   list-style-type: none;
   line-height: 1;
 }
+.footer-nav ul li a,
+.footer-nav ul li p {
+  font-size: 14px;
+}
 .footer-nav ul li .submenu-icon {
   display: none;
 }
 .footer-nav ul li a,
 .footer-nav ul li a:visited {
   padding-bottom: 2px;
-  font-size: 12px;
   line-height: 1;
   position: relative;
   display: inline-block;
@@ -3889,14 +3897,15 @@ header {
   margin-left: 30px;
 }
 
-.social-icons a {
+.footer-social-icons a {
   background-color: var(--am_white);
-  width: 30px;
-  height: 30px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
   margin-left: 20px;
 }
-.social-icons a:hover, .social-icons a:focus-visible {
-  background-color: var(--am_white_2);
+.footer-social-icons a:hover, .footer-social-icons a:focus-visible {
+  transform: scale(1.05);
 }
 
 .social-icons svg {
