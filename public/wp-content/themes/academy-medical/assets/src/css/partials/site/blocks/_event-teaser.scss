@@ -54,8 +54,8 @@ a.event-teaser__item:visited {
 		}
 
 		.event-teaser__image {
-			rotate: 10deg;
-			bottom: -10px;
+			rotate: 5deg;
+			bottom: -25px;
 			opacity: 1;
 
 		}
@@ -100,15 +100,20 @@ a.event-teaser__item:visited {
 		z-index: 2;
 	}
 
+	h2{
+		font-size: 60px;
+		width: 38%;
+	}
+
 	&__inner {
 		position: relative;
 		flex-wrap: wrap;
 		max-width: 1260px;
 		width: 90%;
-		margin: 0 auto;
+		// margin: 0 auto;
 		background: var(--am_blue_4);
 		color: var(--am_black);
-		padding: 30px;
+		padding: 30px 50px;
 		border-radius: 20px;
 
 		.outer-circle{
@@ -172,7 +177,7 @@ a.event-teaser__item:visited {
 		position: absolute;
 		left: 50%;
 		line-height: 0.67;
-		width: 200px;
+		width: 250px;
 		aspect-ratio: 300 / 200;
 		transition: all 0.5s linear;
 		transform-origin: top left;
