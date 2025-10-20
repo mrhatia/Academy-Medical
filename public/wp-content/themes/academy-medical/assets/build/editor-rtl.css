@@ -3372,14 +3372,17 @@ Mixin for transition
 }
 .acf-block-preview .event-teaser h2 {
   font-size: 60px;
-  width: 38%;
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
 }
 .acf-block-preview .event-teaser__inner {
   position: relative;
   flex-wrap: wrap;
   max-width: 1260px;
   width: 90%;
-  background: var(--am_blue_4);
+  margin: 0 auto;
+  background: var(--am_blue_5);
   color: var(--am_black);
   padding: 30px 50px;
   border-radius: 20px;
