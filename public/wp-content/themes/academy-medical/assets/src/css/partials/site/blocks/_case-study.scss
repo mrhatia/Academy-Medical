@@ -101,6 +101,7 @@
 		align-items: center;
 		justify-content: center;
 		z-index: 5;
+		font-size: 0;
 		cursor: pointer;
 		transition: background-color 0.3s ease;
 		background-repeat: no-repeat;
@@ -117,12 +118,12 @@
 
 	.slick-prev {
 		left: -72px;
-		// background-image: url("../images/swiper-arrow-left-white.svg");
+		background-image: url("../images/swiper-arrow-left-white.svg");
 	}
 
 	.slick-next {
 		right: -72px;
-		// background-image: url("../images/swiper-arrow-right-white.svg");
+		background-image: url("../images/swiper-arrow-right-white.svg");
 	}
 
 	.slick-prev:hover,
