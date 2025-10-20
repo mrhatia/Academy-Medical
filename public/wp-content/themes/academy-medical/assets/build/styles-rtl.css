@@ -5128,7 +5128,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   transition: all 0.3s ease-in-out;
 }
 .info-slider .card:hover {
-  background: #55A1D3;
+  background: var(--am_color_primary);
   color: #fff;
 }
 .info-slider .card:hover .icon {
@@ -5860,12 +5860,16 @@ a.event-teaser__item:visited:hover .event-teaser__title {
 .case-study-items .cs-item-image {
   overflow: hidden;
   margin-bottom: 20px;
+  aspect-ratio: 423/423;
+  max-height: 423px;
 }
 .case-study-items .cs-item-image a {
   height: 100%;
   display: inline-block;
   width: 100%;
   border-bottom: none;
+  padding: 0;
+  aspect-ratio: 1/1;
 }
 .case-study-items .cs-item-image a img {
   width: 100%;
@@ -5873,8 +5877,9 @@ a.event-teaser__item:visited:hover .event-teaser__title {
   -o-object-fit: cover;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
+  aspect-ratio: 1/1;
 }
-.case-study-items .cs-item-image a img:hover {
+.case-study-items .cs-item-image a:hover img {
   transform: scale(1.2);
 }
 
@@ -5885,6 +5890,61 @@ a.event-teaser__item:visited:hover .event-teaser__title {
   border-radius: 0;
   text-transform: uppercase;
   padding: 10px 5%;
+}
+
+.case-study-items {
+  cursor: grab;
+}
+.case-study-items .slick-slide {
+  margin: 0 0 0 15px;
+  transition: transform 0.4s ease;
+  transform: scale(0.855);
+  padding-bottom: 34px;
+  box-sizing: border-box;
+}
+.case-study-items .slick-list {
+  margin: 0 -15px;
+}
+.case-study-items .slick-center {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+.case-study-items .slick-prev,
+.case-study-items .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80px);
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-size: 16px 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--am_color_primary) !important;
+  margin: 0;
+  padding: 0;
+}
+.case-study-items .slick-prev::before,
+.case-study-items .slick-next::before {
+  display: none;
+}
+.case-study-items .slick-prev {
+  right: -72px;
+}
+.case-study-items .slick-next {
+  left: -72px;
+}
+.case-study-items .slick-prev:hover,
+.case-study-items .slick-next:hover {
+  background-color: #333;
 }
 
 /*-------------------------------------------------
