@@ -14,6 +14,68 @@ jQuery( document ).on( 'scroll', function() {
 } );
 
 jQuery( function() {
+	// STATS
+	if ( jQuery( '.stats-number' ).length > 0 ) {
+		const $statNumbers = jQuery( '.stats-number' );
+
+		function animateCounter( $element ) {
+			const text = $element.text();
+			const numericText = text.match( /[0-9.]+/ )[ 0 ];
+			const prefix = text.startsWith( '#' ) ? '#' : '';
+			const suffix = text.replace( prefix + numericText, '' ).trim();
+			const targetValue = parseFloat( numericText );
+			if ( isNaN( targetValue ) ) {
+				return;
+			}
+			const startValue = 0;
+			const duration = 1000;
+			const totalFrames = duration / ( 1000 / 60 );
+			const increment = ( targetValue - startValue ) / totalFrames;
+			let animatedValue = startValue;
+			const formatValue = ( value ) => Number.isInteger( targetValue ) ? Math.round( value ) : value.toFixed( 1 );
+			const updateCounter = () => {
+				animatedValue += increment;
+				if ( animatedValue >= targetValue ) {
+					$element.text( prefix + formatValue( targetValue ) + suffix );
+				} else {
+					$element.text( prefix + formatValue( animatedValue ) + suffix );
+					requestAnimationFrame( updateCounter );
+				}
+			};
+			requestAnimationFrame( updateCounter );
+			const value = parseInt( $element.text().trim() );
+			let current = 0;
+			const durationFill = 1500;
+			const step = value / ( durationFill / 16 );
+			function animateFill() {
+				current += step;
+				if ( current < value ) {
+					$element.css( '--percent', current );
+					requestAnimationFrame( animateFill );
+				} else {
+					$element.css( '--percent', value );
+				}
+			}
+			animateFill();
+		}
+
+		const isInViewport = ( element ) => {
+			const rect = element[ 0 ].getBoundingClientRect();
+			return rect.bottom >= 0 && rect.top <= ( window.innerHeight || document.documentElement.clientHeight );
+		};
+
+		jQuery( window )
+			.on( 'scroll resize', () => {
+				$statNumbers.each( function() {
+					const $this = jQuery( this );
+					if ( isInViewport( $this ) && ! $this.hasClass( 'animated' ) ) {
+						animateCounter( $this );
+						$this.addClass( 'animated' );
+					}
+				} );
+			} )
+			.trigger( 'scroll' );
+	}
 	/**
 	 * Header Wrapper Height Calculation for Navigation Overlay
 	 */
