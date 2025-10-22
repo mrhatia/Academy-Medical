@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 // Page Tags - Advanced custom fields variables.
 $am_var_tracking = $am_option_fields['custom_scripts'] ?? '';
@@ -40,7 +40,7 @@ $am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 
 	<?php
 		// Add Head Scripts.
-	if ( AcademyMedical ::if_live() ) {
+	if ( AcademyMedical::if_live() ) {
 
 		if ( '' !== $am_var_hscripts ) {
 			echo html_entity_decode( $am_var_hscripts, ENT_QUOTES );
@@ -102,7 +102,7 @@ $am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 
 <body <?php body_class(); ?>> <?php wp_body_open(); ?>
 	<?php
-	if ( AcademyMedical ::if_live() ) {
+	if ( AcademyMedical::if_live() ) {
 		if ( '' !== $am_var_bscripts ) {
 			?>
 			<div style="display: none;">
@@ -113,68 +113,59 @@ $am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 	?>
 
 	<a class="skip-link screen-reader-text"
-		href="#page-section"><?php esc_html_e( 'Skip to content', 'AcademyMedical _td' ); ?></a>
-	<header id="header-section" class="header-section">
-		<!-- Header Start -->
-		<?php if ( $am_var_tbar_vsblty ) { ?>
-			<div class="top-bar" id="top-bar-ajax" style="display:none;">
-				<div class="header-wrapper">
-					<div class="top-bar-text">
-						<?php
-						if ( $am_var_tbar_text ) {
-							echo html_entity_decode( $am_var_tbar_text );
-						}
-						?>
-						<?php
-						if ( $am_var_tbar_btn ) {
-							echo AcademyMedical ::button( $am_var_tbar_btn, '' );
-						}
-						?>
+		href="#page-section"><?php esc_html_e( 'Skip to content', 'AcademyMedical_td' ); ?></a>
+	<header class="header-section">
+		<div class="top-bar center-align" id="top-bar-ajax">
+			<div class="header-wrapper">
+				<div class="catalogs">
+					<div class="single-catalog">
+						<a href="#">
+							VA Catalog</a>
+					</div>
+					<div class="single-catalog">
+						<a href="#">
+							DOD Catalog</a>
 					</div>
 				</div>
-				<div class="top-bar-cross">
-					<span>
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/topbar-cross-icon.svg"
-							width="16" height="16" alt="<?php esc_attr_e( 'Top bar', 'AcademyMedical _td' ); ?>">
-					</span>
-				</div>
 			</div>
-		<?php } ?>
+			<div class="top-bar-cross">
+				<span>
+								<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+				</span>
+			</div>
+		</div>
 		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
 			<div class="header-logo logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-						src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo.svg"
-						alt="Site Logo" /></a>
+					<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/site-logo.svg">';
+								?>
 			</div>
 			<div class="right-header header-navigation">
 				<div class="nav-overlay">
 					<div class="nav-container">
 						<div class="header-nav">
-							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'header-nav',
-									'fallback_cb'    => 'AcademyMedical ::nav_fallback',
-									'walker'         => new AcademyMedical \Walker\Academy_Medical _Walker_Nav(),
-									'container'      => 'nav',
-								)
-							);
-							?>
-						</div>
-						<?php if ( $am_var_tohdr_btn || $am_var_tohdr_btn_two ) { ?>
-						<div class="header-btns desktop-hide">
-							<?php
-							if ( $am_var_tohdr_btn ) {
-								echo AcademyMedical ::button( $am_var_tohdr_btn, 'button' );
-							}
+							<ul>
+								<li><a href="toolkit.html">For Buyers</a></li>
+								<li class="menu-item current-menu-item menu-item-has-children">
+									<a href="#">For Sellers</a>
+									<ul class="sub-menu">
+										<li><a href="./AcademyMedical /gravity-form.html">For Buyers</a></li>
+										<li><a href="./AcademyMedical /hubspot-form.html">For Sellers</a></li>
+									</ul>
+								</li>
+								<li><a href="./AcademyMedical /html-formatting-tags.html">Supplier Network</a></li>
+								<li><a href="./AcademyMedical /wordpress-blocks.html">Our Company</a></li>
+								<li><a href="./AcademyMedical /wordpress-blocks.html">Industry News</a></li>
 
-							if ( $am_var_tohdr_btn_two ) {
-								echo AcademyMedical ::button( $am_var_tohdr_btn_two, 'button' );
-							}
-							?>
+								<li><a href="./AcademyMedical /wordpress-blocks.html">Contact us</a></li>
 
+							</ul>
+							<div class="header-btns desktop-hide">
+								<a href="#" class="button" title="Get In touch">Get In touch</a>
+							</div>
 						</div>
-						<?php } ?>
 					</div>
 				</div>
 				<div class="menu-btn">
@@ -183,22 +174,40 @@ $am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 					<span class="bottom"></span>
 				</div>
 			</div>
-			<?php if ( $am_var_tohdr_btn || $am_var_tohdr_btn_two ) { ?>
 			<div class="header-btns">
-				<?php
-				if ( $am_var_tohdr_btn ) {
-					echo AcademyMedical ::button( $am_var_tohdr_btn, 'button' );
-				}
 
-				if ( $am_var_tohdr_btn_two ) {
-					echo AcademyMedical ::button( $am_var_tohdr_btn_two, 'button' );
-				}
-				?>
+				<a href="#" class="search-icon top-search">	<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/search-icon.svg">';
+								?></a>
+				<a href="#" class="button" title="Get In touch">Get In touch</a>
+
 			</div>
-			<?php } ?>
-			<!-- header buttons -->
 		</div>
-		<!-- Header End -->
+		<div class="search-form-new">
+			<div class="search-inner-content">
+				<div class="search-inner-content--text">
+					SEARCH SITE </div>
+				<form role="search" method="get" id="searchform" action="#">
+					<div id="search-top">
+						<input type="text" name="s" class="keyword" onkeyup="fetch()" autocomplete="off"
+							autofocus="autofocus" aria-label="Search" placeholder="Search">
+						<div class="clear"></div>
+					</div>
+				</form>
+				<div class="search-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+						<rect class="bg-path" x="0.922852" y="28.5" width="39" height="39" rx="19.5"
+							transform="rotate(-45 0.922852 28.5)" fill="#F1EEE2"></rect>
+						<g opacity="0.5">
+							<rect class="bg-path-white" x="22.8432" y="23.5503" width="1" height="15"
+								transform="rotate(-45 22.8432 23.5503)" fill="#141414"></rect>
+							<rect class="bg-path-white" x="23.5503" y="34.1567" width="1" height="15"
+								transform="rotate(-135 23.5503 34.1567)" fill="#141414"></rect>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
 	</header>
 	<!-- Main Area Start -->
 	<main id="main-section" class="main-section">

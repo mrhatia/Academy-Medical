@@ -419,11 +419,11 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 /* Mixins */
 @font-face {
-  font-family: "flaticon_AcademyMedical ";
+  font-family: "flaticon_AcademyMedical";
   src: url(fonts/flaticon.woff2) format("woff2");
 }
 .dashicons:not(.dashicons-edit, .dashicons-welcome-view-site) {
-  font-family: "flaticon_AcademyMedical " !important;
+  font-family: "flaticon_AcademyMedical" !important;
 }
 
 .dashicons-faqs:before {
@@ -2759,6 +2759,9 @@ Mixin for transition
   font-size: 14px;
   margin-bottom: 5px;
 }
+.acf-block-preview .cta-single {
+  display: none;
+}
 .acf-block-preview .two-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(clamp(350px, 50% - 2%, 100%), 100%), 1fr));
@@ -3197,18 +3200,18 @@ Mixin for transition
 }
 .acf-block-preview .category-teaser .category-item {
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .acf-block-preview .category-teaser .category-item .image-wrap {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   margin: 0 auto 20px;
   border-radius: 50%;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .acf-block-preview .category-teaser .category-item .image-wrap img {
@@ -3216,7 +3219,7 @@ Mixin for transition
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .category-teaser .category-item span {
   margin-top: 20px;
@@ -3267,7 +3270,11 @@ Mixin for transition
   cursor: grab;
 }
 .acf-block-preview .category-slider .slick-list {
+  margin: 0 -10px;
   padding-top: 20px;
+}
+.acf-block-preview .category-slider .slick-list .slick-slide {
+  margin: 0 10px;
 }
 .acf-block-preview .footer-cta {
   padding: 10% 0;
@@ -3320,7 +3327,7 @@ Mixin for transition
   display: block;
   position: relative;
   background-color: var(--cph_color_on_primary);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 2;
   border: none;
 }
@@ -3338,7 +3345,7 @@ Mixin for transition
   background: var(--cph_color_primary);
   display: block;
   content: "";
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 .acf-block-preview a.event-teaser__item::after,
 .acf-block-preview a.event-teaser__item:visited::after {
@@ -3351,7 +3358,7 @@ Mixin for transition
   height: 1px;
   z-index: 0;
   right: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   bottom: 0;
 }
 .acf-block-preview a.event-teaser__item:hover:first-child,
@@ -3369,14 +3376,14 @@ Mixin for transition
 .acf-block-preview a.event-teaser__item:hover .event-teaser__image,
 .acf-block-preview a.event-teaser__item:visited:hover .event-teaser__image {
   rotate: 5deg;
-  bottom: -25px;
+  bottom: 0px;
   opacity: 1;
 }
 .acf-block-preview a.event-teaser__item:hover .event-teaser__inner,
 .acf-block-preview a.event-teaser__item:visited:hover .event-teaser__inner {
   background-color: var(--am_topbar_bgcolor);
   color: var(--am_white_text);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview a.event-teaser__item:hover .event-teaser__inner .outer-circle,
 .acf-block-preview a.event-teaser__item:visited:hover .event-teaser__inner .outer-circle {
@@ -3403,9 +3410,9 @@ Mixin for transition
 .acf-block-preview .event-teaser::after {
   content: "";
   position: absolute;
-  background-color: var(--cph_white);
-  height: 140px;
-  bottom: -45px;
+  background-color: white;
+  height: 125px;
+  bottom: -125px;
   width: 100%;
   z-index: 2;
 }
@@ -3430,7 +3437,7 @@ Mixin for transition
   border: 1px solid var(--am_topbar_bgcolor);
   border-radius: 50%;
   padding: 2px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 40px;
   height: 40px;
   display: flex;
@@ -3447,7 +3454,7 @@ Mixin for transition
   align-items: center;
   justify-content: center;
   color: var(--am_white_text);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .event-teaser__inner h3 {
   margin-bottom: 0;
@@ -3465,12 +3472,12 @@ Mixin for transition
   line-height: 1.2;
   letter-spacing: -0.36px;
   text-decoration: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   color: var(--cph_black);
 }
 .acf-block-preview .event-teaser__title {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-top: -6px;
   display: flex;
   align-items: center;
@@ -3488,7 +3495,7 @@ Mixin for transition
   line-height: 0.67;
   width: 250px;
   aspect-ratio: 300/200;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   transform-origin: top right;
   transform: translateX(50%);
   bottom: -130px;
@@ -3701,6 +3708,10 @@ Mixin for transition
 .acf-block-preview .event-teaser__list {
   margin-top: var(--am_space_48);
 }
+.acf-block-preview .over-flow-hidden {
+  overflow: hidden;
+  overflow-y: hidden;
+}
 .acf-block-preview .numbers-section {
   position: relative;
 }
@@ -3710,12 +3721,12 @@ Mixin for transition
 }
 .acf-block-preview .numbers-section .number-heading h2 {
   font-size: 90px;
-  font-weight: 500;
+  font-weight: 600;
   width: 38%;
   margin: 0 auto;
   text-align: center;
   line-height: 1;
-  padding: 25px 0;
+  padding: 50px 0;
 }
 .acf-block-preview .numbers-section .numbers-items .item {
   position: absolute;
@@ -3761,15 +3772,15 @@ Mixin for transition
 .acf-block-preview .numbers-section .numbers-items .item-3 {
   bottom: -50%;
   right: 10%;
-  background-color: var(--am_blue_5);
+  background-color: var(--am_blue_3);
 }
 .acf-block-preview .numbers-section .numbers-items .item-4 {
   bottom: -70%;
   left: 12%;
-  background-color: var(--am_topbar_bgcolor);
+  background-color: #004c6d;
 }
 .acf-block-preview .case-study-block a {
-  font-size: 14px;
+  font-size: 16px;
 }
 .acf-block-preview .case-study-heading {
   text-align: center;
@@ -3786,6 +3797,9 @@ Mixin for transition
 }
 .acf-block-preview .case-study-items .cs-item-content {
   text-align: center;
+}
+.acf-block-preview .case-study-items .cs-item-content h3 {
+  margin-bottom: 10px;
 }
 .acf-block-preview .case-study-items .cs-item-content h3,
 .acf-block-preview .case-study-items .cs-item-content a {
@@ -3820,9 +3834,7 @@ Mixin for transition
   text-align: center;
 }
 .acf-block-preview .case-study-btn a {
-  border-radius: 0;
   text-transform: uppercase;
-  padding: 10px 5%;
 }
 .acf-block-preview .case-study-items {
   cursor: grab;

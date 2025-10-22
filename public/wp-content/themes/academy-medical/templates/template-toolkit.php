@@ -22,7 +22,7 @@ get_header();
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Toolkit - AcademyMedical </title>
+	<title>Toolkit - AcademyMedical</title>
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/styles.min.css" />
 </head>
 
@@ -53,26 +53,26 @@ get_header();
 								<li class="menu-item current-menu-item menu-item-has-children">
 									<a href="#">Forms</a>
 									<ul>
-										<li><a href="./AcademyMedical /gravity-form.html">Gravity Form</a></li>
-										<li><a href="./AcademyMedical /hubspot-form.html">Hubspot Form</a></li>
+										<li><a href="./AcademyMedical/gravity-form.html">Gravity Form</a></li>
+										<li><a href="./AcademyMedical/hubspot-form.html">Hubspot Form</a></li>
 									</ul>
 								</li>
-								<li><a href="./AcademyMedical /html-formatting-tags.html">Html Tags</a></li>
-								<li><a href="./AcademyMedical /wordpress-blocks.html">WordPress Blocks</a></li>
+								<li><a href="./AcademyMedical/html-formatting-tags.html">Html Tags</a></li>
+								<li><a href="./AcademyMedical/wordpress-blocks.html">WordPress Blocks</a></li>
 								<li class="menu-item current-menu-item menu-item-has-children">
-									<a href="./AcademyMedical /#">Default Pages</a>
+									<a href="./AcademyMedical/#">Default Pages</a>
 									<ul>
 										<li class="menu-item current-menu-item">
-											<a href="./AcademyMedical /blog-template.html">Blog
+											<a href="./AcademyMedical/blog-template.html">Blog
 												Template</a>
 										</li>
-										<li><a href="./AcademyMedical /default-archive.html">Default Archive</a></li>
-										<li><a href="./AcademyMedical /default-index.html">Default index</a></li>
-										<li><a href="./AcademyMedical /default-page.html">Default Page</a></li>
-										<li><a href="./AcademyMedical /default-post.html">Default post</a></li>
-										<li><a href="./AcademyMedical /404.html">404</a></li>
+										<li><a href="./AcademyMedical/default-archive.html">Default Archive</a></li>
+										<li><a href="./AcademyMedical/default-index.html">Default index</a></li>
+										<li><a href="./AcademyMedical/default-page.html">Default Page</a></li>
+										<li><a href="./AcademyMedical/default-post.html">Default post</a></li>
+										<li><a href="./AcademyMedical/404.html">404</a></li>
 
-										<li><a href="./AcademyMedical /default-archive.html">Default Archive</a></li>
+										<li><a href="./AcademyMedical/default-archive.html">Default Archive</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -202,7 +202,7 @@ get_header();
 								<ul id="menu-footer-nav-two" class="menu">
 									<li id="menu-item-1901"
 										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home first-menu-item menu-item-1901">
-										<a href="http://AcademyMedical devcause.local/">Home</a>
+										<a href="http://AcademyMedicaldevcause.local/">Home</a>
 									</li>
 									<li><a href="#">Sample Page</a></li>
 									<li><a href="#">Level 2a</a></li>

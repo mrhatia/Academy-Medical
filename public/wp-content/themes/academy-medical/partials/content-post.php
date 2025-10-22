@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-list( $am_var_post_id, $bst_fields, $am_option_fields, $bst_queried_object ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields, $bst_queried_object ) = AcademyMedical::defaults();
 
 // Post Tags & Categories.
 $am_var_post_categories = get_categories( $am_var_post_id );
@@ -123,7 +123,7 @@ $am_var_posttitle = $bst_fields['am_var_posttitle'] ?? get_the_title();
 
 						?>
 					<div class="related-posts ">
-					<h3><?php esc_html__( 'Related Posts', 'AcademyMedical _td' ); ?></h3>
+					<h3><?php esc_html__( 'Related Posts', 'AcademyMedical_td' ); ?></h3>
 						<?php
 						foreach ( $am_var_selected_posts as $am_var_post ) {
 							setup_postdata( $post );

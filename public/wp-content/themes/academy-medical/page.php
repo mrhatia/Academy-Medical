@@ -12,7 +12,7 @@
 get_header();
 
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 $am_var_tmp_def_title  = $bst_fields['am_var_tmp_def_title'] ?? get_the_title();
 $am_var_tmp_def_text   = $bst_fields['am_var_tmp_def_text'] ?? null;

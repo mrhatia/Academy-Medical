@@ -4,7 +4,7 @@ a.event-teaser__item:visited {
 	display: block;
 	position: relative;
 	background-color: var(--cph_color_on_primary);
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	z-index: 2;
 	border: none;
 	&:nth-child(n + 2) {
@@ -19,7 +19,7 @@ a.event-teaser__item:visited {
 		background: var(--cph_color_primary);
 		display: block;
 		content: "";
-		transition: width 0.5s ease-in-out;
+		transition: width 0.3s ease-in-out;
 	}
 
 	&::after {
@@ -32,7 +32,7 @@ a.event-teaser__item:visited {
 		height: 1px;
 		z-index: 0;
 		left: 0;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		bottom: 0;
 	}
 
@@ -51,14 +51,14 @@ a.event-teaser__item:visited {
 
 		.event-teaser__image {
 			rotate: 5deg;
-			bottom: -25px;
+			bottom: 0px;
 			opacity: 1;
 		}
 
 		.event-teaser__inner {
 			background-color: var(--am_topbar_bgcolor);
 			color: var(--am_white_text);
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
 
 			.outer-circle {
 				border-color: var(--am_white);
@@ -86,9 +86,9 @@ a.event-teaser__item:visited {
 	&::after {
 		content: "";
 		position: absolute;
-		background-color: var(--cph_white);
-		height: 140px;
-		bottom: -45px;
+		background-color: white;
+		height: 125px;
+		bottom: -125px;
 		width: 100%;
 		z-index: 2;
 	}
@@ -115,7 +115,7 @@ a.event-teaser__item:visited {
 			border: 1px solid var(--am_topbar_bgcolor);
 			border-radius: 50%;
 			padding: 2px;
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
 			width: 40px;
 			height: 40px;
 			display: flex;
@@ -132,7 +132,7 @@ a.event-teaser__item:visited {
 				align-items: center;
 				justify-content: center;
 				color: var(--am_white_text);
-				transition: all 0.5s ease-in-out;
+				transition: all 0.3s ease-in-out;
 			}
 		}
 		h3 {
@@ -155,13 +155,13 @@ a.event-teaser__item:visited {
 		@include font(mont, bold);
 		letter-spacing: -0.36px;
 		text-decoration: none;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		text-transform: uppercase;
 		color: var(--cph_black);
 	}
 
 	&__title {
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		margin-top: -6px;
 		display: flex;
 		align-items: center;
@@ -181,7 +181,7 @@ a.event-teaser__item:visited {
 		line-height: 0.67;
 		width: 250px;
 		aspect-ratio: 300 / 200;
-		transition: all 0.5s linear;
+		transition: all 0.3s linear;
 		transform-origin: top left;
 		transform: translateX(-50%);
 		bottom: -130px;
@@ -452,4 +452,8 @@ a.event-teaser__item:visited {
 
 .event-teaser__list {
 	margin-top: var(--am_space_48);
+}
+.over-flow-hidden{
+	overflow: hidden;
+	overflow-y: hidden;
 }

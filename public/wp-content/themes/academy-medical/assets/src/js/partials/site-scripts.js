@@ -5,6 +5,8 @@
 import magnificPopup from '../vendors/jquery-magnificpopup';
 import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
+// import splide from '../vendors/splide.min';
+// import autoSplide from '../vendors/splide-extension-auto-scroll.min';
 jQuery( document ).on( 'scroll', function() {
 	if ( jQuery( document ).scrollTop() > 0 ) {
 		jQuery( 'header, body' ).addClass( 'shrink' );

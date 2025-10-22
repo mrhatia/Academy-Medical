@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-AcademyMedical ::block(
+AcademyMedical::block(
 	$block,
 	function ( $bst_block_id, $bst_block_name, $bst_block_fields, $am_option_fields ) {
 
@@ -25,18 +25,18 @@ AcademyMedical ::block(
 			<div class="iat-section two-columns justify-content-between align-items-center <?php echo $am_var_blk_mat_img_location; ?>">
 				<div class="iat-image column" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
 					<?php if ( $am_var_blk_mat_image ) { ?>
-						<?php AcademyMedical ::the_attachment_image( $am_var_blk_mat_image, 1000 ); ?>
+						<?php AcademyMedical::the_attachment_image( $am_var_blk_mat_image, 1000 ); ?>
 					<?php } ?>
 				</div>
 				<div class="iat-text column">
-					<?php if ( AcademyMedical ::is_block_title( $am_var_blk_mat_title ) ) { ?>
-						<?php AcademyMedical ::the_block_title( $am_var_blk_mat_title, 'heading-2' ); ?>
+					<?php if ( AcademyMedical::is_block_title( $am_var_blk_mat_title ) ) { ?>
+						<?php AcademyMedical::the_block_title( $am_var_blk_mat_title, 'heading-2' ); ?>
 					<?php } ?>
 					<?php if ( $am_var_blk_mat_text ) {  ?>
 						<?php echo html_entity_decode( $am_var_blk_mat_text ); ?>
 					<?php } ?>
 					<?php if ( $am_var_blk_mat_button ) { ?>
-						<?php echo AcademyMedical ::button( $am_var_blk_mat_button, 'button' ); ?>
+						<?php echo AcademyMedical::button( $am_var_blk_mat_button, 'button' ); ?>
 					<?php } ?>
 				</div>
 			</div>

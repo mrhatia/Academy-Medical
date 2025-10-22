@@ -10,13 +10,13 @@
  * @since 1.0.0
  */
 
-if ( ! defined( 'AcademyMedical _BLOCK_DIR' ) ) {
-	define( 'AcademyMedical _BLOCK_DIR', __DIR__ . '/blocks' );
+if ( ! defined( 'AcademyMedical_BLOCK_DIR' ) ) {
+	define( 'AcademyMedical_BLOCK_DIR', __DIR__ . '/blocks' );
 }
 
 
-if ( ! defined( 'AcademyMedical _DEFAULT_IMAGE' ) ) {
-	define( 'AcademyMedical _DEFAULT_IMAGE', esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp' );
+if ( ! defined( 'AcademyMedical_DEFAULT_IMAGE' ) ) {
+	define( 'AcademyMedical_DEFAULT_IMAGE', esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp' );
 }
 
 

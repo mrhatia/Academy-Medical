@@ -14,7 +14,7 @@
 // Include header.
 get_header();
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 $am_var_pagetitle          = $bst_fields['am_var_pagetitle'] ?? get_the_title();
 $am_var_trcho_feature_post = $bst_fields['am_var_trcho_feature_post'] ?? null;
@@ -90,7 +90,7 @@ $am_var_trcho_feature_post = $bst_fields['am_var_trcho_feature_post'] ?? null;
 	<div class="wrapper">
 		<?php
 			// WP_Query.
-			$bst_query = AcademyMedical ::query(
+			$bst_query = AcademyMedical::query(
 				array(
 					'post_type'     => 'resource',
 					'template'      => 'archive-resource',

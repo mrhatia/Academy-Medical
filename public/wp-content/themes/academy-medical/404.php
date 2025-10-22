@@ -11,7 +11,7 @@
 // Include header.
 get_header();
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 // 404 Page - Advanced custom fields variables.
 $am_var_error_headline         = $am_option_fields['am_var_error_headline'] ?? null;

@@ -1,7 +1,7 @@
 {
 	"Wrap in translate html": {
 		"prefix": "wrapDomain",
-		"body": ["<?php esc_html_e( '${TM_SELECTED_TEXT}', 'AcademyMedical _td' ); ?>"],
+		"body": ["<?php esc_html_e( '${TM_SELECTED_TEXT}', 'AcademyMedical_td' ); ?>"],
 		"description": "Wrap selected text in a set value"
 	},
 	"Output var auto": {
@@ -689,8 +689,8 @@
 	"BlockTitle": {
 		"prefix": "BlockTitle",
 		"body": [
-			"<?php if ( AcademyMedical ::is_block_title( $${1:am_var_blkfetrdtxt_title} ) ) { ?>",
-			"\t<?php AcademyMedical ::the_block_title( $${1:am_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
+			"<?php if ( AcademyMedical::is_block_title( $${1:am_var_blkfetrdtxt_title} ) ) { ?>",
+			"\t<?php AcademyMedical::the_block_title( $${1:am_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display block title if it exists"
@@ -700,7 +700,7 @@
 		"prefix": "BlockButton",
 		"body": [
 			"<?php if ( $${1:am_var_blkfetrdtxt_btn} ) { ?>",
-			"\t<?php AcademyMedical ::button( $${1:am_var_blkfetrdtxt_btn}, 'button' ); ?>",
+			"\t<?php AcademyMedical::button( $${1:am_var_blkfetrdtxt_btn}, 'button' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display a button if variable exists"
@@ -718,7 +718,7 @@
 		"prefix": "FeaturedImage",
 		"body": [
 			"<?php if ( $${1:am_var_img} ) { ?>",
-			"\t<?php AcademyMedical ::the_featured_image( $${1:am_var_img}, 1000 ); ?>",
+			"\t<?php AcademyMedical::the_featured_image( $${1:am_var_img}, 1000 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display featured image if variable exists"
@@ -728,7 +728,7 @@
 		"prefix": "AttachmentImage",
 		"body": [
 			"<?php if ( $${1:am_var_img} ) { ?>",
-			"\t<?php AcademyMedical ::the_attachment_image( $${1:am_var_img}, 500 ); ?>",
+			"\t<?php AcademyMedical::the_attachment_image( $${1:am_var_img}, 500 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display Attachment  image if variable exists"

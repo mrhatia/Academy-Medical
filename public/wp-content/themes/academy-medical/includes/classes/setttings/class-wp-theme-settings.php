@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Settings;
+namespace AcademyMedical\Settings;
 
 /**
  * Template Class For Theme Settings
@@ -18,7 +18,7 @@ namespace AcademyMedical \Settings;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Settings {
+class Academy_Medical_Settings {
 	/**
 	 * Define class Constructor
 	 **/
@@ -230,4 +230,4 @@ class Academy_Medical _Settings {
 	}
 
 }
-new Academy_Medical _Settings();
+new Academy_Medical_Settings();

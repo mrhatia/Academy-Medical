@@ -22,10 +22,10 @@
  */
 
 if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' === basename( esc_url_raw( wp_unslash( $_SERVER['SCRIPT_FILENAME'] ) ) ) ) { /*1*/
-		die( esc_html__( 'Please do not load this page directly. Thanks!', 'AcademyMedical _td' ) );
+		die( esc_html__( 'Please do not load this page directly. Thanks!', 'AcademyMedical_td' ) );
 }
 if ( post_password_required() ) {
-	esc_html__( 'This post is password protected. Enter the password to view comments.', 'AcademyMedical _td' );
+	esc_html__( 'This post is password protected. Enter the password to view comments.', 'AcademyMedical_td' );
 	return;
 }
 
@@ -44,13 +44,13 @@ if ( post_password_required() ) {
 			if ( '1' === $am_var_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One Response', 'AcademyMedical _td' ),
+					esc_html__( 'One Response', 'AcademyMedical_td' ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf(
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s Response', '%1$s Response', $theme_comment_count, 'comments title', 'AcademyMedical _td' ) ),
+					esc_html( _nx( '%1$s Response', '%1$s Response', $theme_comment_count, 'comments title', 'AcademyMedical_td' ) ),
 					esc_html( number_format_i18n( $theme_comment_count ) ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
@@ -82,7 +82,7 @@ if ( post_password_required() ) {
 			// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() ) {
 				?>
-					<p class="no-comments"><?php esc_html__( 'Comments are closed.', 'AcademyMedical _td' ); ?></p>
+					<p class="no-comments"><?php esc_html__( 'Comments are closed.', 'AcademyMedical_td' ); ?></p>
 				<?php
 			}
 		}// Check for have_comments().

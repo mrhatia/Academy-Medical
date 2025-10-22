@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Walker\Settings\ACF;
+namespace AcademyMedical\Walker\Settings\ACF;
 
 if ( ! class_exists( 'ACF_Location' ) ) {
 	return;
@@ -23,7 +23,7 @@ use \ACF_Location;
  * @category Walker_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Walker_Acf_Settings extends \ACF_Location {
+class Academy_Medical_Walker_Acf_Settings extends \ACF_Location {
 	/**
 	 * Initialize the basic acf values
 	 *

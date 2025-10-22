@@ -14,7 +14,7 @@
 // Include header.
 get_header();
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 $am_var_pagetitle           = $bst_fields['am_var_tblgho_title'] ?? get_the_title( $am_var_post_id );
 $am_var_tblgho_feature_post = $bst_fields['am_var_tblgho_feature_post'] ?? null;
@@ -76,7 +76,7 @@ $am_var_post_catagories = get_categories( $am_var_post_id );
 				$am_var_post_parmalink = get_the_permalink( $am_var_post_id );
 				$am_var_post_tags      = get_the_tags( $am_var_post_id );
 
-				list($am_var_author_avatar,$am_var_author_name) = AcademyMedical ::get_author_data( $am_var_post_id );
+				list($am_var_author_avatar,$am_var_author_name) = AcademyMedical::get_author_data( $am_var_post_id );
 
 				$am_var_post_image = get_the_post_thumbnail_url( $am_var_post_id, 'full' );
 				if ( ! $am_var_post_image ) {
@@ -181,10 +181,10 @@ $am_var_post_catagories = get_categories( $am_var_post_id );
 			</div>
 			<?php
 			if ( have_posts() ) {
-				if ( class_exists( 'AcademyMedical ' ) && $bst_query->max_num_pages > 1 ) {
+				if ( class_exists( 'AcademyMedical' ) && $bst_query->max_num_pages > 1 ) {
 					?>
 					<div class="center-align">
-						<?php echo AcademyMedical ::pagination( $bst_query->max_num_pages ); ?>
+						<?php echo AcademyMedical::pagination( $bst_query->max_num_pages ); ?>
 					</div>
 					<?php
 				}

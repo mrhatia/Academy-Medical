@@ -8,13 +8,13 @@
  * @since 1.0.0
  */
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-box column' ); ?>>
 	<div class="post-box-img post-image">
 		<a href="<?php echo esc_url( get_the_permalink() ); ?>">
-			<?php AcademyMedical ::the_featured_image( $am_var_post_id, 900 ); ?>
+			<?php AcademyMedical::the_featured_image( $am_var_post_id, 900 ); ?>
 		</a>
 	</div>
 	<div class="post-content">
@@ -25,8 +25,8 @@ list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defau
 			</h4>
 		</div>
 		<div class="post-box-excerpt">
-			<p><?php echo AcademyMedical ::excerpt_nomore( 130 ); ?> </p>
+			<p><?php echo AcademyMedical::excerpt_nomore( 130 ); ?> </p>
 		</div>
-		<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="learn-more"><?php esc_html_e( 'Learn More', 'AcademyMedical _td' ); ?></a>
+		<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="learn-more"><?php esc_html_e( 'Learn More', 'AcademyMedical_td' ); ?></a>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

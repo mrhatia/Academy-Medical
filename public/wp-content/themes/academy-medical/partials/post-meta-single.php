@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-list($am_var_author_avatar,$am_var_author_name) = AcademyMedical ::get_author_data( get_the_ID() );
+list($am_var_author_avatar,$am_var_author_name) = AcademyMedical::get_author_data( get_the_ID() );
 // Post Tags & Categories.
 $am_var_post_tags       = get_the_tags( $am_var_post_id );
 $am_var_post_categories = get_categories( $am_var_post_id );
@@ -24,9 +24,9 @@ $am_var_post_categories = get_categories( $am_var_post_id );
 			<?php } ?>
 			<div class="author-meta">
 				<?php if ( $am_var_author_name ) { ?>
-					<div class="post-author-name"><?php esc_html_e( 'By:', 'AcademyMedical _td' ); ?> <?php echo esc_html( $am_var_author_name ); ?></div>
+					<div class="post-author-name"><?php esc_html_e( 'By:', 'AcademyMedical_td' ); ?> <?php echo esc_html( $am_var_author_name ); ?></div>
 				<?php } ?>
-				<div class="post-meta-date"><?php the_time( AcademyMedical _PROJECT_DTFORMAT ); ?></div>
+				<div class="post-meta-date"><?php the_time( AcademyMedical_PROJECT_DTFORMAT ); ?></div>
 			</div>
 		</div>
 	</div>

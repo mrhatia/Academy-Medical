@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Acf\Acf_Fields;
+namespace AcademyMedical\Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Field Headings
@@ -49,7 +49,7 @@ class Acf_Field_Spacer extends \acf_field {
 		 *
 		 * For public-facing UI. May contain spaces.
 		 */
-		$this->label = __( 'Spacer', 'AcademyMedical _td' );
+		$this->label = __( 'Spacer', 'AcademyMedical_td' );
 
 		/**
 		 * The category the field appears within in the field type picker.
@@ -70,7 +70,7 @@ class Acf_Field_Spacer extends \acf_field {
 		 * const errorMessage = acf._e("spacer", "error");
 		 * ```
 		 */
-		$this->l10n = array( 'error' => __( 'Error! Please enter a higher value', 'AcademyMedical _td' ) );
+		$this->l10n = array( 'error' => __( 'Error! Please enter a higher value', 'AcademyMedical_td' ) );
 
 		$this->env = array(
 			'url'     => site_url( str_replace( ABSPATH, '', __DIR__ ) ), // URL to the acf-FIELD-NAME directory.
@@ -94,8 +94,8 @@ class Acf_Field_Spacer extends \acf_field {
 		acf_render_field_setting(
 			$field,
 			array(
-				'label'        => __( 'Default Value', 'AcademyMedical _td' ),
-				'instructions' => __( 'Customize the input default Value', 'AcademyMedical _td' ),
+				'label'        => __( 'Default Value', 'AcademyMedical_td' ),
+				'instructions' => __( 'Customize the input default Value', 'AcademyMedical_td' ),
 				'type'         => 'text',
 				'name'         => 'default_value',
 				'append'       => '',

@@ -8,9 +8,9 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Blocks;
+namespace AcademyMedical\Blocks;
 
-use AcademyMedical ;
+use AcademyMedical;
 
 /**
  * Template Class For Blocks
@@ -20,7 +20,7 @@ use AcademyMedical ;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Blocks {
+class Academy_Medical_Blocks {
 	/**
 	 * Define class Constructor
 	 **/
@@ -35,7 +35,7 @@ class Academy_Medical _Blocks {
 	 */
 	public function register_acf_blocks() {
 
-		register_block_type( AcademyMedical _BLOCK_DIR . '/section-container' );
+		register_block_type( AcademyMedical_BLOCK_DIR . '/section-container' );
 		// Register a block - FAQ.
 		self::register_acf_block( 'faqs' );
 		// Register a block - Media Alongside Text.
@@ -66,10 +66,10 @@ class Academy_Medical _Blocks {
 			$block_script_order = array( 'jquery' );
 			$dependencies       = array();
 			if ( $block_scripts ) {
-				$dependencies = AcademyMedical ::register_scripts( $block_scripts );
+				$dependencies = AcademyMedical::register_scripts( $block_scripts );
 			}
 			$block_script_order = array_merge( $block_script_order, $dependencies );
-			AcademyMedical ::register_script(
+			AcademyMedical::register_script(
 				'blocks/' . $block_name . '/' . $block_name . '.js',
 				$block_script_order,
 				args:array(
@@ -78,7 +78,7 @@ class Academy_Medical _Blocks {
 				),
 			);
 		}
-		register_block_type( AcademyMedical _BLOCK_DIR . '/' . $block_name );
+		register_block_type( AcademyMedical_BLOCK_DIR . '/' . $block_name );
 	}
 }
-new Academy_Medical _Blocks();
+new Academy_Medical_Blocks();

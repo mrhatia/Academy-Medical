@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-AcademyMedical ::block(
+AcademyMedical::block(
 	$block,
 	function ( $bst_block_id, $bst_block_name,$bst_block_fields, $am_option_fields ) {
 
