@@ -377,8 +377,8 @@
 						src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
 					<script>
-						document.addEventListener( 'DOMContentLoaded', function() {
-							new Splide( '.info-slider', {
+						document.addEventListener('DOMContentLoaded', function () {
+							new Splide('.info-slider', {
 								type: 'loop',
 								perPage: 3,
 								gap: '2rem',
@@ -395,8 +395,8 @@
 									1024: { perPage: 2 },
 									640: { perPage: 1 },
 								},
-							} ).mount( window.splide.Extensions );
-						} );
+							}).mount(window.splide.Extensions);
+						});
 					</script>
 
 				</div>
@@ -463,8 +463,8 @@
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 			<script>
-				jQuery( document ).ready( function() {
-					jQuery( '.category-slider' ).slick( {
+				jQuery(document).ready(function () {
+					jQuery('.category-slider').slick({
 						slidesToShow: 4,
 						slidesToScroll: 1,
 						autoplay: true,
@@ -491,8 +491,8 @@
 								},
 							},
 						],
-					} );
-				} );
+					});
+				});
 			</script>
 
 			<div class="am-s128"></div>
@@ -644,22 +644,22 @@
 				</div>
 			</section>
 			<script>
-				jQuery( document ).ready( function() {
-					if ( jQuery( '.case-study-items' ).length > 0 ) {
-						jQuery( '.case-study-items' ).each( function() {
-							const $slider = jQuery( this );
+				jQuery(document).ready(function () {
+					if (jQuery('.case-study-items').length > 0) {
+						jQuery('.case-study-items').each(function () {
+							const $slider = jQuery(this);
 							const $items = $slider.children();
 
 							// Clone items if less than 4
-							if ( $items.length < 4 ) {
-								while ( $slider.children().length < 4 ) {
-									$slider.append( $items.clone() );
+							if ($items.length < 4) {
+								while ($slider.children().length < 4) {
+									$slider.append($items.clone());
 								}
-							} else if ( $items.length === 4 ) {
-								$slider.append( $items.clone() );
+							} else if ($items.length === 4) {
+								$slider.append($items.clone());
 							}
 
-							$slider.slick( {
+							$slider.slick({
 								slidesToShow: 3,
 								centerMode: true,
 								centerPadding: '0px',
@@ -685,10 +685,10 @@
 										},
 									},
 								],
-							} );
-						} );
+							});
+						});
 					}
-				} );
+				});
 			</script>
 
 			<div class="am-s96"></div>
