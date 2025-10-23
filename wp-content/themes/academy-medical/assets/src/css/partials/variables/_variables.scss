@@ -1,0 +1,363 @@
+:root {
+
+	/*-------------------------------------------------
+	>> Variables for Spaces
+	-------------------------------------------------*/
+	@include spacing(--am_space_2, 2, 2);
+	@include spacing(--am_space_4, 4, 4);
+	@include spacing(--am_space_6, 6, 6);
+	@include spacing(--am_space_8, 8, 8);
+	@include spacing(--am_space_12, 12, 10);
+	@include spacing(--am_space_16, 16, 12);
+	@include spacing(--am_space_20, 20, 16);
+	@include spacing(--am_space_24, 24, 20);
+	@include spacing(--am_space_30, 30, 24);
+	@include spacing(--am_space_36, 36, 30);
+	@include spacing(--am_space_48, 48, 36);
+	@include spacing(--am_space_72, 72, 44);
+	@include spacing(--am_space_96, 96, 52);
+	@include spacing(--am_space_128, 128, 64);
+	@include spacing(--am_space_156, 156, 72);
+	@include spacing(--am_space_200, 200, 84);
+	@include spacing(--am_space_236, 236, 98);
+
+	/* -------------------------------------------------
+	>> Variables for Font Sizes
+	------------------------------------------------- */
+
+	@include font_size(--am_font_size_12, 12, 11);
+	@include font_size(--am_font_size_14, 14, 13);
+	@include font_size(--am_font_size_16, 16, 15);
+	@include font_size(--am_font_size_18, 18, 17);
+	@include font_size(--am_font_size_20, 20, 18);
+	@include font_size(--am_font_size_22, 22, 20);
+	@include font_size(--am_font_size_24, 24, 20);
+	@include font_size(--am_font_size_26, 26, 22);
+	@include font_size(--am_font_size_32, 32, 24);
+	@include font_size(--am_font_size_40, 40, 26);
+	@include font_size(--am_font_size_48, 48, 30);
+	@include font_size(--am_font_size_60, 54, 45);
+	@include font_size(--am_font_size_68, 68, 55);
+
+
+	/* -------------------------------------------------
+	>> Color variables
+	------------------------------------------------- */
+
+	/*
+	>> Base Colors
+	*/
+
+	// Theme Primary
+	--am_color_primary: #121f6b;
+	--am_color_on_primary: #ffffff;
+
+	// Theme Secondary
+	--am_color_secondary: #0013ff;
+
+	// Theme Dark
+	--am_black: #000000;
+	--am_black_1: #14191f;
+	--am_black_2: #606364;
+
+	// Theme Light
+	--am_white: #ffffff;
+	--am_white_1: #f1f1f1;
+	--am_white_2: #f1e9e9;
+
+	// Theme Colors
+	--am_gray: #e0e0e0;
+	--am_gray_1: #e6e6e6;
+	--am_gray_2: #eee;
+
+	--am_blue: #0013ff;
+	--am_blue_1: #121f6b;
+	--am_blue_2: #2ca8dd;
+	--am_blue_3: #55A1D3;
+	--am_blue_3: #6972D9;
+	--am_blue_4: #d1f1ff;
+	--am_blue_5: #55A1D3;
+
+	--am_navy: #091a17;
+	--am_navy_1: #15332e;
+	--am_navy_2: #2f655c;
+
+	--am_red: #ff0000;
+	--am_sea_green: #04c3b4;
+
+	--am_transparent: transparent;
+
+	// Text Variations
+	--am_regular_text: #14191f;
+	--am_dark_text: #14191f;
+	--am_white_text: #f7f7f7;
+	--am_light_text: #606364;
+
+	// fixed variable Colors
+
+	--am_success: #198754;
+	--am_info: #0dcaf0;
+	--am_warning: #ffc107;
+	--am_danger: #dc3545;
+	--am_light: #f8f9fa;
+	--am_dark: #212529;
+
+
+	--am_signal: #d14b3c;
+	--am_signal_bg: #fbede9;
+
+
+	--am_color_background: #ffffff;
+	--am_color_on_background: #14191f;
+
+	// Borders
+	--am_border: #30353c;
+	--am_border_1: #545454;
+	--am_border_2: #adadad;
+	--am_border_3: #e0e0e0;
+	--am_border_4: #14191f;
+	--am_border_5: rgb(0, 0, 0,0.2);
+
+
+	/* -------------------------------------------------
+	>> Base Colors
+	>> Base colors are used for essential elements
+	such as the logo, tables, links, blockquote,
+	default buttons styling and this should't conflict
+	with theme colors
+	------------------------------------------------- */
+
+	// text Colors
+	--am_body_color: var(--am_color_on_background);
+	--am_body_bg: var(--am_color_background);
+	--am_text_strong: var(--am_black);
+
+	--am_dark_text: var(--am_black);
+	--am_white_text: var(--am_white);
+
+	--am_highlight_color: var(--am_color_on_primary);
+	--am_highlight_bg: var(--am_color_primary);
+
+	--am_caption: var(--am_black_2);
+
+	// Headings
+
+	--am_heading_color: inherit;
+	--am_heading_link_color: var(--am_dark_text);
+	--am_heading_link_color_hover: var(--am_dark_text);
+
+	// link colors
+	--am_link_color: var(--am_color_primary);
+	--am_link_color_hover: var(--am_color_primary);
+	--am_link_border_color: var(--am_color_primary);
+	--am_link_border_color_hover: transparent;
+
+	// lists Colors
+	--am_list_ul_marker_color: var(--am_color_primary);
+	--am_list_ol_marker_color: var(--am_color_primary);
+	--am_list_marker_bgcolor: var(--am_border_4);
+
+
+	// Blockquote Colors
+	--am_blockquote_color: var(--am_regular_text);
+	--am_blockquote_border_color: var(--am_regular_text);
+	--am_quote_color: var(--am_regular_text);
+	--am_blockqoute_cite_color: var(--am_light_text);
+
+	// Tables Colors
+	--am_table_border_color: var(--am_border);
+	--am_table_head_border_color: var(--am_dark_text);
+	--am_table_foot_border_color: var(--am_dark_text);
+
+	// Formating
+	--am_strong_color: var(--am_regular_text);
+	--am_underline_border_color: var(--am_regular_text);
+	--am_abbr_border_color: var(--am_regular_text);
+	--am_delete_color: var(--am_danger);
+	--am_insert_color: var(--am_success);
+	--am_insert_border_color: var(--am_success);
+
+	// Code
+	--am_code_color: var(--am_white_text);
+	--am_code_bgcolor: var(--am_dark_text);
+	--am_pre_color: var(--am_white_text);
+	--am_pre_bgcolor: var(--am_dark_text);
+	--am_mark_bgcolor: var(--am_dark_text);
+	--am_mark_color: var(--am_white_text);
+
+	// Graphical elements
+	--am_hr_color: var(--am_border_2);
+
+	// Form Fields
+
+	--am_input_color: var(--am_regular_text);
+	--am_input_bg: var(--am_light_field_bg);
+	--am_input_border_color: var(--am_border);
+
+	--am_input_focus_color: var(--am_black);
+	--am_input_focus_bgcolor: var(--am_white);
+	--am_input_focus_border_color: var(--am_border_2);
+
+	--am_disabled_input_bgcolor: var(--am_field_bg);
+	--am_disabled_input_border_color: var(--am_border_1);
+
+	--am_placeholder_color: var(--am_light_text);
+	--am_range_track_bgcolor: var(--am_field_bg);
+	--am_range_thumb_bgcolor: var(--am_color_primary);
+	--am_color_field_border_color: var(--am_border);
+	--am_color_field_bgcolor: var(--am_field_bg);
+	--am_radio_color: var(--am_regular_text);
+	--am_radio_border_color: var(--am_border);
+	--am_radio_bgcolor: var(--am_field_bg);
+	--am_radio_after_bgcolor: var(--am_color_primary);
+	--am_checkbox_color: var(--am_regular_text);
+	--am_checkbox_border_color: var(--am_border);
+	--am_checkbox_bgcolor: var(--am_field_bg);
+	--am_checkbox_after_bgcolor: var(--am_color_primary);
+	--am_progress_bgcolor: var(--am_field_bg);
+	--am_progress_value_bgcolor: var(--am_color_primary);
+	--am_meter_bgcolor: var(--am_field_bg);
+	--am_meter_value_bgcolor: var(--am_color_primary);
+
+	// Button
+	--am_button_color: var(--am_white_text);
+	--am_button_bgcolor: var(--am_color_primary);
+	--am_button_color_hover: var(--am_dark_text);
+	--am_button_bgcolor_hover: var(--am_transparent);
+	--am_button_border_color: var(--am_color_primary);
+	--am_button_border_color_hover: var(--am_border);
+
+	--am_reset_button_bgcolor: var(--am_button_bgcolor);
+	--am_reset_button_color: var(--am_white_text);
+
+	// Buttons layer
+	--am_theme_btn_color: var(--am_button_color);
+	--am_theme_btn_bgcolor: var(--am_button_bgcolor);
+	--am_theme_btn_color_hover: var(--am_button_color_hover);
+	--am_theme_btn_bgcolor_hover: var(--am_button_bgcolor_hover);
+	--am_theme_btn_border_color: var(--am_button_border_color);
+	--am_theme_btn_border_color_hover: var(--am_button_border_color_hover);
+
+	// --am_wp_btn_color: var(--am_white_text);
+	// --am_wp_btn_bgcolor: var(--am_button_bg);
+
+	// --am_wp_outline_btn_color: var(--am_white_text);
+	// --am_wp_outline_btn_border_color: var(--am_dark_text);
+	// --am_wp_outline_btn_bgcolor: var(--am_dark_text);
+
+	// Date Picker
+	--am_datepicker_bg_color: var(--am_gray);
+	--am_datepicker_select_bgcolor: var(--am_white);
+	--am_datepicker_link_color: var(--am_color_secondary);
+	--am_datepicker_link_active_color: var(--am_color_primary);
+	--am_datepicker_calendar: var(--am_white_text);
+	--am_datepicker_th_bgcolor: var(--am_border_1);
+	--am_datepicker_even_tr_td_bgcolor: var(--am_border_1);
+	--am_datepicker_border_color: var(--am_border_1);
+	--am_datepicker_date_color: var(--am_dark_text);
+
+	// Errors & Confirmation
+	--am_valiation_error_bg_color: var(--am_danger_bg);
+	--am_valiation_message_color: var(--am_danger);
+	--am_error_field_border_color: var(--am_danger);
+	--am_valiation_error_color: var(--am_danger);
+	--am_confirmation_message_bgcolor: var(--am_success_bg);
+	--am_confirmation_message_color: var(--am_dark_text);
+	--am_confirmation_message_border_color: var(--am_danger);
+	--am_required_text_color: var(--am_danger);
+	--am_invalid_error_border_color: var(--am_danger);
+	--am_hubspot_error_label_color: var(--am_danger);
+	--am_hubspot_required_color: var(--am_danger);
+	--am_fileupload_rule_color: var(--am_light_text);
+	--am_error_menu_color: var(--am_dark_text);
+
+	// Accessibility
+	--am_acc_btn_color: var(--am_white_text);
+	--am_acc_btn_bgcolor: var(--am_button_bg);
+	--am_acc_btn_shadow: var(--am_danger);
+	--am_acc_outline: var(--am_black);
+
+	// Comments Box
+	--am_comments_reply_btn_bgcolor: var(--am_button_bg);
+	--am_comments_reply_btn_color: var(--am_white_text);
+	--am_comments_reply_btn_bgcolor_hover: var(--am_button_bg_hover);
+	--am_comments_reply_btn_color_hover: var(--am_white_text);
+	--am_comment_meta_color: var(--am_dark_text);
+	--am_comment_metadata_color: var(--am_light_text);
+	--am_comments_list_border_color: var(--am_border);
+	--am_widget_comments_meta_color: var(--am_light_text);
+
+	// Pagination
+	--am_pagination_bgcolor: var(--am_blue_1);
+	--am_pagination_color: var(--am_white);
+	--am_pagination_color_hover: var(--am_white);
+	--am_pagination_bgcolor_hover: var(--am_border_1);
+	--am_pagination_bgcolor_current: var(--am_border_1);
+	--am_pagination_color_current: var(--am_white);
+	--am_pagination_first_bgcolor: var(--am_border_1);
+	--am_pagination_first_color: var(--am_dark_text);
+	--am_pagination_border: var(--am_transparent);
+
+	// Widgets
+	--am_widget_latest_post_meta_color: var(--am_danger);
+	--am_widget_rss_feed_meta_color: var(--am_danger);
+	--am_widget_search_button_color: var(--am_pure_black);
+	--am_wp_table_block_stripe_bg_color: var(--am_gray);
+
+	// Breadcrumbs
+	--am_breadcrumb_color: var(--am_pure_black);
+	--am_breadcrumb_link_color: var(--am_pure_black);
+	--am_breadcrumb_border_color: transparent;
+	--am_breadcrumb_border_color_hover: var(--am_pure_black);
+	--am_breadcrumb_span_color: var(--am_pure_black);
+
+	// Header
+	--am_header_bgcolor: var(--am_transparent);
+	--am_header_color: var(--am_black);
+	--am_header_color_hover: var(--am_black);
+	--am_header_bgcolor_sticky: var(--am_white);
+	--am_header_nav_border_color: var(--am_dark_text);
+
+	--am_header_submenu_bgcolor: var(--am_gray);
+	--am_header_submenu_color: var(--am_header_color);
+	--am_header_submenu_color_hover: var(--am_header_color_hover);
+
+	--am_header_mobile_color: var(--am_dark_text);
+	--am_header_mobile_submenu_color: var(--am_dark_text);
+
+	--am_nav_overlay_bgcolor: var(--am_white);
+	--am_mobile_nav_icon_bgcolor: var(--am_dark_text);
+	--am_abbr_border: var(--am_dark_text);
+
+	// Top Bar
+	--am_topbar_bgcolor: var(--am_color_primary);
+	--am_topbar_color: var(--am_white);
+	--am_topbar_link_color: var(--am_white);
+
+
+	// Footer
+	--am_footer_bgcolor: var(--am_dark_text);
+	--am_footer_color: var(--am_white_text);
+	--am_footer_color_hover: var(--am_white_text);
+	--am_f_nav_color: var(--am_footer_color);
+	--am_f_nav_color_hover: var(--am_footer_color_hover);
+	--am_f_nav_border_color: var(--am_footer_color);
+	--am_f_nav_border_color_hover: var(--am_footer_color_hover);
+
+	--am_copyright_color: var(--am_white_text);
+	--am_legal_nav_color: var(--am_white_text);
+	--am_legal_nav_border_color: var(--am_white_text);
+	--am_legal_nav_border_color_hover: var(--am_white_text);
+	--am_legal_text_color: var(--am_white_text);
+
+	// Containers
+	--am_ctn_red: var(--am_red);
+	--am_ctn_black: var(--am_black);
+	--am_ctn_sea_green: var(--am_sea_green);
+
+	// style variations
+	--am_style_bg: #821212;
+	--am_style_text: #000000;
+	--am_style_link: #000000;
+	--am_style_button: #121f6b;
+}

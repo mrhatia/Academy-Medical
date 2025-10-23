@@ -1,0 +1,45 @@
+/****
+ *
+ * containers
+ *
+****/
+
+
+.wrapper {
+	max-width: 1300px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ctn-980 {
+	.wrapper {
+		max-width: 980px;
+	}
+}
+
+.ctn-760 {
+	.wrapper {
+		max-width: 760px;
+	}
+}
+
+.ctn-full-width {
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+
+.ctn-navy {
+	background-color: var(--wp--preset--color--navy);
+}
+.ctn-light-blue {
+	background: linear-gradient(135deg, #dfebf9 0%, #ffffff 100%);
+}
+.ctn-light-gray {
+	background-color: #f8f8f8;}
+.ctn-blue{
+	background-color: var(--am_topbar_bgcolor);
+	color: var(--am_white);
+}
