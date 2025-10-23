@@ -68,9 +68,70 @@ get_header();
 </div>
 
 				</div>
+				<section class="numbers">
+					<div class="wrapper">
+						<div class="numbers-section full-width-container">
+
+							<div class="numbers-items stats-items four-columns">
+
+								<div class="item item-1 d-flex flex-column justify-content-between">
+									<p class="label">Improved Efficiency</p>
+									<div class="numbers-heading">
+										<h3 class=" heading-1 stats-number">93%</h3>
+										<p>Orders processed within 24 hours</p>
+									</div>
+								</div>
+								<div class="item item-2 d-flex flex-column justify-content-between">
+									<p>Faster Turnaround</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">10 days</h3>
+										<p>Average government AR collection</p>
+									</div>
+								</div>
+								<div class="item item-3 d-flex flex-column justify-content-between">
+									<p>Accelerated Payments</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">24 hours</h3>
+										<p>Vendor payments completed</p>
+									</div>
+								</div>
+								<div class="item item-4 d-flex flex-column justify-content-between">
+									<p>Revenue Growth</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">200M+</h3>
+										<p>Annual sales across partners</p>
+									</div>
+								</div>
+								<!-- <div class="item item-5 d-flex flex-column justify-content-between">
+									<p>Supplied in Medical Equipment</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">1.3B</h3>
+										<p>Supplied in Medical Equipment</p>
+									</div>
+								</div>
+								<div class="item item-6 d-flex flex-column justify-content-between">
+									<p>Federal Facilities Supported</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">700+</h3>
+										<p>Serving nationwide</p>
+									</div>
+								</div>
+								<div class="item item-7 d-flex flex-column justify-content-between">
+									<p>Equipment & Supply Items</p>
+									<div class="numbers-heading">
+										<h3 class="heading-1 stats-number">70,000+</h3>
+										<p>In active distribution</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+				</section>
 			</section>
-			<div class="am-s128"></div>
-			<section class="numbers">
+			<!-- <div class="am-s128"></div> -->
+			<!-- <section class="numbers">
 				<div class="wrapper">
 					<div class="numbers-section full-width-container">
 
@@ -117,7 +178,7 @@ get_header();
 				</div>
 				</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- <div class="am-s236"></div> -->
 			<div class="am-s128"></div>
 			<section class="full-width-container over-flow-hidden">
