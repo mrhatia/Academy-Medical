@@ -5290,7 +5290,7 @@ section:has(.info-slider):not(:has(section .info-slider)) {
   width: 20px;
   height: 20px;
   background-color: var(--am_color_primary);
-  transform: rotate(-45deg);
+  border-radius: 50%;
 }
 .who-we-are-single-item:nth-child(n+2) {
   margin-top: 30px;
@@ -5465,7 +5465,6 @@ ul.slick-dots li button:hover {
 .event-teaser__list a {
   border-bottom: 0;
   position: relative;
-  transition: all 0.3s ease-in-out;
 }
 .event-teaser__list a:hover .event-teaser__image img {
   transform: scale(1.02);
@@ -5503,7 +5502,6 @@ ul.slick-dots li button:hover {
   position: absolute;
   right: 5%;
   bottom: 5%;
-  transition: all 0.3s ease-in-out;
 }
 .event-teaser__head h3 {
   margin: 10px auto;
