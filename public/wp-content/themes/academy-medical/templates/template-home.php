@@ -22,15 +22,13 @@ get_header();
 				<div class="hero-home">
   <div class="hero-home-inner">
     <div class="hero-home-content">
-      <h1>Simplifying the federal procurement process.</h1>
+      <h1>Simplifying Federal Procurement. Empowering Innovation.</h1>
       <h2>
         As a service-disabled veteran-owned business, Academy Medical makes the complex federal
         procurement process easier for both suppliers and federal agencies.
       </h2>
       <p>
-        Whether you're a supplier looking to sell or a federal agency ready to purchase,
-        Academy Medical helps simplify the journey. We connect the right solutions with the right
-        partners, making the procurement process smooth, efficient, and tailored to your needs.
+        Academy Medical is a trusted, veteran-led partner connecting innovative medical manufacturers and suppliers to equip federal healthcare facilities with cutting edge medical solutions that provide care to patients and the heroes who serve our nation.
       </p>
 
       <form class="selector-form">
@@ -71,49 +69,48 @@ get_header();
 
 				</div>
 			</section>
-			<div class="am-s236"></div>
-			<section>
+			<div class="am-s128"></div>
+			<section class="numbers">
 				<div class="wrapper">
-					<div class="numbers-section">
-						<div class="number-heading">
-							<h2>Trust, measured <span>in results</span></h2>
-						</div>
-						<div class="numbers-items stats-items">
+					<div class="numbers-section full-width-container">
+
+						<div class="numbers-items stats-items four-columns">
 
 							<div class="item item-1">
-								<h3 class="heading-1 stats-number">200+</h3>
-								<p>Supplier Partnerships</p>
-								<div class="number-item-btn d-flex justify-content-between align-items-center">
-									<a href="#">rating</a>
-									<div class="arrow">
-									</div>
-								</div>
+								<p class="label">Improved Efficiency</p>
+
+								<h3 class=" heading-1 stats-number">93%</h3>
+								<p>Orders processed within 24 hours</p>
 							</div>
 							<div class="item item-2">
-								<h3 class="heading-1 stats-number">10,000+</h3>
-								<p>Products Available for Procurement</p>
-								<div class="number-item-btn d-flex justify-content-between align-items-center">
-									<a href="#">rating</a>
-									<div class="arrow">
-									</div>
-								</div>
+								<p>Faster Turnaround</p>
+								<h3 class="heading-1 stats-number">10 days</h3>
+								<p>Average government AR collection</p>
 							</div>
 							<div class="item item-3">
-								<h3 class="heading-1 stats-number">500M+</h3>
-								<p>Contract Value Secured</p>
-								<div class="number-item-btn d-flex justify-content-between align-items-center">
-									<a href="#">rating</a>
-									<div class="arrow"></div>
-								</div>
+								<p>Accelerated Payments</p>
+								<h3 class="heading-1 stats-number">24 hours</h3>
+								<p>Vendor payments completed</p>
 							</div>
 							<div class="item item-4">
-								<h3 class="heading-1 stats-number">100%</h3>
-								<p>Veteran-Owned and Operated</p>
-								<div class="number-item-btn d-flex justify-content-between align-items-center">
-									<a href="#">rating</a>
-									<div class="arrow">
-									</div>
-								</div>
+								<p>Revenue Growth</p>
+								<h3 class="heading-1 stats-number">200M+</h3>
+								<p>Annual sales across partners</p>
+							</div>
+							<div class="item item-5">
+								<p>Supplied in Medical Equipment</p>
+								<h3 class="heading-1 stats-number">1.3B</h3>
+								<p>Supplied in Medical Equipment</p>
+							</div>
+							<div class="item item-6">
+								<p>Federal Facilities Supported</p>
+								<h3 class="heading-1 stats-number">700+</h3>
+								<p>Serving nationwide</p>
+							</div>
+							<div class="item item-7">
+								<p>Equipment & Supply Items</p>
+								<h3 class="heading-1 stats-number">70,000+</h3>
+								<p>In active distribution</p>
 							</div>
 						</div>
 					</div>
@@ -121,94 +118,81 @@ get_header();
 				</div>
 				</div>
 			</section>
-			<div class="am-s236"></div>
+			<!-- <div class="am-s236"></div> -->
 			<div class="am-s128"></div>
 			<section class="full-width-container over-flow-hidden">
 				<div class="wrapper">
 					<div>
 						<div class="event-teaser">
-							<h2 class="heading-2">Why Suppliers Love Partnering with Academy Medical
-							</h2>
-							<div class="event-teaser__list">
-								<a href="#" class="event-teaser__item">
+							<div class="event-teaser-heading">
+								<h2 class="heading-2">Driving Innovation Across the System
+								</h2>
+								<p>Academy Medical connects government agencies, manufacturers, and distributors to
+									streamline the federal healthcare
+									supply chain with speed, compliance, and veteran-led precision.</p>
+							</div>
+							<div class="event-teaser__list d-flex justify-content-between gap-30">
+								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image">
-											<?php
+										<div class="event-teaser__image-background">
+											<div class="event-teaser__image">
+												<?php
 												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
 											?>
-										</div>
-										<div
-											class="event-teaser__head d-flex justify-content-between align-items-center">
-											<div class="d-flex align-items-center gap-20">
-												<div class="outer-circle">
-													<div class="inner-circle">01</div>
-												</div>
-												<h3>Reach New Revenue Streams</h3>
 											</div>
-											<p>By registering with Academy Medical, your products gain visibility among
-												federal and state buyers, expanding your
-												potential market.</p>
+										</div>
+										<div class="event-teaser__head">
+											<h3>Government</h3>
+											<p>We partner with federal health systems including VA hospitals and DoD
+												medical
+												centers to simplify procurement,
+												accelerate contracting, and enhance care delivery through smarter,
+												compliant
+												solutions that ensure critical resources
+												reach patients on time.</p>
+											<button class="event-teaser-btn">Learn More</button>
+
 										</div>
 									</div>
 								</a>
-								<a href="#" class="event-teaser__item">
+								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image">
-											<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Orthopedic.webp">';
+										<div class="event-teaser__image-background">
+											<div class="event-teaser__image">
+												<?php
+												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
 											?>
-										</div>
-										<div
-											class="event-teaser__head d-flex justify-content-between align-items-center">
-											<div class="d-flex align-items-center gap-20">
-												<div class="outer-circle">
-													<div class="inner-circle">02</div>
-												</div>
-												<h3>We Handle the Red Tape</h3>
 											</div>
-											<p>Our veteran-owned status and procurement expertise streamline regulatory
-												requirements and qualify your business quickly.</p>
+										</div>
+										<div class="event-teaser__head">
+											<h3>Manufacturer</h3>
+											<p>We help innovative manufacturers unlock VA and DoD opportunities by
+												simplifying contracts, managing pricing and
+												compliance, and aligning with federal procurement standards. Our
+												veteran-led
+												expertise turns complex government
+												requirements into scalable opportunities for growth across nationwide
+												healthcare systems.</p>
+											<button class="event-teaser-btn">Learn More</button>
 										</div>
 									</div>
 								</a>
-								<a href="#" class="event-teaser__item">
+								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image">
-											<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Surgical.webp">';
+										<div class="event-teaser__image-background">
+											<div class="event-teaser__image">
+												<?php
+												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
 											?>
-										</div>
-										<div
-											class="event-teaser__head d-flex justify-content-between align-items-center">
-											<div class="d-flex align-items-center gap-20">
-												<div class="outer-circle">
-													<div class="inner-circle">03</div>
-												</div>
-												<h3>SDVOSB Leverage</h3>
 											</div>
-											<p>Benefit from our preferred status to secure contracts faster and reduce
-												procurement costs.
-											</p>
 										</div>
-									</div>
-								</a>
-								<a href="#" class="event-teaser__item">
-									<div class="event-teaser__inner">
-										<div class="event-teaser__image">
-											<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Dental.webp">';
-											?>
-										</div>
-										<div
-											class="event-teaser__head d-flex justify-content-between align-items-center">
-											<div class="d-flex align-items-center gap-20">
-												<div class="outer-circle">
-													<div class="inner-circle">04</div>
-												</div>
-												<h3>Personalized Onboarding and Support</h3>
-											</div>
-											<p>Our procurement specialists guide you through every step, answer
-												compliance questions, and ensure you're contract-ready.</p>
+										<div class="event-teaser__head">
+											<h3>Supplier & Distributor</h3>
+											<p>We help distributors meet government standards, streamline fulfillment,
+												and
+												connect with VA and DoD healthcare systems
+												with confidence and compliance.</p>
+											<button class="event-teaser-btn">Learn More</button>
 										</div>
 									</div>
 								</a>
@@ -218,13 +202,14 @@ get_header();
 					</div>
 				</div>
 			</section>
+
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
 					<div class="who-we-are">
 						<div class="who-we-are-content">
 							<h2>
-								Why Federal and Government Agencies Trust Academy Medical
+								How We Help Manufacturers and Suppliers Grow Their Revenue
 							</h2>
 							<p>TrillaMed, founded by U.S. Army Airborne Ranger Veterans, is a Service-Disabled
 								Veteran-Owned Small Business
@@ -233,41 +218,36 @@ get_header();
 							<div class="who-we-are-items">
 								<div class="who-we-are-single-item">
 									<h3 class="heading-3">
-										Access to Trusted and certified Suppliers
+										Access Federal Opportunities
 									</h3>
 									<p>
-										Gain easy access to a network of qualified suppliers who meet your procurement
-										needs.
+										We connect your business with VA, DoD, and other government healthcare systems, expanding your market reach and unlocking reliable revenue streams.
 									</p>
 								</div>
 								<div class="who-we-are-single-item">
 									<h3 class="heading-3">
-										Streamlined Procurement Process
+										Simplify Contracts and Compliance
 									</h3>
 									<p>
-										Our team navigates complex procurement processes, ensuring that you meet
-										deadlines and compliance requirements without
-										delays.
+										Our veteran-led team manages contract vehicles, pricing submissions, and federal regulations, turning complex procurement processes into clear and compliant growth pathways.
+
 									</p>
 								</div>
 								<div class="who-we-are-single-item">
 									<h3 class="heading-3">
-										Expertise in Federal and State Regulations
+										Leverage SDVOSB Advantage
 									</h3>
 									<p>
-										We leverage our experience and status to quickly resolve regulatory challenges,
-										allowing your agency to focus on its
-										mission
+										As a service-disabled veteran-owned business, we help you benefit from preferred contracting status to secure opportunities faster and more efficiently.
 									</p>
 								</div>
 								<div class="who-we-are-single-item">
 									<h3 class="heading-3">
-										Comprehensive Support for Every Step
+										End-to-End Partnership and Support
+
 									</h3>
 									<p>
-										From product sourcing to final delivery, we provide ongoing support to ensure
-										your procurement is seamless and
-										efficient.
+										From registration to fulfillment, our specialists guide you every step of the way, ensuring compliance, accelerating onboarding, and helping your organization scale with confidence.
 									</p>
 								</div>
 							</div>
@@ -354,11 +334,7 @@ get_header();
 					<section class="category-teaser">
 						<div class="category-header">
 							<h2 class="title">Industry Leading Suppliers</h2>
-							<p class="text">Through our expansive network of regional to global suppliers, we have
-								provided federal hospitals, military bases, and
-								government facilities with the tools, resources, and solutions necessary to conquer each
-								day. Through our partnerships,
-								we empower our purchasers with the following products:</p>
+							<p class="text">Through our expansive network of regional and global suppliers, we have provided federal hospitals, military bases, and government facilities with the tools, resources, and solutions necessary to conquer each day. Through our partnerships, we empower our purchasers with the following products:</p>
 						</div>
 
 						<div class="category-slider four-columns">
@@ -378,7 +354,7 @@ get_header();
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Orthopedic.webp">';
 							?>
 								</div>
-								<span>Implants Biological & Non-Biological</span>
+								<span>Implants (Biological & Non-Biological)</span>
 							</div>
 
 							<div class="category-item" data-category="dental">
@@ -388,7 +364,7 @@ get_header();
 							?>
 
 								</div>
-								<span>Personal Protective Equipment(PPE)</span>
+								<span>Personal Protective Equipment (PPE)</span>
 							</div>
 
 							<div class="category-item" data-category="surgical">
@@ -406,12 +382,39 @@ get_header();
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Orthopedic.webp">';
 								?>
 								</div>
-								<span>Wound Care</span>
+								<span>Soft Goods & Wound Care</span>
 							</div>
 
 						</div>
 					</section>
 
+				</div>
+			</section>
+			<div class="am-s128"></div>
+			<section>
+				<div class="wrapper">
+					<div class="certification-compliance d-flex justify-content-between align-items-center flex-wrap">
+						<div class="certification-compliance-content">
+							<h2 class="heading-1">
+								Certifications & Compliance
+							</h2>
+							<h3 class="heading-2">Committed to Quality. Built on Trust.</h3>
+							<p>At Academy Medical, certifications are more than symbols — they reflect our unwavering
+								commitment to excellence,
+								accountability, and reliability in every federal partnership.</p>
+							<p>As a verified Service-Disabled Veteran-Owned Small Business (SDVOSB), we uphold the
+								highest standards of compliance
+								across all federal healthcare networks, ensuring our partners and purchasers operate
+								with complete confidence.
+							</p>
+
+						</div>
+						<div class="certification-compliance-image image-cover">
+							<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/who-we-are.webp">';
+										?>
+						</div>
+					</div>
 				</div>
 			</section>
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
