@@ -31,7 +31,8 @@
 		width: 20px;
 		height: 20px;
 		background-color: var(--am_color_primary);
-		transform: rotate(45deg);
+		// transform: rotate(45deg);
+		border-radius: 50%;
 
 	}
 	&:nth-child(n + 2){

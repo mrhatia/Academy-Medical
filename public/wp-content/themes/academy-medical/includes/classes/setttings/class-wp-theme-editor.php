@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Editor;
+namespace AcademyMedical\Editor;
 
 /**
  * Template Class For Acf Settings
@@ -18,7 +18,7 @@ namespace AcademyMedical \Editor;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Editor {
+class Academy_Medical_Editor {
 	/**
 	 * Define class Constructor
 	 **/
@@ -49,4 +49,4 @@ class Academy_Medical _Editor {
 	}
 
 }
-new Academy_Medical _Editor();
+new Academy_Medical_Editor();

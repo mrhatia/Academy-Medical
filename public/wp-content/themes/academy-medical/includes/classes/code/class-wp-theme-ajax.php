@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Ajax;
+namespace AcademyMedical\Ajax;
 
 /**
  * Template Class For Ajax
@@ -18,7 +18,7 @@ namespace AcademyMedical \Ajax;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Ajax {
+class Academy_Medical_Ajax {
 	/**
 	 * Define class Constructor
 	 **/
@@ -37,4 +37,4 @@ class Academy_Medical _Ajax {
 	}
 
 }
-new Academy_Medical _Ajax();
+new Academy_Medical_Ajax();

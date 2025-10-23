@@ -8,9 +8,9 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Boilerplate;
+namespace AcademyMedical\Boilerplate;
 
-use AcademyMedical ;
+use AcademyMedical;
 /**
  * Template Class For Custom
  *
@@ -19,7 +19,7 @@ use AcademyMedical ;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Boilerplate {
+class Academy_Medical_Boilerplate {
 
 	/**
 	 * Block Render Boilerplate.
@@ -28,12 +28,12 @@ class Academy_Medical _Boilerplate {
 	 * @param mixed $callback_function callback function.
 	 */
 	public static function block( $block, $callback_function ) {
-		list( $bst_block_id, $bst_block_fields,$am_option_fields ) = AcademyMedical ::defaults( $block['id'] );
+		list( $bst_block_id, $bst_block_fields,$am_option_fields ) = AcademyMedical::defaults( $block['id'] );
 
 		// Set the block name for it's ID & class from it's file name.
 		$bst_block_name   = $block['name'];
 		$bst_block_name   = str_replace( 'acf/', '', $bst_block_name );
-		$bst_block_styles = AcademyMedical ::convert_to_css( $block );
+		$bst_block_styles = AcademyMedical::convert_to_css( $block );
 		// Set the preview thumbnail for this block for gutenberg editor view.
 		if ( isset( $block['data']['preview'] ) && 'preview' === $block['mode'] && isset( $block['data']['preview'] ) ) {
 			$version = filemtime( get_template_directory() . '/blocks/' . $bst_block_name . '/' . $block['data']['preview'] );
@@ -58,9 +58,9 @@ class Academy_Medical _Boilerplate {
 		echo '<div id="' . esc_html( $bst_block_html_id ) . '" class="' . esc_html( $am_var_align_class . ' ' . $am_var_class_name . ' ' . $am_var_name ) . ' block-' . esc_html( $bst_block_name ) . '" style="' . esc_html( $bst_block_styles ) . '"> ';
 
 		$spacers = self::get_spacer( $bst_block_fields );
-		AcademyMedical ::the_spacer( $spacers, 'top' );
+		AcademyMedical::the_spacer( $spacers, 'top' );
 		$callback_function( $bst_block_id, $bst_block_name, $bst_block_fields, $am_option_fields );
-		AcademyMedical ::the_spacer( $spacers, 'bottom' );
+		AcademyMedical::the_spacer( $spacers, 'bottom' );
 		echo '</div>';
 		wp_enqueue_script( 'wp-theme-' . str_replace( 'acf-', '', $bst_block_name ) );
 	}
@@ -358,7 +358,7 @@ class Academy_Medical _Boilerplate {
 					$query->the_post();
 					$am_var_post_id = get_the_ID();
 
-					list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults( $am_var_post_id );
+					list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults( $am_var_post_id );
 					// Include specific template for the content.
 					if ( isset( $template ) ) {
 						get_template_part( 'partials/content', $template );
@@ -373,7 +373,7 @@ class Academy_Medical _Boilerplate {
 			echo '</div>';
 			if ( $query->have_posts() && $query->max_num_pages > 1 && $pagination ) {
 				echo '<div class="ts-40"></div><div class="center-align">';
-				AcademyMedical ::$pagination_fun( $query->max_num_pages );
+				AcademyMedical::$pagination_fun( $query->max_num_pages );
 				echo '</div>';
 			}
 			return $query;
@@ -404,4 +404,4 @@ class Academy_Medical _Boilerplate {
 }
 
 
-class_alias( 'AcademyMedical \Boilerplate\Academy_Medical _Boilerplate', 'Boilerplate' );
+class_alias( 'AcademyMedical\Boilerplate\Academy_Medical_Boilerplate', 'Boilerplate' );

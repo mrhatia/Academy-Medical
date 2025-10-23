@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Walker;
+namespace AcademyMedical\Walker;
 
 use \Walker_Nav_Menu;
 
@@ -21,7 +21,7 @@ use \Walker_Nav_Menu;
  * @category Walker_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Walker_Nav extends \Walker_Nav_Menu {
+class Academy_Medical_Walker_Nav extends \Walker_Nav_Menu {
 
 	/**
 	 * Starts the list before the elements are added.

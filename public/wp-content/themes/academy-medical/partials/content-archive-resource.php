@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-box column' ); ?>>

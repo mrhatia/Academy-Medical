@@ -12,7 +12,7 @@ the_content(
 	sprintf(
 		wp_kses(
 		/* translators: %s: Name of current post. Only visible to screen readers */
-			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'AcademyMedical _td' ),
+			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'AcademyMedical_td' ),
 			array(
 				'span' => array(
 					'class' => array(),
@@ -24,7 +24,7 @@ the_content(
 );
 wp_link_pages(
 	array(
-		'before' => '<div class="page-links">' . __( 'Pages:', 'AcademyMedical _td' ),
+		'before' => '<div class="page-links">' . __( 'Pages:', 'AcademyMedical_td' ),
 		'after'  => '</div>',
 	)
 );

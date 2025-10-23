@@ -24,13 +24,13 @@
 	},
 	"Translation function": {
 		"prefix": "translationFun",
-		"body": ["esc_html_e( '${1:String to translate}', 'AcademyMedical _td' );"],
+		"body": ["esc_html_e( '${1:String to translate}', 'AcademyMedical_td' );"],
 		"description": "inserts code for WordPress translation in HTML document."
 	},
 	"Translation function for HTML": {
 		"prefix": "phpTranslationFun",
 		"body": [
-			"<?php esc_html_e( '${1:String to translate}', 'AcademyMedical _td' ); ?>"
+			"<?php esc_html_e( '${1:String to translate}', 'AcademyMedical_td' ); ?>"
 		],
 		"description": "inserts code for WordPress translation in HTML document."
 	},
@@ -174,7 +174,7 @@
 		"prefix": "globalVars",
 		"body": [
 			"// Global variables.\r",
-			"list( \\$am_var_post_id, \\$bst_fields, \\$am_option_fields ) = AcademyMedical ::defaults();"
+			"list( \\$am_var_post_id, \\$bst_fields, \\$am_option_fields ) = AcademyMedical::defaults();"
 		],
 		"description": "Use this to display the global variables being used in default theme."
 	},
@@ -217,8 +217,8 @@
 	"BlockTitle": {
 		"prefix": "BlockTitle",
 		"body": [
-			"<?php if ( AcademyMedical ::is_block_title( $${1:am_var_blkfetrdtxt_title} ) ) { ?>",
-			"\t<?php AcademyMedical ::the_block_title( $${1:am_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
+			"<?php if ( AcademyMedical::is_block_title( $${1:am_var_blkfetrdtxt_title} ) ) { ?>",
+			"\t<?php AcademyMedical::the_block_title( $${1:am_var_blkfetrdtxt_title}, 'heading-2' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display block title if it exists"
@@ -228,7 +228,7 @@
 		"prefix": "BlockButton",
 		"body": [
 			"<?php if ( $${1:am_var_blkfetrdtxt_btn} ) { ?>",
-			"\t<?php AcademyMedical ::button( $${1:am_var_blkfetrdtxt_btn}, 'button' ); ?>",
+			"\t<?php AcademyMedical::button( $${1:am_var_blkfetrdtxt_btn}, 'button' ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display a button if variable exists"
@@ -246,7 +246,7 @@
 		"prefix": "FeaturedImage",
 		"body": [
 			"<?php if ( $${1:am_var_img} ) { ?>",
-			"\t<?php AcademyMedical ::the_featured_image( $${1:am_var_img}, 1000 ); ?>",
+			"\t<?php AcademyMedical::the_featured_image( $${1:am_var_img}, 1000 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display featured image if variable exists"
@@ -256,7 +256,7 @@
 		"prefix": "AttachmentImage",
 		"body": [
 			"<?php if ( $${1:am_var_img} ) { ?>",
-			"\t<?php AcademyMedical ::the_attachment_image( $${1:am_var_img}, 500 ); ?>",
+			"\t<?php AcademyMedical::the_attachment_image( $${1:am_var_img}, 500 ); ?>",
 			"<?php } ?>"
 		],
 		"description": "Display Attachment  image if variable exists"

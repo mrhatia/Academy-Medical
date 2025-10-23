@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Acf\Acf_Fields;
+namespace AcademyMedical\Acf\Acf_Fields;
 
 /**
  * Template Class For Acf Block Title Field

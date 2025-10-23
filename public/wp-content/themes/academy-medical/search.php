@@ -11,19 +11,19 @@
 // Include header.
 get_header();
 
-list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical::defaults();
 
 ?>
 <section id="hero-section" class="hero-section hero-section-default">
 	<!-- Hero Start -->
 	<div class="hero-single search-hero">
 		<div class="wrapper">
-			<h1><?php echo esc_html_e( 'Search Results', 'AcademyMedical _td' ); ?></h1>
+			<h1><?php echo esc_html_e( 'Search Results', 'AcademyMedical_td' ); ?></h1>
 			<p>
 			<?php
 				printf(
 					/* translators: %s: search term. */
-					esc_html__( 'Results for "%s"', 'AcademyMedical _td' ),
+					esc_html__( 'Results for "%s"', 'AcademyMedical_td' ),
 					'<span class="search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>
@@ -38,7 +38,7 @@ list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defau
 
 <section id="page-section" class="page-section">
 	<div class="wrapper">
-		<div class="post-archive <?php AcademyMedical ::have_post_class( 'three-columns' ); ?>">
+		<div class="post-archive <?php AcademyMedical::have_post_class( 'three-columns' ); ?>">
 			<!-- Content Start -->
 			<?php
 			if ( have_posts() ) {
@@ -55,10 +55,10 @@ list( $am_var_post_id, $bst_fields, $am_option_fields ) = AcademyMedical ::defau
 			<div class="ts-40"></div>
 			<?php
 			if ( have_posts() ) {
-				if ( class_exists( 'AcademyMedical ' ) && $wp_query->max_num_pages > 1 ) {
+				if ( class_exists( 'AcademyMedical' ) && $wp_query->max_num_pages > 1 ) {
 					?>
 						<div class="center-align">
-							<?php AcademyMedical ::pagination( $wp_query->max_num_pages ); ?>
+							<?php AcademyMedical::pagination( $wp_query->max_num_pages ); ?>
 						</div>
 					<?php
 				}

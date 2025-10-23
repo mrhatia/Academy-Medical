@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Core;
+namespace AcademyMedical\Core;
 
 /**
  * Template Class For Ajax

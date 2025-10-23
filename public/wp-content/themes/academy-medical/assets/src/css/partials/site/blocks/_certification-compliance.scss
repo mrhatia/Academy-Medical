@@ -1,0 +1,19 @@
+.certification-compliance-image{
+	width: 42%;
+	img{
+		border-radius: 12px;
+	}
+}
+.certification-compliance-content{
+	width: 48%;
+	h2{
+		font-size: var(--am_font_size_48);
+	}
+	h3{
+		font-size: var(--am_font_size_26);
+		margin-bottom: 30px;
+	}
+	:nth-child(3){
+		margin-bottom: 10px;
+	}
+}

@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Walker\Settings;
+namespace AcademyMedical\Walker\Settings;
 
 use \Walker_Nav_Menu_Checklist;
 /**
@@ -19,7 +19,7 @@ use \Walker_Nav_Menu_Checklist;
  * @category Walker_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Walker_Settings {
+class Academy_Medical_Walker_Settings {
 	/**
 	 * Define class Constructor
 	 **/
@@ -142,7 +142,7 @@ class Academy_Medical _Walker_Settings {
 		return $menu_item;
 	}
 	/**
-	 * Init Academy_Medical _Walker_Acf_Settings Class.
+	 * Init Academy_Medical_Walker_Acf_Settings Class.
 	 *
 	 * @return void
 	 */
@@ -150,11 +150,11 @@ class Academy_Medical _Walker_Settings {
 
 		// Check function exists, then include and register the custom location type class.
 		if ( function_exists( 'acf_register_location_type' ) ) {
-			acf_register_location_type( '\AcademyMedical \Walker\Settings\ACF\Academy_Medical _Walker_Acf_Settings' );
+			acf_register_location_type( '\AcademyMedical\Walker\Settings\ACF\Academy_Medical_Walker_Acf_Settings' );
 			if ( is_multisite() ) {
-				acf_register_location_type( '\AcademyMedical \Walker\Settings\ACF\Academy_Medical _Acf_Multisite_Support' );
+				acf_register_location_type( '\AcademyMedical\Walker\Settings\ACF\Academy_Medical_Acf_Multisite_Support' );
 			}
 		}
 	}
 }
-new Academy_Medical _Walker_Settings();
+new Academy_Medical_Walker_Settings();

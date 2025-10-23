@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-namespace AcademyMedical \Blog;
+namespace AcademyMedical\Blog;
 
 /**
  * Template Class For Custom
@@ -18,7 +18,7 @@ namespace AcademyMedical \Blog;
  * @category Setting_Class
  * @package  Academy Medical
  */
-class Academy_Medical _Blog_Url {
+class Academy_Medical_Blog_Url {
 
 	/**
 	 * Define class Constructor
@@ -186,4 +186,4 @@ class Academy_Medical _Blog_Url {
 
 
 }
-new Academy_Medical _Blog_Url();
+new Academy_Medical_Blog_Url();

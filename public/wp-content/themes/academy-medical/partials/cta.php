@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-list( $am_var_post_id, $bst_fields, $am_option_fields, $bst_queried_object ) = AcademyMedical ::defaults();
+list( $am_var_post_id, $bst_fields, $am_option_fields, $bst_queried_object ) = AcademyMedical::defaults();
 
 $am_var_to_cta_headline = $am_option_fields['am_var_to_cta_headline'] ?? null;
 

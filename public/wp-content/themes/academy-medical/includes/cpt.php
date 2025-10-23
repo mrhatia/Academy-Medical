@@ -8,9 +8,9 @@
  * @since 1.0.0
  */
 
-use AcademyMedical \CPT\Academy_Medical _CPT;
+use AcademyMedical\CPT\Academy_Medical_CPT;
 
-new Academy_Medical _CPT(
+new Academy_Medical_CPT(
 	array(
 		'labels'       => array(
 			'singular_capital'   => 'Testimonial',
@@ -45,7 +45,7 @@ new Academy_Medical _CPT(
 		),
 	)
 );
-new Academy_Medical _CPT(
+new Academy_Medical_CPT(
 	array(
 		'labels'    => array(
 			'singular_capital'   => 'Team Member',
@@ -61,7 +61,7 @@ new Academy_Medical _CPT(
 		'public'    => false,
 	)
 );
-new Academy_Medical _CPT(
+new Academy_Medical_CPT(
 	array(
 		'labels'    => array(
 			'singular_capital'   => 'Resource',
