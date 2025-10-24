@@ -16,7 +16,7 @@
 		border: 2px solid var(--am_theme_btn_border_color);
 		transition: all 0.35s ease-in-out;
 		border-radius: 0;
-		@include font(axi, bold);
+		@include font(space, bold);
 		font-size: var(--am_font_size_16);
 
 		&:hover,

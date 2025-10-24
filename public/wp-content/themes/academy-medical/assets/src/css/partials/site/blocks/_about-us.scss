@@ -1,0 +1,15 @@
+.about-us-content{
+	width: 48%;
+	h2{
+		font-size: var(--am_font_size_48)
+	}
+	.about-us-btn{
+		row-gap: 10px;
+	}
+}
+.about-us-image{
+	width: 42%;
+	img{
+		border-radius: 12px;
+	}
+}

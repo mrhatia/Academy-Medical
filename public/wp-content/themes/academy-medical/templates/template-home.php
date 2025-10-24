@@ -17,19 +17,16 @@ get_header();
 ?>
 <section id="page-section" class="page-section">
 	<!-- Content Start -->
-			<section class="ctn-light-blue">
+			<section class=" hero-bg">
 				<div class="wrapper">
 				<div class="hero-home">
   <div class="hero-home-inner">
     <div class="hero-home-content">
       <h1>Simplifying Federal Procurement. Empowering Innovation.</h1>
-      <h2>
-        As a service-disabled veteran-owned business, Academy Medical makes the complex federal
-        procurement process easier for both suppliers and federal agencies.
-      </h2>
-      <p>
-        Academy Medical is a trusted, veteran-led partner connecting innovative medical manufacturers and suppliers to equip federal healthcare facilities with cutting edge medical solutions that provide care to patients and the heroes who serve our nation.
-      </p>
+     <p>
+		Academy Medical is a trusted, veteran-led partner connecting innovative medical manufacturers and suppliers to equip federal healthcare facilities with cutting edge medical solutions that provide care to patients and the heroes who serve our nation.
+	 </p>
+
 
       <form class="selector-form">
         <div class="single-field">
@@ -55,11 +52,6 @@ get_header();
       </form>
     </div>
 
-    <div class="hero-home-image">
-      <?php
-		echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/hero-image.webp">';
-
-      ?>
       <div class="shape-circle shape-1"></div>
       <div class="shape-circle shape-2"></div>
       <div class="shape-circle shape-3"></div>
@@ -68,138 +60,164 @@ get_header();
 </div>
 
 				</div>
-				<section class="numbers">
-					<div class="wrapper">
-						<div class="numbers-section full-width-container">
+				<div class="numbers-section full-width-container">
+<div class="splide stats-slider" id="stats-splide" aria-label="Statistics Slider">
+  <div class="splide__track">
+    <ul class="splide__list">
 
-							<div class="numbers-items stats-items four-columns">
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+        <p class="label">Improved Efficiency</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">93%</h3>
+          <p>Orders processed within 24 hours</p>
+        </div>
+      </li>
 
-								<div class="item item-1 d-flex flex-column justify-content-between">
-									<p class="label">Improved Efficiency</p>
-									<div class="numbers-heading">
-										<h3 class=" heading-1 stats-number">93%</h3>
-										<p>Orders processed within 24 hours</p>
-									</div>
-								</div>
-								<div class="item item-2 d-flex flex-column justify-content-between">
-									<p>Faster Turnaround</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">10 days</h3>
-										<p>Average government AR collection</p>
-									</div>
-								</div>
-								<div class="item item-3 d-flex flex-column justify-content-between">
-									<p>Accelerated Payments</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">24 hours</h3>
-										<p>Vendor payments completed</p>
-									</div>
-								</div>
-								<div class="item item-4 d-flex flex-column justify-content-between">
-									<p>Revenue Growth</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">200M+</h3>
-										<p>Annual sales across partners</p>
-									</div>
-								</div>
-								<!-- <div class="item item-5 d-flex flex-column justify-content-between">
-									<p>Supplied in Medical Equipment</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">1.3B</h3>
-										<p>Supplied in Medical Equipment</p>
-									</div>
-								</div>
-								<div class="item item-6 d-flex flex-column justify-content-between">
-									<p>Federal Facilities Supported</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">700+</h3>
-										<p>Serving nationwide</p>
-									</div>
-								</div>
-								<div class="item item-7 d-flex flex-column justify-content-between">
-									<p>Equipment & Supply Items</p>
-									<div class="numbers-heading">
-										<h3 class="heading-1 stats-number">70,000+</h3>
-										<p>In active distribution</p>
-									</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
-					</div>
-					</div>
-				</section>
+      <li class="splide__slide item item-2 d-flex flex-column justify-content-between">
+        <p>Faster Turnaround</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">10 days</h3>
+          <p>Average government AR collection</p>
+        </div>
+      </li>
+
+      <li class="splide__slide item item-3 d-flex flex-column justify-content-between">
+        <p>Accelerated Payments</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">24 hours</h3>
+          <p>Vendor payments completed</p>
+        </div>
+      </li>
+
+      <li class="splide__slide item item-4 d-flex flex-column justify-content-between">
+        <p>Revenue Growth</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">200M+</h3>
+          <p>Annual sales across partners</p>
+        </div>
+      </li>
+
+      <li class="splide__slide item item-5 d-flex flex-column justify-content-between">
+        <p>Supplied in Medical Equipment</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">1.3B</h3>
+          <p>Supplied in Medical Equipment</p>
+        </div>
+      </li>
+
+      <li class="splide__slide item item-6 d-flex flex-column justify-content-between">
+        <p>Federal Facilities Supported</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">700+</h3>
+          <p>Serving nationwide</p>
+        </div>
+      </li>
+
+      <li class="splide__slide item item-7 d-flex flex-column justify-content-between">
+        <p>Equipment & Supply Items</p>
+        <div class="numbers-heading">
+          <h3 class="heading-1 stats-number">70,000+</h3>
+          <p>In active distribution</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+	<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							new Splide('.stats-slider', {
+								type: 'loop',
+								perPage: 4,
+								gap: '2rem',
+								arrows: false,
+								pagination: false,
+								drag: 'free',
+								pauseOnHover: true,
+								focus: 'center',
+								autoScroll: {
+									speed: 1,
+									pauseOnHover: true,
+									pauseOnFocus: false,
+								},
+								breakpoints: {
+									1024: { perPage: 2 },
+									640: { perPage: 1 },
+								},
+							}).mount();
+						});
+					</script>
+
+			  </div>
+
 			</section>
-			<!-- <div class="am-s128"></div> -->
-			<!-- <section class="numbers">
+
+			<div class="am-s128"></div>
+					<section>
 				<div class="wrapper">
-					<div class="numbers-section full-width-container">
+					<div class="about-us d-flex justify-content-between flex-wrap">
+						<div class="about-us-content">
+							<div class="kicker">About Us</div>
+							<h2>Founded in Service. Mission Driven. Committed to Better Care.</h2>
+							<p>Academy Medical is a service-disabled veteran-owned business dedicated to redefining
+								healthcare for service members,
+								veterans, and federal healthcare facilities. We combine veteran discipline, federal
+								contracting expertise, and strong
+								supplier partnerships to deliver advanced technologies and medical solutions that
+								strengthen our nation’s healthcare
+								system.</p>
+							<p>For over a decade, Academy Medical has supported the mission of the United States
+								government. From VA hospitals to DoD
+								medical centers and other federal healthcare facilities, our solutions empower care
+								providers with innovative products,
+								faster access, and measurable performance. Every delivery reflects our commitment to
+								accuracy, transparency, and mission
+								success, ensuring innovation reaches those who need it most.</p>
+								<p class="last-p">
+									In federal procurement, reliability is everything. That is where we lead.
 
-						<div class="numbers-items stats-items four-columns">
+								</p>
+								<ul>
+														<li>
+					Where others navigate compliance, we master it.
+					</li>
+														<li>
+					Where others transact, we partner.
 
-							<div class="item item-1">
-								<p class="label">Improved Efficiency</p>
+									</li>
+								</ul>
+							<div class="about-us-btn d-flex flex-wrap">
+								<a href="#" class="trans-btn">Partner With Us</a>
+								<a href="#" class="button">Learn More About Us</a>
+							</div>
 
-								<h3 class=" heading-1 stats-number">93%</h3>
-								<p>Orders processed within 24 hours</p>
-							</div>
-							<div class="item item-2">
-								<p>Faster Turnaround</p>
-								<h3 class="heading-1 stats-number">10 days</h3>
-								<p>Average government AR collection</p>
-							</div>
-							<div class="item item-3">
-								<p>Accelerated Payments</p>
-								<h3 class="heading-1 stats-number">24 hours</h3>
-								<p>Vendor payments completed</p>
-							</div>
-							<div class="item item-4">
-								<p>Revenue Growth</p>
-								<h3 class="heading-1 stats-number">200M+</h3>
-								<p>Annual sales across partners</p>
-							</div>
-							<div class="item item-5">
-								<p>Supplied in Medical Equipment</p>
-								<h3 class="heading-1 stats-number">1.3B</h3>
-								<p>Supplied in Medical Equipment</p>
-							</div>
-							<div class="item item-6">
-								<p>Federal Facilities Supported</p>
-								<h3 class="heading-1 stats-number">700+</h3>
-								<p>Serving nationwide</p>
-							</div>
-							<div class="item item-7">
-								<p>Equipment & Supply Items</p>
-								<h3 class="heading-1 stats-number">70,000+</h3>
-								<p>In active distribution</p>
-							</div>
+						</div>
+						<div class="about-us-image image-cover">
+							<?php
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-1.webp">';
+							?>
 						</div>
 					</div>
 				</div>
-				</div>
-				</div>
-			</section> -->
-			<!-- <div class="am-s236"></div> -->
+			</section>
 			<div class="am-s128"></div>
 			<section class="full-width-container over-flow-hidden">
 				<div class="wrapper">
 					<div>
-						<div class="event-teaser">
-							<div class="event-teaser-heading">
-								<h2 class="heading-2">Driving Innovation Across the System
-								</h2>
-								<p>Academy Medical connects government agencies, manufacturers, and distributors to
-									streamline the federal healthcare
-									supply chain with speed, compliance, and veteran-led precision.</p>
-							</div>
-							<div class="event-teaser__list d-flex justify-content-between gap-30">
+					<div class="event-teaser">
+  <div class="event-teaser-heading">
+    <h2 class="heading-2">Driving Innovation Across the System</h2>
+    <p>Academy Medical connects government agencies, manufacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and veteran-led precision.</p>
+  </div>
+
+  <div class="event-teaser__list d-flex justify-content-between gap-30">
 								<a href="#">
 									<div class="event-teaser__inner">
 										<div class="event-teaser__image-background">
 											<div class="event-teaser__image">
 												<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
-											?>
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/goverment.webp">';
+							?>
 											</div>
 										</div>
 										<div class="event-teaser__head">
@@ -221,8 +239,8 @@ get_header();
 										<div class="event-teaser__image-background">
 											<div class="event-teaser__image">
 												<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
-											?>
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/manfucture.webp">';
+							?>
 											</div>
 										</div>
 										<div class="event-teaser__head">
@@ -242,9 +260,9 @@ get_header();
 									<div class="event-teaser__inner">
 										<div class="event-teaser__image-background">
 											<div class="event-teaser__image">
-												<?php
-												echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
-											?>
+											<?php
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/spplier.webp">';
+							?>
 											</div>
 										</div>
 										<div class="event-teaser__head">
@@ -259,7 +277,8 @@ get_header();
 								</a>
 
 							</div>
-						</div>
+</div>
+
 					</div>
 				</div>
 			</section>
@@ -315,15 +334,75 @@ get_header();
 						</div>
 						<div class="who-we-are-image image-cover">
 							<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/who-we-are.webp">';
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-3.webp">';
 							?>
 						</div>
 					</div>
 				</div>
 			</section>
 			<div class="am-s128"></div>
+				<section>
+				<div class="wrapper">
+					<div class="who-we-are">
+							<div class="who-we-are-image image-cover">
+							<?php
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-2.webp">';
+							?>
+						</div>
+						<div class="who-we-are-content">
+							<h2>
+								How We Support Federal Healthcare Facilities in Delivering Better Care
 
-			<section>
+							</h2>
+							<p>TrillaMed, founded by U.S. Army Airborne Ranger Veterans, is a Service-Disabled
+								Veteran-Owned Small Business
+								specializing in distributing medical.
+							</p>
+							<div class="who-we-are-items">
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+									Access to Trusted Suppliers
+									</h3>
+									<p>
+									 We provide federal healthcare facilities with direct access to a qualified network of compliant, certified suppliers who meet procurement and clinical standards.
+									</p>
+								</div>
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+									Streamline the Procurement Process
+									</h3>
+									<p>
+										 Our veteran-led team manages contracting, logistics, and compliance to eliminate inefficiencies and ensure every order moves seamlessly from request to delivery.
+
+
+									</p>
+								</div>
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+									Expertise in Federal and State Regulations
+									</h3>
+									<p>
+ 									We help facilities navigate complex procurement frameworks, remain audit-ready, and resolve regulatory challenges with speed and accuracy.
+
+									</p>
+								</div>
+								<div class="who-we-are-single-item">
+									<h3 class="heading-3">
+										End-to-End Partnership and Support
+									</h3>
+									<p>
+										 From sourcing to fulfillment, our dedicated support team ensures every procurement mission is executed with precision, transparency, and on-time delivery.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<div class="am-s128"></div>
+
+			<section class="ctn-full-width">
 				<div class="wrapper">
 					<div class="splide info-slider" aria-label="Info Slider">
 						<div class="splide__track">
@@ -367,7 +446,7 @@ get_header();
 						document.addEventListener('DOMContentLoaded', function () {
 							new Splide('.info-slider', {
 								type: 'loop',
-								perPage: 3,
+								perPage: 4,
 								gap: '2rem',
 								arrows: false,
 								pagination: false,
@@ -395,6 +474,10 @@ get_header();
 					<section class="category-teaser">
 						<div class="category-header">
 							<h2 class="title">Industry Leading Suppliers</h2>
+							<p class="text statement">
+								<b>Capabilities Statement</b>
+ Academy Medical delivers advanced, cost-effective medical products and solutions that strengthen federal healthcare systems nationwide.
+							</p>
 							<p class="text">Through our expansive network of regional and global suppliers, we have provided federal hospitals, military bases, and government facilities with the tools, resources, and solutions necessary to conquer each day. Through our partnerships, we empower our purchasers with the following products:</p>
 						</div>
 
@@ -402,7 +485,7 @@ get_header();
 							<div class="category-item" data-category="cardiology">
 								<div class="image-wrap">
 										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Cardiology.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-1.webp">';
 							?>
 								</div>
 								<span>Durable Medical Equipment (DME)
@@ -412,7 +495,7 @@ get_header();
 							<div class="category-item" data-category="orthopedic">
 								<div class="image-wrap">
 													<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Orthopedic.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-2.webp">';
 							?>
 								</div>
 								<span>Implants (Biological & Non-Biological)</span>
@@ -421,7 +504,7 @@ get_header();
 							<div class="category-item" data-category="dental">
 								<div class="image-wrap">
 																<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Dental.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-3.webp">';
 							?>
 
 								</div>
@@ -431,7 +514,7 @@ get_header();
 							<div class="category-item" data-category="surgical">
 								<div class="image-wrap">
 											<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Surgical.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-4.webp">';
 							?>
 
 								</div>
@@ -440,7 +523,7 @@ get_header();
 							<div class="category-item" data-category="surgical">
 								<div class="image-wrap">
 								<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/Orthopedic.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-5.webp">';
 								?>
 								</div>
 								<span>Soft Goods & Wound Care</span>
@@ -470,11 +553,18 @@ get_header();
 							</p>
 
 						</div>
-						<div class="certification-compliance-image image-cover">
-							<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/who-we-are.webp">';
-										?>
-						</div>
+<div class="certification-compliance-logos">
+	<div class="certification-compliance-logo">
+			<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/footer-logo-01.png">';
+								?>
+	</div>
+	<div class="certification-compliance-logo">
+			<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/footer-logo-02.png">';
+								?>
+	</div>
+</div>
 					</div>
 				</div>
 			</section>
@@ -533,7 +623,7 @@ get_header();
 									<a href="#">
 
 											<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-01.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-01.webp">';
 								?>
 										</a>
 								</div>
@@ -553,7 +643,7 @@ get_header();
 								<div class="cs-item-image">
 									<a href="#">
 										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-03.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-02.webp">';
 								?>
 								</a>
 								</div>
@@ -573,9 +663,9 @@ get_header();
 								<div class="cs-item-image">
 									<a href="#">
 											<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-03.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-03.webp">';
 								?>
-					</a>
+				                  </a>
 								</div>
 								<div class="cs-item-content">
 									<div class="kicker">Friday, 15 November</div>
@@ -591,10 +681,11 @@ get_header();
 							<div class="cs-item item-1">
 								<div class="cs-item-image">
 									<a href="#">
-										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-03.webp">';
+
+											<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-01.webp">';
 								?>
-						</a>
+										</a>
 								</div>
 								<div class="cs-item-content">
 									<div class="kicker">Monday, 4 November</div>
@@ -612,9 +703,9 @@ get_header();
 								<div class="cs-item-image">
 									<a href="#">
 										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-02.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-02.webp">';
 								?>
-						</a>
+								</a>
 								</div>
 								<div class="cs-item-content">
 									<div class="kicker">Thursday, 7 November</div>
@@ -632,9 +723,9 @@ get_header();
 								<div class="cs-item-image">
 									<a href="#">
 											<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/event-03.webp">';
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/cs-03.webp">';
 								?>
-					</a>
+				                  </a>
 								</div>
 								<div class="cs-item-content">
 									<div class="kicker">Friday, 15 November</div>

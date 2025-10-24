@@ -111,7 +111,7 @@ ol ul {
 			&::before {
 				color: var(--am_ol_list_marker_color);
 
-				@include font(axi, reg);
+				@include font(space, reg);
 
 				content: counters(list, ".") ".";
 				counter-increment: list;

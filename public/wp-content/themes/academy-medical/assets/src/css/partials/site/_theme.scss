@@ -288,7 +288,7 @@ ul.list-none li {
 .learn-more {
 	color: var(--wp--preset--color--black);
 
-	@include font(axi, bold);
+	@include font(space, bold);
 }
 
 /****
@@ -314,7 +314,7 @@ span.button,
 	text-align: center;
 	border-radius: 0;
 	line-height: 1.5;
-	@include font(axi, bold);
+	@include font(space, bold);
 	font-size: var(--am_font_size_16);
 	border-radius: 100px;
 
@@ -335,14 +335,30 @@ span.button,
 	}
 }
 
-.trans-btn{
-	background-color: var(--am_transparent);
-	color: var(--am_theme_btn_bgcolor);
-	transition: all 0.3s ease-in-out;
+a.trans-btn,
+a.trans-btn:visited{
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 8px 22px;
+	text-decoration: none;
+	background-color: var(--am_theme_btn_bgcolor_hover);
+	border: solid 2px var(--am_theme_btn_border_color_hover);
+	color: var(--am_theme_btn_color_hover);
+	transition: all 0.35s ease-in-out;
+	margin-right: 9px;
+	text-align: center;
+	border-radius: 0;
+	line-height: 1.5;
+	@include font(space, bold);
+	font-size: var(--am_font_size_16);
+	border-radius: 100px;
 
 	&:hover{
-		background-color: var(--am_theme_btn_bgcolor);
 		color: var(--am_theme_btn_color);
+		background-color: var(--am_blue_3);
+		border: 2px solid var(--am_blue_3);
 
 	}
 }
@@ -524,4 +540,7 @@ body {
 
 .cta-single{
 	display: none;
+}
+.last-p{
+	margin-bottom: 20px;
 }

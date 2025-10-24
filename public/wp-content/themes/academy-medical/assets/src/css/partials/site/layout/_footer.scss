@@ -5,7 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	.footer-inner {
-		max-width: 1300px;
+		max-width: 1520px;
 		margin: 0 auto;
 
 	}
@@ -77,10 +77,11 @@
 }
 
 .footer-links {
-	flex: 3 1 800px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	gap: 50px;
+	width: 68%;
 	@media (max-width: 992px) {
 		grid-template-columns: 1fr;
 	}

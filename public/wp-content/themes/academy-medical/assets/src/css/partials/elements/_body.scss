@@ -6,7 +6,7 @@
 
 body {
 
-	@include font(axi, reg, family weight);
+	@include font(int, reg, family weight);
 	transition: all 0.3s ease-in-out;
 	position: relative;
 	font-size: var(--am_font_size_16);
@@ -17,7 +17,6 @@ body {
 	&.have-topbar {
 		padding-top: var(--am_header-height);
 	}
-
 }
 
 p {

@@ -35,9 +35,9 @@
 		}
 	}
 	.cta-blue-btn{
-    	background-color: var(--am_blue_5);
+    	background-color: transparent;
 			color: var(--am_white);
-			border: 2px solid var(--am_blue_5);
+			border: 2px solid white;
 			transition: all 0.35s ease-in-out;
 			&:hover{
 				color: var(--am_theme_btn_bgcolor);

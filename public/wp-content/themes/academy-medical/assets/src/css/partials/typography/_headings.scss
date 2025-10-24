@@ -17,7 +17,7 @@ h5,
 h6,
 .heading-6 {
 
-	@include font(axi, bold);
+	@include font(space, bold);
 	margin: 0 0 20px;
 	color: var(--am_heading_color);
 	line-height: 1.3;

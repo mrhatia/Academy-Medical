@@ -106,7 +106,7 @@ $am_var_social_profiles = $am_option_fields['am_var_social_profiles'] ?? null;
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<p>Copyright © 2024</p>
+			<p>Copyright © 2025</p>
 			<ul>
 				<li><a href="#">Sitemap</a></li>
 				<li><a href="#">Terms of Use</a></li>

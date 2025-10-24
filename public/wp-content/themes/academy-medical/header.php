@@ -128,13 +128,7 @@ $am_var_tbar_btn      = $am_option_fields['am_var_tbar_btn'] ?? null;
 					</div>
 				</div>
 			</div>
-			<div class="top-bar-cross">
-				<span>
-								<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
-				</span>
-			</div>
+
 		</div>
 		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
 			<div class="header-logo logo">

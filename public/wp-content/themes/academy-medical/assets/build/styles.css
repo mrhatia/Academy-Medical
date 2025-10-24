@@ -156,7 +156,7 @@ Mixin for transition
   --am_blue_1: #121f6b;
   --am_blue_2: #2ca8dd;
   --am_blue_3: #55A1D3;
-  --am_blue_3: #6972D9;
+  --am_blue_3: #010a62;
   --am_blue_4: #d1f1ff;
   --am_blue_5: #55A1D3;
   --am_navy: #091a17;
@@ -544,7 +544,7 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 0 0 20px;
@@ -769,7 +769,7 @@ video {
 >> Edit these styles as required
 ------------------------------------------------- */
 body {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Inter 18pt", arial, sans-serif;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -984,7 +984,7 @@ ol ul {
 }
 .page-section ol > li::before {
   color: var(--am_ol_list_marker_color);
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   content: counters(list, ".") ".";
@@ -1266,7 +1266,7 @@ input[type=string],
 select,
 textarea,
 .gform-text-input-reset {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--am_font_size_18);
@@ -1450,7 +1450,7 @@ input[type=reset] {
   border: 1px solid var(--am_button_bgcolor);
   color: var(--am_button_color);
   outline: none;
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: var(--am_font_size_16);
@@ -2263,7 +2263,7 @@ table.ui-datepicker_calendar {
   text-align: left;
 }
 .wp-caption p.wp-caption-text {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--am_font_size_18);
@@ -2503,7 +2503,7 @@ a img.aligncenter {
   font-size: var(--am_font_size_20);
   line-height: 20px;
   cursor: pointer;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 40px;
@@ -2605,7 +2605,7 @@ a img.aligncenter {
   border-bottom: none;
 }
 .comment-author.vcard span {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3002,7 +3002,7 @@ header {
 }
 
 .header-section {
-  background-color: var(--am_header_bgcolor);
+  background-color: var(--am_white);
   z-index: 9;
   width: 100%;
   position: fixed;
@@ -3017,7 +3017,7 @@ header {
 .header-wrapper {
   box-sizing: border-box;
   width: 90%;
-  max-width: 1300px;
+  max-width: 1520px;
   margin: 0 auto;
 }
 
@@ -3193,7 +3193,7 @@ header {
   display: inline-block;
   position: relative;
   line-height: 1;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Inter 18pt", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3208,7 +3208,7 @@ header {
   color: var(--am_header_color);
   font-size: var(--am_font_size_16);
   opacity: 0.7;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Inter 18pt", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3286,7 +3286,7 @@ header {
   position: relative;
   color: var(--am_header_submenu_color);
   transition: all 0.3s ease-in-out;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Inter 18pt", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3390,7 +3390,7 @@ header {
   .nav-overlay .header-nav ul ul li a:visited {
     padding: initial;
     text-transform: inherit;
-    font-family: "Axiforma-Regular", arial, sans-serif;
+    font-family: "Space Grotesk", arial, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -3629,9 +3629,16 @@ header {
   margin-top: 30px;
 }
 
+.hero-bg {
+  background-image: url(images/home-banner-image.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
 .hero-home {
   position: relative;
-  padding: var(--am_space_156) 0 var(--am_space_96);
+  padding: var(--am_space_156) 0 var(--am_space_36);
   overflow: hidden;
   /* ✨ Modern Selector Form */
   /* Hero Image & Shapes */
@@ -3640,38 +3647,32 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 100px;
   position: relative;
   z-index: 2;
 }
 .hero-home .hero-home-content {
   flex: 1;
   z-index: 3;
-  max-width: 600px;
+  max-width: 680px;
 }
 .hero-home .hero-home-content h1 {
-  font-size: 3rem;
   line-height: 1.2;
-  color: #121f6b;
+  color: var(--am_color_primary);
   margin-bottom: 20px;
 }
-.hero-home .hero-home-content h2 {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: 400;
-  margin-bottom: 25px;
-}
 .hero-home .hero-home-content p {
-  color: #444;
+  color: #797777;
   line-height: 1.6;
   margin-bottom: 40px;
   max-width: 540px;
+  font-size: 18px;
 }
 .hero-home .selector-form {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   padding: 28px 32px;
@@ -3734,7 +3735,7 @@ header {
 .hero-home .hero-home-image {
   flex: 1;
   position: relative;
-  max-width: 600px;
+  max-width: 560px;
 }
 .hero-home .hero-home-image img {
   width: 100%;
@@ -3779,7 +3780,7 @@ header {
   overflow: hidden;
 }
 .footer-ctn .footer-inner {
-  max-width: 1300px;
+  max-width: 1520px;
   margin: 0 auto;
 }
 
@@ -3856,10 +3857,11 @@ header {
 }
 
 .footer-links {
-  flex: 3 1 800px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
+  width: 68%;
 }
 @media (max-width: 992px) {
   .footer-links {
@@ -4016,11 +4018,11 @@ header {
 }
 
 .ctn-light-blue {
-  background: linear-gradient(135deg, #dfebf9 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #10142b 0%, #1e2250 100%);
 }
 
 .ctn-light-gray {
-  background-color: #f8f8f8;
+  background-color: #121f6b;
 }
 
 .ctn-blue {
@@ -4428,7 +4430,7 @@ ul.list-none li::before {
 ****/
 .learn-more {
   color: var(--wp--preset--color--black);
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -4456,7 +4458,7 @@ span.button,
   text-align: center;
   border-radius: 0;
   line-height: 1.5;
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: var(--am_font_size_16);
@@ -4487,14 +4489,33 @@ span.button.outline-btn,
   color: var(--am_theme_btn_color_hover);
 }
 
-.trans-btn {
-  background-color: var(--am_transparent);
-  color: var(--am_theme_btn_bgcolor);
-  transition: all 0.3s ease-in-out;
+a.trans-btn,
+a.trans-btn:visited {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 22px;
+  text-decoration: none;
+  background-color: var(--am_theme_btn_bgcolor_hover);
+  border: solid 2px var(--am_theme_btn_border_color_hover);
+  color: var(--am_theme_btn_color_hover);
+  transition: all 0.35s ease-in-out;
+  margin-right: 9px;
+  text-align: center;
+  border-radius: 0;
+  line-height: 1.5;
+  font-family: "Space Grotesk'", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--am_font_size_16);
+  border-radius: 100px;
 }
-.trans-btn:hover {
-  background-color: var(--am_theme_btn_bgcolor);
+a.trans-btn:hover,
+a.trans-btn:visited:hover {
   color: var(--am_theme_btn_color);
+  background-color: var(--am_blue_3);
+  border: 2px solid var(--am_blue_3);
 }
 
 button[disabled] {
@@ -4641,6 +4662,10 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   display: none;
 }
 
+.last-p {
+  margin-bottom: 20px;
+}
+
 /*-------------------------------------------------
 >> Basic styles for Blog post
 -------------------------------------------------*/
@@ -4752,7 +4777,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 
 .post-tag a {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 8px;
@@ -4881,7 +4906,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   display: block;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
@@ -4933,7 +4958,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   text-transform: uppercase;
   font-size: var(--am_font_size_16);
   line-height: 22px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 10px;
@@ -4959,7 +4984,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   background-color: rgba(40, 28, 60, 0.04);
   font-size: 15px;
   line-height: 20px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -5005,13 +5030,13 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   width: 100%;
 }
 .single-member .member-name {
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   margin-bottom: 8px;
 }
 .single-member .designation {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--am_font_size_18);
@@ -5131,14 +5156,14 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   width: 64%;
 }
 .single-team .member-name-popup {
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: var(--wp--preset--color--dark_text);
   margin-bottom: 5px;
 }
 .single-team .member-designation {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Space Grotesk", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--wp--preset--color--lblack);
@@ -5179,7 +5204,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 >> Basic styles for Logo slider
 -------------------------------------------------*/
 .info-slider .card {
-  background: #f9f9f9;
+  background: rgba(23, 42, 154, 0.92);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -5204,11 +5229,11 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   font-size: var(--am_font_size_26);
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #000;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 .info-slider .card p {
-  color: #555;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 .info-slider .card:hover {
@@ -5242,7 +5267,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .info-slider::after {
   background: linear-gradient(270deg, #ffffff 78%, rgba(244, 247, 249, 0));
-  right: -40vw;
+  right: -45vw;
   left: auto;
 }
 
@@ -5296,7 +5321,7 @@ section:has(.info-slider):not(:has(section .info-slider)) {
   margin-top: 30px;
 }
 .who-we-are-single-item:nth-child(2n+2)::before {
-  background-color: var(--am_blue_3);
+  background-color: var(--am_color_secondary);
 }
 .who-we-are-single-item h3 {
   margin-bottom: 6px;
@@ -5311,7 +5336,7 @@ section:has(.info-slider):not(:has(section .info-slider)) {
 .category-teaser {
   padding: var(--am_space_72) 0;
   text-align: center;
-  background: #f8f8f8;
+  background: #121f6b;
 }
 .category-teaser .category-header {
   max-width: 760px;
@@ -5319,10 +5344,19 @@ section:has(.info-slider):not(:has(section .info-slider)) {
 }
 .category-teaser .category-header .title {
   font-size: var(--am_font_size_40);
+  color: var(--am_white);
 }
 .category-teaser .category-header p {
   font-size: 16px;
   margin-bottom: var(--am_space_72);
+  color: var(--am_white);
+}
+.category-teaser .category-header p.statement {
+  margin-bottom: 10px;
+}
+.category-teaser .category-header p.statement b {
+  display: block;
+  color: var(--am_white);
 }
 .category-teaser .category-item {
   cursor: pointer;
@@ -5351,7 +5385,7 @@ section:has(.info-slider):not(:has(section .info-slider)) {
   margin-top: 20px;
   font-size: var(--am_font_size_22);
   font-weight: 500;
-  color: #222;
+  color: var(--am_white);
   transition: all 0.3s ease-in-out;
 }
 .category-teaser .category-item:hover .image-wrap {
@@ -5359,9 +5393,6 @@ section:has(.info-slider):not(:has(section .info-slider)) {
 }
 .category-teaser .category-item:hover img {
   transform: scale(1.05);
-}
-.category-teaser .category-item:hover span {
-  color: var(--am_blue_3);
 }
 
 ul.slick-dots {
@@ -5389,6 +5420,7 @@ ul.slick-dots li button {
   padding: 0;
   transition: all 0.4s ease-in-out;
   border-radius: 100%;
+  background-color: var(--am_white);
 }
 ul.slick-dots li button:hover {
   background-color: var(--am_button_bgcolor);
@@ -5441,9 +5473,9 @@ ul.slick-dots li button:hover {
   border: 2px solid var(--am_blue_5);
 }
 .cta-btn .cta-blue-btn {
-  background-color: var(--am_blue_5);
+  background-color: transparent;
   color: var(--am_white);
-  border: 2px solid var(--am_blue_5);
+  border: 2px solid white;
   transition: all 0.35s ease-in-out;
 }
 .cta-btn .cta-blue-btn:hover {
@@ -5456,157 +5488,188 @@ ul.slick-dots li button:hover {
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
 .event-teaser .event-teaser-heading {
-  width: 53%;
+  width: 75%;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
 }
-
-.event-teaser__list a {
-  border-bottom: 0;
+.event-teaser .event-teaser-heading .heading-2 {
+  font-size: var(--am_font_size_48);
+}
+.event-teaser .event-teaser__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.event-teaser .event-teaser__list a {
   position: relative;
-}
-.event-teaser__list a:hover .event-teaser__image img {
-  transform: scale(1.05);
-}
-.event-teaser__list a:hover .event-teaser__head .event-teaser-btn,
-.event-teaser__list a:hover .event-teaser__head p {
+  border-bottom: 0;
   display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 33.3%;
 }
-
-.event-teaser__image-background {
-  filter: saturate(0.25);
-  opacity: 0.75;
-  transform: none;
-  will-change: transform;
-  transform-origin: 50% 50% 0px;
+.event-teaser .event-teaser__list a .event-teaser__inner {
+  position: relative;
+  border-radius: 50px;
   overflow: hidden;
+  transition: all 0.4s ease;
+  background: #fff;
+}
+.event-teaser .event-teaser__list a:hover .event-teaser__image img {
+  transform: scale(1.08);
+}
+.event-teaser .event-teaser__list a:hover .event-teaser__head {
+  opacity: 1;
+  transform: translateY(0);
+}
+.event-teaser .event-teaser__image-background {
+  opacity: 0.9;
+  overflow: hidden;
+  border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
+  max-height: 526px;
 }
-.event-teaser__image-background .event-teaser__image {
-  inset: 0px;
+.event-teaser .event-teaser__image-background .event-teaser__image {
+  border-radius: inherit;
   overflow: hidden;
-  border-radius: 50px;
+  aspect-ratio: 345/525;
+  max-height: 525px;
+  width: 100%;
 }
-.event-teaser__image-background .event-teaser__image img {
-  display: block;
+.event-teaser .event-teaser__image-background .event-teaser__image img {
   width: 100%;
   height: auto;
-  -o-object-position: center center;
-     object-position: center center;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.3s ease-in-out;
+  -o-object-position: center center;
+     object-position: center center;
+  transition: transform 0.5s ease;
+  aspect-ratio: 345/525;
 }
-
-.event-teaser__head {
+.event-teaser .event-teaser__head {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 30px;
+  background: linear-gradient(180deg, transparent 0%, rgb(0, 0, 0) 100%);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  box-sizing: border-box;
 }
-.event-teaser__head h3 {
-  margin: 10px auto;
+.event-teaser .event-teaser__head h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--am_white);
 }
-.event-teaser__head p {
-  width: 90%;
-  margin-bottom: 10px;
-  display: none;
-  transition: all 0.3s ease-in-out;
+.event-teaser .event-teaser__head p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--am_white);
 }
-.event-teaser__head .event-teaser-btn {
-  position: relative;
+.event-teaser .event-teaser__head .event-teaser-btn {
   background: none;
-  color: var(--am_topbar_bgcolor);
-  padding: 0;
+  color: white;
   border: none;
-  display: none;
+  font-weight: 600;
+  position: relative;
+  padding-left: 0;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.event-teaser__head .event-teaser-btn::after {
-  position: absolute;
+.event-teaser .event-teaser__head .event-teaser-btn::after {
   content: "→";
-  left: 92px;
-  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease;
 }
-.event-teaser__head .event-teaser-btn:hover::after {
-  left: 100px;
+.event-teaser .event-teaser__head .event-teaser-btn:hover::after {
+  right: -5px;
 }
 
 /*-------------------------------------------------
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
-.numbers {
-  background-color: #6972d3;
-}
-
 .numbers-section {
-  position: relative;
-  padding: 1px 0;
-}
-.numbers-section .numbers-items {
-  gap: 0;
-}
-.numbers-section .numbers-items .item {
   color: var(--am_white_text);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  background: #0bf;
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  padding-bottom: 60px;
 }
-.numbers-section .numbers-items .item .stats-number {
-  transition: all 0.3s ease-in-out;
-}
-.numbers-section .numbers-items .item:hover {
-  border-color: rgba(255, 255, 255, 0.4);
+.numbers-section .stats-slider .splide__slide {
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-}
-.numbers-section .numbers-items .item:hover .stats-number {
-  color: #0bf;
-  transform: scale(1.05);
-}
-.numbers-section .numbers-items .item p,
-.numbers-section .numbers-items .item h3 {
-  letter-spacing: 1px;
-}
-.numbers-section .numbers-items .item h3 {
-  margin-bottom: 0;
-  font-weight: 500;
-  font-size: var(--am_font_size_48);
-}
-.numbers-section .numbers-items .item p:first-child {
-  margin-bottom: 15%;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.numbers-section .numbers-items .item p:last-child {
-  margin-bottom: 15px;
-  font-size: var(--am_font_size_14);
-  opacity: 0.8;
-}
-.numbers-section .numbers-items .item .numbers-heading h3 {
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 42px;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  transition: all 0.4s ease;
   color: #fff;
+  cursor: pointer;
+}
+.numbers-section .stats-slider .splide__slide::before {
+  display: none;
+}
+.numbers-section .stats-slider .splide__slide:last-child {
+  border-right: none;
+}
+.numbers-section .stats-slider .splide__slide:hover .stats-number {
+  color: #00b3ff;
+}
+.numbers-section .stats-slider .splide__slide p,
+.numbers-section .stats-slider .splide__slide h3 {
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.numbers-section .stats-slider .splide__slide p:first-child {
+  margin-bottom: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: black;
+}
+.numbers-section .stats-slider .splide__slide .numbers-heading h3 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
   transition: all 0.4s ease;
 }
-
+.numbers-section .stats-slider .splide__slide .numbers-heading p {
+  font-size: 15px;
+  opacity: 0.8;
+  color: black;
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.numbers-items .item {
+.numbers-section .numbers-items .item {
   animation: fadeUp 0.8s ease forwards;
+}
+@media (max-width: 1024px) {
+  .numbers-section .numbers-section .numbers-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .numbers-section .numbers-section .numbers-items {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*-------------------------------------------------
@@ -5734,18 +5797,28 @@ ul.slick-dots li button:hover {
 /*-------------------------------------------------
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
-.certification-compliance-image {
+.certification-compliance-logos {
   width: 42%;
+  background-color: var(--am_color_primary);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
-.certification-compliance-image img {
+.certification-compliance-logos img {
   border-radius: 12px;
 }
 
 .certification-compliance-content {
-  width: 48%;
+  width: 57%;
 }
 .certification-compliance-content h2 {
   font-size: var(--am_font_size_48);
+  margin-bottom: 10px;
 }
 .certification-compliance-content h3 {
   font-size: var(--am_font_size_26);
@@ -5753,6 +5826,34 @@ ul.slick-dots li button:hover {
 }
 .certification-compliance-content :nth-child(3) {
   margin-bottom: 10px;
+}
+.certification-compliance-content p:last-of-type {
+  margin: 0;
+}
+
+.certification-compliance-logo {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.about-us-content {
+  width: 48%;
+}
+.about-us-content h2 {
+  font-size: var(--am_font_size_48);
+}
+.about-us-content .about-us-btn {
+  row-gap: 10px;
+}
+
+.about-us-image {
+  width: 42%;
+}
+.about-us-image img {
+  border-radius: 12px;
 }
 
 /*-------------------------------------------------
@@ -5775,7 +5876,7 @@ ul.slick-dots li button:hover {
   border: 2px solid var(--am_theme_btn_border_color);
   transition: all 0.35s ease-in-out;
   border-radius: 0;
-  font-family: "Axiforma-Bold", arial, sans-serif;
+  font-family: "Space Grotesk'", arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: var(--am_font_size_16);
@@ -5938,16 +6039,22 @@ ul.slick-dots li button:hover {
 > Import Fonts
 ------------------------------------------------------------------ */
 @font-face {
-  font-family: "axiforma-bold";
+  font-family: "Space Grotesk'";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/axiforma-bold.woff2) format("woff2");
+  src: url(fonts/SpaceGrotesk-Bold.woff2) format("woff2");
 }
 @font-face {
-  font-family: "axiforma-regular";
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/axiforma-regular.woff2) format("woff2");
+  src: url(fonts/SpaceGrotesk-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Inter 18pt";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Inter18pt-Regular.woff2) format("woff2");
 }
 /* ------------------------------------------------------------------
 > Vendors CSS Starts Here

@@ -33,7 +33,7 @@
 			display: inline-block;
 			position: relative;
 			line-height: 1;
-			@include font(axi, reg);
+			@include font(int, reg);
 
 			a,
 			a:visited,
@@ -46,7 +46,7 @@
 				color: var(--am_header_color);
 				font-size: var(--am_font_size_16);
 				opacity: 0.7;
-				@include font(axi, reg);
+				@include font(int, reg);
 
 				&::after {
 					content: "";
@@ -131,7 +131,7 @@
 					color: var(--am_header_submenu_color);
 
 					@include transition(all, 0.3s, ease-in-out);
-					@include font(axi, reg);
+					@include font(int, reg);
 
 					&::after {
 						bottom: -4px;
