@@ -89,3 +89,40 @@
 section:has(.info-slider):not(:has(section .info-slider)) {
 	overflow: hidden;
 }
+
+.info-slider-icon{
+
+}
+
+.info-slider {
+	.section-heading{
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 60px;
+		p{
+			width: 60%;
+			margin: 0 auto;
+		}
+	}
+	.splide__track{
+		margin-bottom: 50px;
+	}
+
+	margin-bottom: 5%;
+	.info-slider-card {
+		border-radius: 1rem;
+		text-align: center;
+		cursor: pointer;
+		list-style: none;
+		&::before{
+			display: none;
+		}
+
+		.info-slider-icon {
+			font-size: 2.5rem;
+			color: #3B82F6;
+			margin-bottom: 1rem;
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+}

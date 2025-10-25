@@ -66,87 +66,114 @@ get_header();
     <ul class="splide__list">
 
       <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-        <p class="label">Improved Efficiency</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">93%</h3>
-          <p>Orders processed within 24 hours</p>
-        </div>
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-1.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-2.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-3.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-4.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-5.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-6.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-7.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-8.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-9.webp">';
+			?>
+		</div>
+      </li>
+      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
+      	<div class="stats-logo image-cover">
+			<?php
+				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-10.webp">';
+			?>
+		</div>
       </li>
 
-      <li class="splide__slide item item-2 d-flex flex-column justify-content-between">
-        <p>Faster Turnaround</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">10 days</h3>
-          <p>Average government AR collection</p>
-        </div>
-      </li>
-
-      <li class="splide__slide item item-3 d-flex flex-column justify-content-between">
-        <p>Accelerated Payments</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">24 hours</h3>
-          <p>Vendor payments completed</p>
-        </div>
-      </li>
-
-      <li class="splide__slide item item-4 d-flex flex-column justify-content-between">
-        <p>Revenue Growth</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">200M+</h3>
-          <p>Annual sales across partners</p>
-        </div>
-      </li>
-
-      <li class="splide__slide item item-5 d-flex flex-column justify-content-between">
-        <p>Supplied in Medical Equipment</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">1.3B</h3>
-          <p>Supplied in Medical Equipment</p>
-        </div>
-      </li>
-
-      <li class="splide__slide item item-6 d-flex flex-column justify-content-between">
-        <p>Federal Facilities Supported</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">700+</h3>
-          <p>Serving nationwide</p>
-        </div>
-      </li>
-
-      <li class="splide__slide item item-7 d-flex flex-column justify-content-between">
-        <p>Equipment & Supply Items</p>
-        <div class="numbers-heading">
-          <h3 class="heading-1 stats-number">70,000+</h3>
-          <p>In active distribution</p>
-        </div>
-      </li>
 
     </ul>
   </div>
 </div>
-	<script>
-						document.addEventListener('DOMContentLoaded', function () {
-							new Splide('.stats-slider', {
-								type: 'loop',
-								perPage: 4,
-								gap: '2rem',
-								arrows: false,
-								pagination: false,
-								drag: 'free',
-								pauseOnHover: true,
-								focus: 'center',
-								autoScroll: {
-									speed: 1,
-									pauseOnHover: true,
-									pauseOnFocus: false,
-								},
-								breakpoints: {
-									1024: { perPage: 2 },
-									640: { perPage: 1 },
-								},
-							}).mount();
-						});
-					</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var splide = new Splide('.stats-slider', {
+    type: 'loop',
+    focus: 'center',
+    arrows: false,
+    pagination: false,
+    perMove: 1,
+    autoWidth: true,
+    gap: '20px',
+    drag: false,
+    clones: 6,
+    autoScroll: {
+      speed: 1,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    },
+    breakpoints: {
+      768: {
+        gap: '10px',
+        focus: 'center',
+        perPage: 1,
+        autoScroll: {
+          speed: 0.5
+        },
+      },
+    },
+  });
+
+  splide.mount(window.splide.Extensions);
+});
+</script>
+
+
 
 			  </div>
 
@@ -385,83 +412,16 @@ get_header();
 			</section>
 			<div class="am-s128"></div>
 
-			<section class="ctn-full-width">
+			<section class="">
 				<div class="wrapper">
-					<div class="splide info-slider" aria-label="Info Slider">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide card">
-									<div class="icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
-										?>
-									</div>
-
-									<h3>Supplier Network</h3>
-									<p>Explore our partners</p>
-								</li>
-								<li class="splide__slide card">
-										<div class="icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/people-icon.svg">';
-										?>
-									</div>
-									<h3>Leadership & Staff</h3>
-									<p>Meet the team</p>
-								</li>
-								<li class="splide__slide card">
-									<div class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/speaker-icon.svg">';
-									?>
-									</div>
-									<h3>Industry News</h3>
-									<p>Stay informed</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-					<script
-						src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
-					<script>
-						document.addEventListener('DOMContentLoaded', function () {
-							new Splide('.info-slider', {
-								type: 'loop',
-								perPage: 4,
-								gap: '2rem',
-								arrows: false,
-								pagination: false,
-								drag: 'free',
-								pauseOnHover: true,
-								focus: 'center',
-								autoScroll: {
-									speed: 1,
-									pauseOnHover: true,
-									pauseOnFocus: false,
-								},
-								breakpoints: {
-									1024: { perPage: 2 },
-									640: { perPage: 1 },
-								},
-							}).mount(window.splide.Extensions);
-						});
-					</script>
-
-				</div>
-			</section>
-			<div class="am-s128"></div>
-			<section >
-				<div class="wrapper">
-					<section class="category-teaser">
+					<div class="category-teaser">
 						<div class="category-header">
 							<h2 class="title">Industry Leading Suppliers</h2>
-							<p class="text statement">
-								<b>Capabilities Statement</b>
- Academy Medical delivers advanced, cost-effective medical products and solutions that strengthen federal healthcare systems nationwide.
-							</p>
-							<p class="text">Through our expansive network of regional and global suppliers, we have provided federal hospitals, military bases, and government facilities with the tools, resources, and solutions necessary to conquer each day. Through our partnerships, we empower our purchasers with the following products:</p>
+							<p class="text">Through our expansive network of regional to global suppliers, we have
+								provided federal hospitals, military bases, and
+								government facilities with the tools, resources, and solutions necessary to conquer each
+								day. Through our partnerships,
+								we empower our purchasers with the following products:</p>
 						</div>
 
 						<div class="category-slider">
@@ -527,10 +487,166 @@ get_header();
 							</div> -->
 
 						</div>
-					</section>
+					</div>
 
 				</div>
 			</section>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+			<script>
+				jQuery(document).ready(function () {
+					jQuery('.category-slider').slick({
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						autoplay: true,
+						autoplaySpeed: 3000,
+						arrows: false,
+						dots: true,
+						responsive: [
+							{
+								breakpoint: 1024,
+								settings: {
+									slidesToShow: 3,
+								},
+							},
+							{
+								breakpoint: 768,
+								settings: {
+									slidesToShow: 2,
+								},
+							},
+							{
+								breakpoint: 480,
+								settings: {
+									slidesToShow: 1,
+								},
+							},
+						],
+					});
+				});
+			</script>
+
+			<div class="am-s128"></div>
+			<section>
+				<div class="wrapper">
+					<div class="splide info-slider" aria-label="Info Slider">
+						<div class="section-heading">
+							<h2 class="heading-1" >Our Supplier Network</h2>
+							<p>Academy Medical connects goverment agencies, manugacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and vetern-led precision.</p>
+						</div>
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-1.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-2.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-3.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-4.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-5.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-6.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-7.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-8.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-9.webp">';
+										?>
+									</div>
+								</li>
+								<li class="splide__slide info-slider-card">
+									<div class="info-slider-icon">
+										<?php
+										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-10.webp">';
+										?>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="case-study-btn">
+							<a href="#" class="button" tabindex="0">view our supplier network</a>
+						</div>
+
+					</div>
+					<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+					<script
+						src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							new Splide('.info-slider', {
+								type: 'loop',
+								perPage: 3,
+								gap: '2rem',
+								arrows: false,
+								pagination: false,
+								drag: 'free',
+								focus: 'center',
+								autoScroll: {
+									speed: 1,
+									pauseOnHover: false,
+									pauseOnFocus: false,
+								},
+								breakpoints: {
+									1024: { perPage: 2 },
+									640: { perPage: 1 },
+								},
+							}).mount(window.splide.Extensions);
+						});
+					</script>
+
+				</div>
+			</section>
+
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">

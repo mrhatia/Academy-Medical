@@ -3166,6 +3166,36 @@ Mixin for transition
 .acf-block-preview section:has(.info-slider):not(:has(section .info-slider)) {
   overflow: hidden;
 }
+.acf-block-preview .info-slider {
+  margin-bottom: 5%;
+}
+.acf-block-preview .info-slider .section-heading {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.acf-block-preview .info-slider .section-heading p {
+  width: 60%;
+  margin: 0 auto;
+}
+.acf-block-preview .info-slider .splide__track {
+  margin-bottom: 50px;
+}
+.acf-block-preview .info-slider .info-slider-card {
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+}
+.acf-block-preview .info-slider .info-slider-card::before {
+  display: none;
+}
+.acf-block-preview .info-slider .info-slider-card .info-slider-icon {
+  font-size: 2.5rem;
+  color: #3B82F6;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
 .acf-block-preview .who-we-are-image {
   width: 42%;
 }
@@ -3181,31 +3211,41 @@ Mixin for transition
 .acf-block-preview .who-we-are-items {
   margin-top: 50px;
 }
-.acf-block-preview .who-we-are-single-item {
-  padding-left: 50px;
-  box-sizing: border-box;
+.acf-block-preview .who-we-are-items {
   position: relative;
+  padding-left: 50px;
 }
-.acf-block-preview .who-we-are-single-item::before {
+.acf-block-preview .who-we-are-items .who-we-are-single-item {
+  position: relative;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.acf-block-preview .who-we-are-items .who-we-are-single-item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 8px;
-  width: 20px;
-  height: 20px;
+  left: -32px;
+  top: 0;
+  width: 18px;
+  height: 110%;
+  border-radius: 20px 20px 0 0;
   background-color: var(--am_color_primary);
-  border-radius: 50%;
 }
-.acf-block-preview .who-we-are-single-item:nth-child(n+2) {
-  margin-top: 30px;
+.acf-block-preview .who-we-are-items .who-we-are-single-item:nth-child(2n+2)::before {
+  background-color: #3b6299;
 }
-.acf-block-preview .who-we-are-single-item:nth-child(2n+2)::before {
-  background-color: var(--am_color_secondary);
+.acf-block-preview .who-we-are-items .who-we-are-single-item:nth-child(n+2) {
+  padding-top: 40px;
 }
-.acf-block-preview .who-we-are-single-item h3 {
+.acf-block-preview .who-we-are-items .who-we-are-single-item:last-child::before {
+  border-radius: 20px;
+}
+.acf-block-preview .who-we-are-items .who-we-are-single-item:nth-child(3n+3)::before {
+  background-color: #bec8d7;
+}
+.acf-block-preview .who-we-are-items .who-we-are-single-item h3 {
   margin-bottom: 6px;
 }
-.acf-block-preview .who-we-are-single-item p {
+.acf-block-preview .who-we-are-items .who-we-are-single-item p {
   margin: 0;
 }
 .acf-block-preview .category-teaser {
@@ -3269,7 +3309,8 @@ Mixin for transition
   transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .category-teaser .category-item:hover {
-  background-color: var(--am_color_primary);
+  background-color: #c4d7ff;
+  border: 2px solid #c4d7ff;
 }
 .acf-block-preview .category-teaser .category-item:hover .image-wrap {
   transform: scale(1.05);
@@ -3401,18 +3442,16 @@ Mixin for transition
 }
 .acf-block-preview .event-teaser .event-teaser__list {
   align-items: stretch;
-  padding: 50px;
   box-sizing: border-box;
 }
 .acf-block-preview .event-teaser .event-teaser__list a {
+  width: 31.5%;
   border-bottom: none;
+  padding: 0;
 }
 .acf-block-preview .event-teaser__inner {
-  width: 340px;
-  background-color: #fff;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -3440,7 +3479,7 @@ Mixin for transition
   color: var(--am_white);
   position: relative;
   padding: 30px 25px 50px 25px;
-  min-height: 400px;
+  min-height: 356px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, calc(95% - 25px) 100%, 0 100%);
   transition: all 0.3s ease-in-out h3;
   transition-margin: 0 0 10px;
@@ -3450,30 +3489,21 @@ Mixin for transition
 }
 .acf-block-preview .plus {
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 25px;
+  right: 40px;
   font-size: 40px;
-  color: var(--am_white);
+  color: #196bdb;
   transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .numbers-section {
   color: var(--am_white_text);
   position: relative;
   overflow: hidden;
-  padding-bottom: 60px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #dfebf9;
 }
 .acf-block-preview .numbers-section .stats-slider .splide__slide {
-  padding: 40px 20px;
-  border-radius: 20px;
-  text-align: center;
-  position: relative;
-  list-style: none;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  transition: all 0.4s ease;
-  color: #fff;
   cursor: pointer;
 }
 .acf-block-preview .numbers-section .stats-slider .splide__slide::before {
@@ -3531,6 +3561,37 @@ Mixin for transition
   .acf-block-preview .numbers-section .numbers-section .numbers-items {
     grid-template-columns: 1fr;
   }
+}
+.acf-block-preview .stats-logo img {
+  width: auto;
+  height: auto;
+  -o-object-fit: initial;
+     object-fit: initial;
+  max-height: 100px;
+}
+.acf-block-preview .numbers-section {
+  position: relative;
+  cursor: grab;
+}
+.acf-block-preview .numbers-section::before, .acf-block-preview .numbers-section::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 50vw;
+  z-index: 2;
+  bottom: 0;
+}
+.acf-block-preview .numbers-section::before {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 92%, rgba(244, 247, 249, 0));
+  left: calc(-50vw + 6.5%);
+}
+.acf-block-preview .numbers-section::after {
+  background: linear-gradient(270deg, #ffffff 78%, rgba(244, 247, 249, 0));
+  right: -40vw;
+  left: auto;
+}
+.acf-block-preview section:has(.numbers-section):not(:has(section .numbers-section)) {
+  overflow: hidden;
 }
 .acf-block-preview .case-study-block a {
   font-size: 16px;
@@ -3695,9 +3756,9 @@ Mixin for transition
   width: 48%;
 }
 .acf-block-preview .about-us-image img {
-  border-radius: 12px;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  border-radius: 0px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .acf-block-preview .logo-slider {
   background-color: var(--am_blue_4);

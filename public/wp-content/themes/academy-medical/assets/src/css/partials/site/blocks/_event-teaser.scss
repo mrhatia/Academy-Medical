@@ -11,20 +11,18 @@
 	}
 	.event-teaser__list {
 		align-items: stretch;
-		padding: 50px;
 		box-sizing: border-box;
 		a{
+			width: 31.5%;
 			border-bottom: none;
+			padding: 0;
 		}
 	}
 }
 
 .event-teaser__inner {
-	width: 340px;
-	background-color: #fff;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 	overflow: hidden;
 	transition: all 0.3s ease-in-out;
 	&:hover {
@@ -55,7 +53,7 @@
 	color: var(--am_white);
 	position: relative;
 	padding: 30px 25px 50px 25px;
-	min-height: 400px;
+	min-height: 356px;
 	clip-path: polygon(0 0, 100% 0, 100% 85%, calc(95% - 25px) 100%, 0 100%);
 	transition: all 0.3s ease-in-out
 	h3 {
@@ -69,9 +67,10 @@
 
 .plus {
 	position: absolute;
-	bottom: 15px;
-	right: 20px;
+	bottom: 25px;
+	right: 40px;
 	font-size: 40px;
-	color: var(--am_white);
-	transition: all 0.3s ease-in-out;
+	color: #196bdb;
+	transition: all 0.3s
+		ease-in-out;
 }

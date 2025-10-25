@@ -65,7 +65,8 @@
 			transition: all 0.3s ease-in-out;
 		}
 		&:hover {
-			background-color: var(--am_color_primary);
+			background-color: #c4d7ff;
+			border: 2px solid #c4d7ff;
 			.image-wrap {
 				transform: scale(1.05);
 			}
