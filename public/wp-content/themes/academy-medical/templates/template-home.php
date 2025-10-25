@@ -155,7 +155,7 @@ get_header();
 			<div class="am-s128"></div>
 					<section>
 				<div class="wrapper">
-					<div class="about-us d-flex justify-content-between flex-wrap">
+					<div class="about-us d-flex justify-content-between align-items-center flex-wrap">
 						<div class="about-us-content">
 							<div class="kicker">About Us</div>
 							<h2>Founded in Service. Mission Driven. Committed to Better Care.</h2>
@@ -194,7 +194,7 @@ get_header();
 						</div>
 						<div class="about-us-image image-cover">
 							<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-1.webp">';
+							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/numbers.webp">';
 							?>
 						</div>
 					</div>
@@ -210,15 +210,11 @@ get_header();
     <p>Academy Medical connects government agencies, manufacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and veteran-led precision.</p>
   </div>
 
-  <div class="event-teaser__list d-flex justify-content-between gap-30">
+ <div class="event-teaser__list d-flex justify-content-between gap-30 flex-wrap ">
 								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image-background">
-											<div class="event-teaser__image">
-												<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/goverment.webp">';
-							?>
-											</div>
+										<div class="event-teaser__image"
+											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/goverment.webp');">
 										</div>
 										<div class="event-teaser__head">
 											<h3>Government</h3>
@@ -229,55 +225,42 @@ get_header();
 												compliant
 												solutions that ensure critical resources
 												reach patients on time.</p>
-											<button class="event-teaser-btn">Learn More</button>
-
+											<div class="plus">+</div>
 										</div>
 									</div>
 								</a>
 								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image-background">
-											<div class="event-teaser__image">
-												<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/manfucture.webp">';
-							?>
-											</div>
+										<div class="event-teaser__image"
+											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/manfucture.webp');">
 										</div>
 										<div class="event-teaser__head">
 											<h3>Manufacturer</h3>
 											<p>We help innovative manufacturers unlock VA and DoD opportunities by
 												simplifying contracts, managing pricing and
 												compliance, and aligning with federal procurement standards. Our
-												veteran-led
-												expertise turns complex government
+												veteran-led expertise turns complex government
 												requirements into scalable opportunities for growth across nationwide
 												healthcare systems.</p>
-											<button class="event-teaser-btn">Learn More</button>
+											<div class="plus">+</div>
 										</div>
 									</div>
 								</a>
 								<a href="#">
 									<div class="event-teaser__inner">
-										<div class="event-teaser__image-background">
-											<div class="event-teaser__image">
-											<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/spplier.webp">';
-							?>
-											</div>
+										<div class="event-teaser__image"
+											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/spplier.webp');">
 										</div>
 										<div class="event-teaser__head">
 											<h3>Supplier & Distributor</h3>
 											<p>We help distributors meet government standards, streamline fulfillment,
-												and
-												connect with VA and DoD healthcare systems
+												and connect with VA and DoD healthcare systems
 												with confidence and compliance.</p>
-											<button class="event-teaser-btn">Learn More</button>
+											<div class="plus">+</div>
 										</div>
 									</div>
 								</a>
-
 							</div>
-</div>
 
 					</div>
 				</div>
@@ -286,7 +269,7 @@ get_header();
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
-					<div class="who-we-are">
+					<div class="who-we-are d-flex justify-content-between flex-wrap align-items-center">
 						<div class="who-we-are-content">
 							<h2>
 								How We Help Manufacturers and Suppliers Grow Their Revenue
@@ -343,7 +326,7 @@ get_header();
 			<div class="am-s128"></div>
 				<section>
 				<div class="wrapper">
-					<div class="who-we-are">
+					<div class="who-we-are d-flex justify-content-between flex-wrap align-items-center">
 							<div class="who-we-are-image image-cover">
 							<?php
 							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-2.webp">';
@@ -469,7 +452,7 @@ get_header();
 				</div>
 			</section>
 			<div class="am-s128"></div>
-			<section class="ctn-light-gray">
+			<section >
 				<div class="wrapper">
 					<section class="category-teaser">
 						<div class="category-header">
@@ -481,53 +464,67 @@ get_header();
 							<p class="text">Through our expansive network of regional and global suppliers, we have provided federal hospitals, military bases, and government facilities with the tools, resources, and solutions necessary to conquer each day. Through our partnerships, we empower our purchasers with the following products:</p>
 						</div>
 
-						<div class="category-slider four-columns">
+						<div class="category-slider">
 							<div class="category-item" data-category="cardiology">
-								<div class="image-wrap">
-										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-1.webp">';
-							?>
+								<div class="outer d-flex align-items-center justify-content-center">
+									<div class="inner d-flex align-items-center justify-content-center">01</div>
 								</div>
 								<span>Durable Medical Equipment (DME)
 								</span>
 							</div>
-
-							<div class="category-item" data-category="orthopedic">
-								<div class="image-wrap">
-													<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-2.webp">';
-							?>
+							<div class="category-item" data-category="cardiology">
+								<div class="outer d-flex align-items-center justify-content-center">
+									<div class="inner d-flex align-items-center justify-content-center">02</div>
 								</div>
-								<span>Implants (Biological & Non-Biological)</span>
+								<span>Implants (Biological & Non-Biological)
+								</span>
+							</div>
+							<div class="category-item" data-category="cardiology">
+								<div class="outer d-flex align-items-center justify-content-center">
+									<div class="inner d-flex align-items-center justify-content-center">03</div>
+								</div>
+								<span>Personal Protective Equipment (PPE)
+								</span>
+							</div>
+							<div class="category-item" data-category="cardiology">
+								<div class="outer d-flex align-items-center justify-content-center">
+									<div class="inner d-flex align-items-center justify-content-center">04</div>
+								</div>
+								<span>Soft Goods & Wound Care
+								</span>
+							</div>
+
+
+
+							<!-- <div class="category-item" data-category="orthopedic">
+								<div class="image-wrap">
+									<img src="../assets/src/images/uploads/Orthopedic.webp" alt="">
+								</div>
+								<span>Implants Biological & Non-Biological</span>
 							</div>
 
 							<div class="category-item" data-category="dental">
 								<div class="image-wrap">
-																<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-3.webp">';
-							?>
+									<img src="../assets/src/images/uploads/Dental.webp" alt="">
 
 								</div>
-								<span>Personal Protective Equipment (PPE)</span>
+								<span>Personal Protective Equipment(PPE)</span>
 							</div>
 
 							<div class="category-item" data-category="surgical">
 								<div class="image-wrap">
-											<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-4.webp">';
-							?>
+									<img src="../assets/src/images/uploads/Surgical.webp" alt="">
 
 								</div>
 								<span>Soft Goods</span>
 							</div>
 							<div class="category-item" data-category="surgical">
 								<div class="image-wrap">
-								<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-5.webp">';
-								?>
+									<img src="../assets/src/images/uploads/Orthopedic.webp" alt="">
+
 								</div>
-								<span>Soft Goods & Wound Care</span>
-							</div>
+								<span>Wound Care</span>
+							</div> -->
 
 						</div>
 					</section>
@@ -575,7 +572,7 @@ get_header();
 			<script>
 				jQuery(document).ready(function () {
 					jQuery('.category-slider').slick({
-						slidesToShow: 4,
+						slidesToShow: 3,
 						slidesToScroll: 1,
 						autoplay: true,
 						autoplaySpeed: 3000,
