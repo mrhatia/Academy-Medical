@@ -2170,6 +2170,9 @@ Mixin for transition
   /*-------------------------------------------------
   >> Basic styles for Image Alongside Text Block
   -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Image Alongside Text Block
+  -------------------------------------------------*/
   /* Forms */
   /* -------------------------------------------------
   >> Styles for form fields
@@ -3239,6 +3242,8 @@ Mixin for transition
   border: 2px solid var(--am_black);
   padding: 20px;
   border-radius: 20px;
+  text-align: left;
+  min-height: 220px;
 }
 .acf-block-preview .category-teaser .category-item .image-wrap {
   width: 280px;
@@ -3693,6 +3698,18 @@ Mixin for transition
   border-radius: 12px;
   -o-object-fit: inherit;
      object-fit: inherit;
+}
+.acf-block-preview .logo-slider {
+  background-color: var(--am_blue_4);
+}
+.acf-block-preview .logo-section {
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+  position: relative;
+}
+.acf-block-preview .logo-section .hero-logos {
+  list-style: none;
 }
 .acf-block-preview form {
   margin: 0 0 20px;

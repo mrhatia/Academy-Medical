@@ -1,0 +1,13 @@
+.logo-slider{
+	background-color: var(--am_blue_4);
+}
+.logo-section{
+	align-items: center;
+	display: flex;
+	padding: 20px 0;
+	position: relative;
+
+	.hero-logos{
+		list-style: none;
+	}
+}

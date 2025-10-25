@@ -5361,6 +5361,8 @@ section:has(.info-slider):not(:has(section .info-slider)) {
   border: 2px solid var(--am_black);
   padding: 20px;
   border-radius: 20px;
+  text-align: right;
+  min-height: 220px;
 }
 .category-teaser .category-item .image-wrap {
   width: 280px;
@@ -5851,6 +5853,23 @@ ul.slick-dots li button:hover {
   border-radius: 12px;
   -o-object-fit: inherit;
      object-fit: inherit;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.logo-slider {
+  background-color: var(--am_blue_4);
+}
+
+.logo-section {
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+  position: relative;
+}
+.logo-section .hero-logos {
+  list-style: none;
 }
 
 /*-------------------------------------------------
