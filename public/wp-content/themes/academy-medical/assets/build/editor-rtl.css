@@ -3199,9 +3199,6 @@ Mixin for transition
 .acf-block-preview .who-we-are-image {
   width: 42%;
 }
-.acf-block-preview .who-we-are-image img {
-  border-radius: 12px;
-}
 .acf-block-preview .who-we-are-content {
   width: 48%;
 }
@@ -3390,9 +3387,15 @@ Mixin for transition
 .acf-block-preview .footer-cta {
   padding: 10% 0;
 }
-.acf-block-preview .footer-cta .cta-heading {
-  text-align: center;
-  width: 60%;
+.acf-block-preview .footer-cta .cta-heading h2 {
+  margin: 0 auto 20px;
+  width: 56%;
+  font-size: 30px;
+  text-transform: none;
+}
+.acf-block-preview .footer-cta .cta-heading h2,
+.acf-block-preview .footer-cta .cta-heading p {
+  color: var(--am_white);
 }
 .acf-block-preview .cta-btn .cta-btn {
   box-sizing: border-box;
@@ -3464,6 +3467,9 @@ Mixin for transition
 .acf-block-preview .event-teaser__inner:hover .event-teaser__head {
   background-color: #113b8d;
 }
+.acf-block-preview .event-teaser__inner:hover .event-teaser__head p {
+  max-height: 500px;
+}
 .acf-block-preview .event-teaser__inner:hover .plus {
   color: #4da3ff;
   transform: rotate(-90deg) scale(1.2);
@@ -3479,7 +3485,6 @@ Mixin for transition
   color: var(--am_white);
   position: relative;
   padding: 30px 25px 50px 25px;
-  min-height: 356px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, calc(95% - 25px) 100%, 0 100%);
   transition: all 0.3s ease-in-out h3;
   transition-margin: 0 0 10px;
@@ -3487,10 +3492,16 @@ Mixin for transition
   transition-font-weight: 600;
   transition-color: var(--am_white);
 }
+.acf-block-preview .event-teaser__head p {
+  max-height: 3.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease-in-out;
+}
 .acf-block-preview .plus {
   position: absolute;
-  bottom: 25px;
-  left: 40px;
+  bottom: 10px;
+  left: 24px;
   font-size: 40px;
   color: #196bdb;
   transition: all 0.3s ease-in-out;

@@ -4001,6 +4001,23 @@ header {
   margin: 0 auto;
 }
 
+.section-heading {
+  text-align: center;
+  margin: 0px auto 60px;
+}
+.section-heading h2 {
+  font-size: var(--am_font_size_48);
+  color: var(--am_black);
+  text-transform: uppercase;
+}
+.section-heading p {
+  font-size: 16px;
+  margin-bottom: var(--am_space_72);
+  color: var(--am_black);
+  width: 60%;
+  margin: 0px auto;
+}
+
 .ctn-980 .wrapper {
   max-width: 980px;
 }
@@ -5313,9 +5330,6 @@ section:has(.info-slider):not(:has(section .info-slider)) {
 .who-we-are-image {
   width: 42%;
 }
-.who-we-are-image img {
-  border-radius: 12px;
-}
 
 .who-we-are-content {
   width: 48%;
@@ -5515,9 +5529,15 @@ ul.slick-dots li button:hover {
 .footer-cta {
   padding: 10% 0;
 }
-.footer-cta .cta-heading {
-  text-align: center;
-  width: 60%;
+.footer-cta .cta-heading h2 {
+  margin: 0 auto 20px;
+  width: 56%;
+  font-size: 30px;
+  text-transform: none;
+}
+.footer-cta .cta-heading h2,
+.footer-cta .cta-heading p {
+  color: var(--am_white);
 }
 
 .cta-btn .cta-btn {
@@ -5595,6 +5615,9 @@ ul.slick-dots li button:hover {
 .event-teaser__inner:hover .event-teaser__head {
   background-color: #113b8d;
 }
+.event-teaser__inner:hover .event-teaser__head p {
+  max-height: 500px;
+}
 .event-teaser__inner:hover .plus {
   color: #4da3ff;
   transform: rotate(-90deg) scale(1.2);
@@ -5612,7 +5635,6 @@ ul.slick-dots li button:hover {
   color: var(--am_white);
   position: relative;
   padding: 30px 25px 50px 25px;
-  min-height: 356px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, calc(95% - 25px) 100%, 0 100%);
   transition: all 0.3s ease-in-out h3;
   transition-margin: 0 0 10px;
@@ -5620,11 +5642,17 @@ ul.slick-dots li button:hover {
   transition-font-weight: 600;
   transition-color: var(--am_white);
 }
+.event-teaser__head p {
+  max-height: 3.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease-in-out;
+}
 
 .plus {
   position: absolute;
-  bottom: 25px;
-  left: 40px;
+  bottom: 10px;
+  left: 24px;
   font-size: 40px;
   color: #196bdb;
   transition: all 0.3s ease-in-out;

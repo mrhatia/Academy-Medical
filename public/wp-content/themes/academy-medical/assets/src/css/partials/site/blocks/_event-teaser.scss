@@ -32,6 +32,9 @@
 		}
 		.event-teaser__head{
 			background-color: #113b8d;
+			p{
+				max-height: 500px;
+			}
 		}
 		.plus {
 			color: #4da3ff;
@@ -53,7 +56,6 @@
 	color: var(--am_white);
 	position: relative;
 	padding: 30px 25px 50px 25px;
-	min-height: 356px;
 	clip-path: polygon(0 0, 100% 0, 100% 85%, calc(95% - 25px) 100%, 0 100%);
 	transition: all 0.3s ease-in-out
 	h3 {
@@ -62,15 +64,20 @@
 		font-weight: 600;
 		color: var(--am_white);
 	}
+	p{
+		max-height: 3.2em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		transition: max-height 0.3s ease-in-out;
+	}
 }
 
 
 .plus {
 	position: absolute;
-	bottom: 25px;
-	right: 40px;
+	bottom: 10px;
+	right: 24px;
 	font-size: 40px;
 	color: #196bdb;
-	transition: all 0.3s
-		ease-in-out;
+	transition: all 0.3s ease-in-out;
 }

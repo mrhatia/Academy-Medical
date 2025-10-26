@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				<div class="wrapper">
 					<div>
 					<div class="event-teaser">
-  <div class="event-teaser-heading">
+  <div class="section-heading">
     <h2 class="heading-2">Driving Innovation Across the System</h2>
     <p>Academy Medical connects government agencies, manufacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and veteran-led precision.</p>
   </div>
@@ -292,6 +292,8 @@ document.addEventListener('DOMContentLoaded', function () {
 					</div>
 				</div>
 			</section>
+
+
 
 			<div class="am-s128"></div>
 			<section>
@@ -415,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			<section class="">
 				<div class="wrapper">
 					<div class="category-teaser">
-						<div class="category-header">
+						<div class="section-heading">
 							<h2 class="title">Industry Leading Suppliers</h2>
 							<p class="text">Through our expansive network of regional to global suppliers, we have
 								provided federal hospitals, military bases, and
@@ -722,9 +724,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			<section>
 				<div class="wrapper">
 					<div class="case-study-block">
-						<div class="case-study-heading">
+						<div class="section-heading">
 							<div class="kicker">Upcoming Events</div>
-							<h2 class="heading-1">INFORMATIVE & IMPACTFUL.</h2>
+							<h2 class="heading-1">Informative & Impactful</h2>
 							<p>Join us for inspiring events and hands-on workshops designed to connect, educate, and
 								empower our
 								medical community.</p>
@@ -913,7 +915,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				<div class="wrapper">
 					<div class="footer-cta">
 						<div class="footer-cta-content d-flex flex-column justify-content-center align-items-center">
-							<div class="cta-heading">
+							<div class="section-heading cta-heading">
 								<h2>Ready to Transform Your Healthcare Procurement?</h2>
 								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic adipisci nobis ratione
 									nihil doloribus earum! Harum libero fugiat officiis voluptatem eligendi non atque
