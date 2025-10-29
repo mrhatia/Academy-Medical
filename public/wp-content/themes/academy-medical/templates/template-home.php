@@ -116,14 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
 						</div>
 						<div class="what-we-do-inner d-flex flex-wrap justify-content-between ">
 							<div class="what-we-do-left-content">
-								<h4>What We Do</h4>
-								<p>
-									We provide multi-lingual services to children and their families including forensic
-									interviews,
-									educational prevention trainings, therapy, and medical care completely FREE as part
-									of our
-									ongoing efforts to Protect Austin Kids™.
-								</p>
+								<h4>Capabilities Statement</h4>
+								<p>Academy Medical delivers advanced, cost-effective medical products and solutions that strengthen federal healthcare systems nationwide.</p>
+								<p>Through our expansive network of regional and global suppliers, we have provided federal hospitals, military bases, and government facilities with the tools, resources, and solutions necessary to conquer each day. Through our partnerships, we empower our purchasers with the following products:</p>
 								<a href="#" class="button">About Us</a>
 							</div>
 							<div class="what-we-do-right-content">
@@ -132,36 +127,25 @@ document.addEventListener('DOMContentLoaded', function () {
 										<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
 								?>
-										<p><strong>938</strong> children told their story to a professional last year.
-										</p>
+										<p><strong>Durable Medical Equipment (DME)</strong></p>
 									</div>
 									<div class="what-we-do-item">
 										<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
 								?>
-										<p><strong>938</strong> children told their story to a professional last year.
-										</p>
+										<p><strong>Implants (Biological & Non-Biological)</strong></p>
 									</div>
 									<div class="what-we-do-item">
 										<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
 								?>
-										<p><strong>938</strong> children told their story to a professional last year.
-										</p>
+										<p><strong>Personal Protective Equipment (PPE)</strong></p>
 									</div>
 									<div class="what-we-do-item">
 										<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
 								?>
-										<p><strong>938</strong> children told their story to a professional last year.
-										</p>
-									</div>
-									<div class="what-we-do-item">
-										<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
-								?>
-										<p><strong>938</strong> children told their story to a professional last year.
-										</p>
+										<p><strong>Soft Goods & Wound Care</strong></p>
 									</div>
 								</div>
 							</div>
@@ -182,22 +166,16 @@ document.addEventListener('DOMContentLoaded', function () {
 							<div class="why-us-content">
 								<div class="content-block active">
 									<h3><span>01</span> Government</h3>
-									<p>Empower your team to engage students with timely, multi-channel conversations
-										that drive
-										enrollment completion, reduce melt, and improve outcomes.</p>
+									<p>We partner with federal health systems including VA hospitals and DoD medical centers to simplify procurement, accelerate contracting, and enhance care delivery through smarter, compliant solutions that ensure critical resources reach patients on time.</p>
 								</div>
 
 								<div class="content-block">
 									<h3 class="inactive"><span>02</span> Manufacturer</h3>
-									<p>Build lifelong alumni relationships and inspire donor action with personalized
-										outreach,
-										backed by data that helps your team drive giving outcomes at scale.</p>
+									<p>We help innovative manufacturers unlock VA and DoD opportunities by simplifying contracts, managing pricing and compliance, and aligning with federal procurement standards. Our veteran-led expertise turns complex government requirements into scalable opportunities for growth across nationwide healthcare systems.</p>
 								</div>
 								<div class="content-block">
 									<h3 class="inactive"><span>03</span> Supplier & Distributor</h3>
-									<p>Build lifelong alumni relationships and inspire donor action with personalized
-										outreach,
-										backed by data that helps your team drive giving outcomes at scale.</p>
+									<p>We help distributors meet government standards, streamline fulfillment, and connect with VA and DoD healthcare systems with confidence and compliance.</p>
 
 								</div>
 								<div class="why-us-btn">

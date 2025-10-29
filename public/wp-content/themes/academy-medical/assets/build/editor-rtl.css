@@ -3947,18 +3947,36 @@ Mixin for transition
 .acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 10px;
   border: 3px solid var(--am_border_3);
-  padding: 10px 20px;
+  padding: 30px 20px;
   border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item img {
   width: 50px;
   height: 50px;
+  transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item p {
   line-height: 1.4;
+  margin-bottom: 0;
+}
+.acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item p strong {
+  transition: all 0.3s ease-in-out;
+}
+.acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item:hover {
+  background-color: var(--am_color_primary);
+}
+.acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item:hover img {
+  transform: scale(1.1);
+}
+.acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item:hover p strong {
+  color: var(--am_white);
 }
 .acf-block-preview .logo-grid-heading .subtitle {
   font-size: 16px;
@@ -4014,7 +4032,6 @@ Mixin for transition
 }
 .acf-block-preview .faq-search input::after {
   position: absolute;
-  content: "fdfdfds";
 }
 .acf-block-preview .faq-item {
   background: var(--am_blue_4);
