@@ -666,6 +666,9 @@ document.addEventListener('DOMContentLoaded', function () {
 						</div>
 					</div>
 					<div class="faq-contact">
+						<a href=
+"mailto:feedback@geeksforgeeks.org?cc=feedback@xyz.com&bcc=contact@xyz.org&subject=Mail to GeeksForGeeks&body=Demo email"
+      target="_blank">
 						<div class="contact-box">
 							<div class="icon">
 								<?php
@@ -675,7 +678,8 @@ document.addEventListener('DOMContentLoaded', function () {
 							<h4>Email Us</h4>
 							<p>Have questions or need assistance? Reach out to us via email. We're here to help!</p>
 						</div>
-
+</a>
+						<a href="tel:+4733378901">
 						<div class="contact-box">
 							<div class="icon">
 								<?php
@@ -685,6 +689,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							<h4>Call Us</h4>
 							<p>Need help or have inquiries? Call us anytime. We’re here for you.</p>
 						</div>
+						</a>
 					</div>
 				</div>
 			</section>

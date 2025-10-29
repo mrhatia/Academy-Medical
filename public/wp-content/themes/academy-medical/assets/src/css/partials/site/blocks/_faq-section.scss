@@ -80,6 +80,13 @@
 	margin: 0 auto;
 	gap: 20px;
 	margin-top: 50px;
+	a{
+		border-bottom: none;
+		width: inherit;
+		&:hover{
+			transform: scale(1.03);
+		}
+	}
 
 	.contact-box {
 		flex: 1 1 300px;

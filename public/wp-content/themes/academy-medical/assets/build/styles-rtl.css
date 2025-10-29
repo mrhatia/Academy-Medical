@@ -6300,6 +6300,13 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   gap: 20px;
   margin-top: 50px;
 }
+.faq-contact a {
+  border-bottom: none;
+  width: inherit;
+}
+.faq-contact a:hover {
+  transform: scale(1.03);
+}
 .faq-contact .contact-box {
   flex: 1 1 300px;
   background: var(--am_blue_4);
