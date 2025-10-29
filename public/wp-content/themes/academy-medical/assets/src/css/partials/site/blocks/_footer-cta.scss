@@ -31,17 +31,7 @@
 		font-style: normal;
 		font-size: var(--am_font_size_16);
 	}
-	.cta-white-btn{
-		color: var(--am_theme_btn_bgcolor);
-		background-color: var(--am_white);
-		border: 2px solid var(--am_white);
-		transition: all 0.35s ease-in-out;
-		&:hover{
-			background-color: var(--am_blue_5);
-			color: var(--am_white);
-			border: 2px solid var(--am_blue_5);
-		}
-	}
+
 	.cta-blue-btn{
 		background-color: transparent;
 		color: var(--am_white);
@@ -52,5 +42,16 @@
 			background-color: var(--am_white);
 			border: 2px solid var(--am_white);
 		}
+	}
+}
+.cta-white-btn{
+	color: var(--am_theme_btn_bgcolor);
+	background-color: var(--am_white);
+	border: 2px solid var(--am_white);
+	transition: all 0.35s ease-in-out;
+	&:hover{
+		background-color: var(--am_blue_5);
+		color: var(--am_white);
+		border: 2px solid var(--am_blue_5);
 	}
 }

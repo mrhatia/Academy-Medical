@@ -1,0 +1,41 @@
+.logo-grid-heading {
+	.subtitle {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	.main-heading {
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 1.1;
+		span {
+			display: block;
+		}
+	}
+}
+
+.logo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 40px;
+	margin-top: 60px;
+	justify-items: center;
+	align-items: center;
+	.logo-item{
+		display: flex;
+		flex-direction: column;
+		img {
+			max-height: 40px;
+			margin-bottom: 12px;
+		}
+		.review {
+			background: var(--am_topbar_bgcolor);
+			color: var(--am_white);
+			font-size: 12px;
+			font-weight: 600;
+			border-radius: 20px;
+			padding: 4px 10px;
+			display: inline-block;
+		}
+	}
+}

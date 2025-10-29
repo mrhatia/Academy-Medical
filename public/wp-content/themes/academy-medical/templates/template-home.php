@@ -59,87 +59,7 @@ get_header();
   </div>
 </div>
 
-				</div>
-				<div class="numbers-section full-width-container">
-<div class="splide stats-slider" id="stats-splide" aria-label="Statistics Slider">
-  <div class="splide__track">
-    <ul class="splide__list">
 
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-1.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-2.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-3.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-4.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-5.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-6.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-7.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-8.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-9.webp">';
-			?>
-		</div>
-      </li>
-      <li class="splide__slide item item-1 d-flex flex-column justify-content-between">
-      	<div class="stats-logo image-cover">
-			<?php
-				echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-10.webp">';
-			?>
-		</div>
-      </li>
-
-
-    </ul>
-  </div>
-</div>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var splide = new Splide('.stats-slider', {
@@ -180,474 +100,217 @@ document.addEventListener('DOMContentLoaded', function () {
 			</section>
 
 			<div class="am-s128"></div>
-					<section>
-				<div class="wrapper">
-					<div class="about-us d-flex justify-content-between align-items-center flex-wrap">
-						<div class="about-us-content">
-							<div class="kicker">About Us</div>
-							<h2>Founded in Service. Mission Driven. Committed to Better Care.</h2>
-							<p>Academy Medical is a service-disabled veteran-owned business dedicated to redefining
-								healthcare for service members,
-								veterans, and federal healthcare facilities. We combine veteran discipline, federal
-								contracting expertise, and strong
-								supplier partnerships to deliver advanced technologies and medical solutions that
-								strengthen our nation’s healthcare
-								system.</p>
-							<p>For over a decade, Academy Medical has supported the mission of the United States
-								government. From VA hospitals to DoD
-								medical centers and other federal healthcare facilities, our solutions empower care
-								providers with innovative products,
-								faster access, and measurable performance. Every delivery reflects our commitment to
-								accuracy, transparency, and mission
-								success, ensuring innovation reaches those who need it most.</p>
-								<p class="last-p">
-									In federal procurement, reliability is everything. That is where we lead.
-
-								</p>
-								<ul>
-														<li>
-					Where others navigate compliance, we master it.
-					</li>
-														<li>
-					Where others transact, we partner.
-
-									</li>
-								</ul>
-							<div class="about-us-btn d-flex flex-wrap">
-								<a href="#" class="trans-btn">Partner With Us</a>
-								<a href="#" class="button">Learn More About Us</a>
-							</div>
-
-						</div>
-						<div class="about-us-image image-cover">
-							<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/numbers.webp">';
-							?>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="am-s128"></div>
-			<section class="full-width-container over-flow-hidden">
-				<div class="wrapper">
-					<div>
-					<div class="event-teaser">
-  <div class="section-heading">
-    <h2 class="heading-2">Driving Innovation Across the System</h2>
-    <p>Academy Medical connects government agencies, manufacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and veteran-led precision.</p>
-  </div>
-
- <div class="event-teaser__list d-flex justify-content-between gap-30 flex-wrap ">
-								<a href="#">
-									<div class="event-teaser__inner">
-										<div class="event-teaser__image"
-											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/goverment.webp');">
-										</div>
-										<div class="event-teaser__head">
-											<h3>Government</h3>
-											<p>We partner with federal health systems including VA hospitals and DoD
-												medical
-												centers to simplify procurement,
-												accelerate contracting, and enhance care delivery through smarter,
-												compliant
-												solutions that ensure critical resources
-												reach patients on time.</p>
-											<div class="plus">+</div>
-										</div>
-									</div>
-								</a>
-								<a href="#">
-									<div class="event-teaser__inner">
-										<div class="event-teaser__image"
-											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/manfucture.webp');">
-										</div>
-										<div class="event-teaser__head">
-											<h3>Manufacturer</h3>
-											<p>We help innovative manufacturers unlock VA and DoD opportunities by
-												simplifying contracts, managing pricing and
-												compliance, and aligning with federal procurement standards. Our
-												veteran-led expertise turns complex government
-												requirements into scalable opportunities for growth across nationwide
-												healthcare systems.</p>
-											<div class="plus">+</div>
-										</div>
-									</div>
-								</a>
-								<a href="#">
-									<div class="event-teaser__inner">
-										<div class="event-teaser__image"
-											style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/spplier.webp');">
-										</div>
-										<div class="event-teaser__head">
-											<h3>Supplier & Distributor</h3>
-											<p>We help distributors meet government standards, streamline fulfillment,
-												and connect with VA and DoD healthcare systems
-												with confidence and compliance.</p>
-											<div class="plus">+</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-					</div>
-				</div>
-			</section>
-
-
-
-			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
-					<div class="who-we-are d-flex justify-content-between flex-wrap align-items-center">
-						<div class="who-we-are-content">
-							<h2>
-								How We Help Manufacturers and Suppliers Grow Their Revenue
-							</h2>
-							<p>TrillaMed, founded by U.S. Army Airborne Ranger Veterans, is a Service-Disabled
-								Veteran-Owned Small Business
-								specializing in distributing medical.
-							</p>
-							<div class="who-we-are-items">
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-										Access Federal Opportunities
-									</h3>
-									<p>
-										We connect your business with VA, DoD, and other government healthcare systems, expanding your market reach and unlocking reliable revenue streams.
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-										Simplify Contracts and Compliance
-									</h3>
-									<p>
-										Our veteran-led team manages contract vehicles, pricing submissions, and federal regulations, turning complex procurement processes into clear and compliant growth pathways.
-
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-										Leverage SDVOSB Advantage
-									</h3>
-									<p>
-										As a service-disabled veteran-owned business, we help you benefit from preferred contracting status to secure opportunities faster and more efficiently.
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-										End-to-End Partnership and Support
-
-									</h3>
-									<p>
-										From registration to fulfillment, our specialists guide you every step of the way, ensuring compliance, accelerating onboarding, and helping your organization scale with confidence.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="who-we-are-image image-cover">
-							<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-3.webp">';
-							?>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="am-s128"></div>
-				<section>
-				<div class="wrapper">
-					<div class="who-we-are d-flex justify-content-between flex-wrap align-items-center">
-							<div class="who-we-are-image image-cover">
-							<?php
-							echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/categories-teaser-2.webp">';
-							?>
-						</div>
-						<div class="who-we-are-content">
-							<h2>
-								How We Support Federal Healthcare Facilities in Delivering Better Care
-
-							</h2>
-							<p>TrillaMed, founded by U.S. Army Airborne Ranger Veterans, is a Service-Disabled
-								Veteran-Owned Small Business
-								specializing in distributing medical.
-							</p>
-							<div class="who-we-are-items">
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-									Access to Trusted Suppliers
-									</h3>
-									<p>
-									 We provide federal healthcare facilities with direct access to a qualified network of compliant, certified suppliers who meet procurement and clinical standards.
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-									Streamline the Procurement Process
-									</h3>
-									<p>
-										 Our veteran-led team manages contracting, logistics, and compliance to eliminate inefficiencies and ensure every order moves seamlessly from request to delivery.
-
-
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-									Expertise in Federal and State Regulations
-									</h3>
-									<p>
- 									We help facilities navigate complex procurement frameworks, remain audit-ready, and resolve regulatory challenges with speed and accuracy.
-
-									</p>
-								</div>
-								<div class="who-we-are-single-item">
-									<h3 class="heading-3">
-										End-to-End Partnership and Support
-									</h3>
-									<p>
-										 From sourcing to fulfillment, our dedicated support team ensures every procurement mission is executed with precision, transparency, and on-time delivery.
-									</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-			<div class="am-s128"></div>
-
-			<section class="">
-				<div class="wrapper">
-					<div class="category-teaser">
+					<div class="what-we-do">
 						<div class="section-heading">
-							<h2 class="title">Industry Leading Suppliers</h2>
-							<p class="text">Through our expansive network of regional to global suppliers, we have
-								provided federal hospitals, military bases, and
+							<div class="kicker">Our Vision</div>
+							<h2>
+								Industry Leading Suppliers
+							</h2>
+							<p>Through our expansive network of regional to global suppliers, we have provided federal
+								hospitals, military bases, and
 								government facilities with the tools, resources, and solutions necessary to conquer each
 								day. Through our partnerships,
 								we empower our purchasers with the following products:</p>
 						</div>
-
-						<div class="category-slider">
-							<div class="category-item" data-category="cardiology">
-								<div class="outer d-flex align-items-center justify-content-center">
-									<div class="inner d-flex align-items-center justify-content-center">01</div>
-								</div>
-								<span>Durable Medical Equipment (DME)
-								</span>
+						<div class="what-we-do-inner d-flex flex-wrap justify-content-between ">
+							<div class="what-we-do-left-content">
+								<h4>What We Do</h4>
+								<p>
+									We provide multi-lingual services to children and their families including forensic
+									interviews,
+									educational prevention trainings, therapy, and medical care completely FREE as part
+									of our
+									ongoing efforts to Protect Austin Kids™.
+								</p>
+								<a href="#" class="button">About Us</a>
 							</div>
-							<div class="category-item" data-category="cardiology">
-								<div class="outer d-flex align-items-center justify-content-center">
-									<div class="inner d-flex align-items-center justify-content-center">02</div>
+							<div class="what-we-do-right-content">
+								<div class="what-we-do-items two-columns">
+									<div class="what-we-do-item">
+										<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
+								?>
+										<p><strong>938</strong> children told their story to a professional last year.
+										</p>
+									</div>
+									<div class="what-we-do-item">
+										<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
+								?>
+										<p><strong>938</strong> children told their story to a professional last year.
+										</p>
+									</div>
+									<div class="what-we-do-item">
+										<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
+								?>
+										<p><strong>938</strong> children told their story to a professional last year.
+										</p>
+									</div>
+									<div class="what-we-do-item">
+										<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
+								?>
+										<p><strong>938</strong> children told their story to a professional last year.
+										</p>
+									</div>
+									<div class="what-we-do-item">
+										<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/global-icon.svg">';
+								?>
+										<p><strong>938</strong> children told their story to a professional last year.
+										</p>
+									</div>
 								</div>
-								<span>Implants (Biological & Non-Biological)
-								</span>
 							</div>
-							<div class="category-item" data-category="cardiology">
-								<div class="outer d-flex align-items-center justify-content-center">
-									<div class="inner d-flex align-items-center justify-content-center">03</div>
-								</div>
-								<span>Personal Protective Equipment (PPE)
-								</span>
-							</div>
-							<div class="category-item" data-category="cardiology">
-								<div class="outer d-flex align-items-center justify-content-center">
-									<div class="inner d-flex align-items-center justify-content-center">04</div>
-								</div>
-								<span>Soft Goods & Wound Care
-								</span>
-							</div>
-
-
-
-							<!-- <div class="category-item" data-category="orthopedic">
-								<div class="image-wrap">
-									<img src="../assets/src/images/uploads/Orthopedic.webp" alt="">
-								</div>
-								<span>Implants Biological & Non-Biological</span>
-							</div>
-
-							<div class="category-item" data-category="dental">
-								<div class="image-wrap">
-									<img src="../assets/src/images/uploads/Dental.webp" alt="">
-
-								</div>
-								<span>Personal Protective Equipment(PPE)</span>
-							</div>
-
-							<div class="category-item" data-category="surgical">
-								<div class="image-wrap">
-									<img src="../assets/src/images/uploads/Surgical.webp" alt="">
-
-								</div>
-								<span>Soft Goods</span>
-							</div>
-							<div class="category-item" data-category="surgical">
-								<div class="image-wrap">
-									<img src="../assets/src/images/uploads/Orthopedic.webp" alt="">
-
-								</div>
-								<span>Wound Care</span>
-							</div> -->
-
 						</div>
 					</div>
-
 				</div>
 			</section>
-			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+			<div class="am-s128"></div>
+			<section class="why-us-section">
+				<div class="wrapper">
+					<div class="why-us">
 
-			<script>
-				jQuery(document).ready(function () {
-					jQuery('.category-slider').slick({
-						slidesToShow: 3,
-						slidesToScroll: 1,
-						autoplay: true,
-						autoplaySpeed: 3000,
-						arrows: false,
-						dots: true,
-						responsive: [
-							{
-								breakpoint: 1024,
-								settings: {
-									slidesToShow: 3,
-								},
-							},
-							{
-								breakpoint: 768,
-								settings: {
-									slidesToShow: 2,
-								},
-							},
-							{
-								breakpoint: 480,
-								settings: {
-									slidesToShow: 1,
-								},
-							},
-						],
-					});
-				});
-			</script>
+						<div class="section-heading">
+							<h2><span>Data-Driven</span> Outcomes<br>from Our Conversation<br>Intelligence Platform</h2>
+						</div>
 
+						<div class="why-us-inner d-flex flex-wrap align-items-center justify-content-between">
+							<div class="why-us-content">
+								<div class="content-block active">
+									<h3><span>01</span> Government</h3>
+									<p>Empower your team to engage students with timely, multi-channel conversations
+										that drive
+										enrollment completion, reduce melt, and improve outcomes.</p>
+								</div>
+
+								<div class="content-block">
+									<h3 class="inactive"><span>02</span> Manufacturer</h3>
+									<p>Build lifelong alumni relationships and inspire donor action with personalized
+										outreach,
+										backed by data that helps your team drive giving outcomes at scale.</p>
+								</div>
+								<div class="content-block">
+									<h3 class="inactive"><span>03</span> Supplier & Distributor</h3>
+									<p>Build lifelong alumni relationships and inspire donor action with personalized
+										outreach,
+										backed by data that helps your team drive giving outcomes at scale.</p>
+
+								</div>
+								<div class="why-us-btn">
+									<a href="#" class="button">Learn More</a>
+								</div>
+							</div>
+
+							<div class="why-us-image image-cover">
+								<div class="image-grid">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/goverment.webp">';
+								?>
+									<div class="stat orange">
+										<h4>98%</h4>
+										<p>retention of students who opt in to messaging</p>
+									</div>
+									<div class="stat purple">
+										<h4>300%</h4>
+										<p>increase in giving day donations</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
-					<div class="splide info-slider" aria-label="Info Slider">
-						<div class="section-heading">
-							<h2 class="heading-1" >Our Supplier Network</h2>
-							<p>Academy Medical connects goverment agencies, manugacturers, and distributors to streamline the federal healthcare supply chain with speed, compliance, and vetern-led precision.</p>
-						</div>
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-1.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-2.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-3.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-4.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-5.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-6.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-7.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-8.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-9.webp">';
-										?>
-									</div>
-								</li>
-								<li class="splide__slide info-slider-card">
-									<div class="info-slider-icon">
-										<?php
-										echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-10.webp">';
-										?>
-									</div>
-								</li>
-
-							</ul>
+					<div class="two-columns-tiles-items d-flex ">
+						<div class="two-columns-tiles-item d-flex justify-content-center flex-column">
+							<h2>Creating Change</h2>
+							<p>
+								Advocacy is at the heart of what we do. We champion the rights of individuals
+								with disabilities, amplifying their voices to drive accessibility and opportunity
+								in the workplace and beyond. Discover how our initiatives empower communities
+								and influence meaningful change.
+							</p>
+							<a href=" #" class="two-columns-tiles-btn cta-white-btn" tabindex="0">Advocacy</a>
 						</div>
 
-						<div class="case-study-btn">
-							<a href="#" class="button" tabindex="0">view our supplier network</a>
+						<div class="two-columns-tiles-item d-flex justify-content-center flex-column">
+							<h2>Collaborating for Impact</h2>
+							<p>
+								We believe in the power of partnerships to create lasting opportunities. By working
+								alongside organizations, government agencies, and businesses, PCSI builds pathways
+								and fosters economic empowerment for people with disabilities. Explore how our
+								collaborations make a difference.
+							</p>
+							<a href="#" class="two-columns-tiles-btn cta-white-btn" tabindex="0">Partnership</a>
 						</div>
-
 					</div>
-					<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-					<script
-						src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
-					<script>
-						document.addEventListener('DOMContentLoaded', function () {
-							new Splide('.info-slider', {
-								type: 'loop',
-								perPage: 3,
-								gap: '2rem',
-								arrows: false,
-								pagination: false,
-								drag: 'free',
-								focus: 'center',
-								autoScroll: {
-									speed: 1,
-									pauseOnHover: false,
-									pauseOnFocus: false,
-								},
-								breakpoints: {
-									1024: { perPage: 2 },
-									640: { perPage: 1 },
-								},
-							}).mount(window.splide.Extensions);
-						});
-					</script>
-
 				</div>
 			</section>
+			<div class="am-s128"></div>
+
+		<section class="credibility-section">
+				<div class="wrapper">
+					<div class="logo-grid-heading">
+						<p class="subtitle">Here comes the credibility</p>
+						<h2 class="main-heading">
+							22 years of <br>
+							<span>design excellence</span>
+						</h2>
+					</div>
+
+					<div class="logo-grid three-columns ">
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-1.webp">';
+								?>
+							<p class="review">45 REVIEWS ★★★★★</p>
+						</div>
+
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-2.webp">';
+								?>
+							<p class="review">36 REVIEWS ★★★★★</p>
+						</div>
+
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-3.webp">';
+								?>
+							<p class="review">59 REVIEWS ★★★★★</p>
+						</div>
+
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-4.webp">';
+								?>
+							<p class="review">NO. 4,207</p>
+						</div>
+
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-5.webp">';
+								?>
+							<p class="review">SOLUTIONS PARTNER</p>
+						</div>
+
+						<div class="logo-item">
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/supplier-logo-6.webp">';
+								?>
+							<p class="review">AGENCY PARTNER</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 
 			<div class="am-s128"></div>
 			<section>
@@ -932,7 +595,155 @@ document.addEventListener('DOMContentLoaded', function () {
 					</div>
 				</div>
 			</section>
-			<div class="am-s2"></div>
+
+			<div class="am-s96"></div>
+
+			<section class="faq-section">
+				<div class="wrapper">
+					<div class="section-heading">
+						<h2>Frequently Asked Questions</h2>
+					</div>
+
+					<div class="faq-search">
+						<input type="text" placeholder="Search for a question">
+					</div>
+
+					<div class="faq-container d-flex flex-column gap-10">
+						<div class="faq-item active">
+							<button class="faq-question">
+								How do I get started?
+								<span class="icon">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<p>
+									When you sign up, you'll start with the Free Plan. It's ideal for new teams and
+									allows unlimited
+									team members,
+									but only 1 active editable project at a time. For more advanced features, check out
+									our Basic,
+									Premium, or
+									Enterprise plans.
+								</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<button class="faq-question">
+								What is included in the Free Plan?
+								<span class="icon">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<p>The Free Plan includes unlimited team members and basic collaboration features.</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<button class="faq-question">
+								How do I cancel my membership?
+								<span class="icon">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<p>You can cancel your membership anytime in your account settings under “Billing”.</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<button class="faq-question">
+								How do I transfer my membership to a different account?
+								<span class="icon">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<p>Contact our support team and we’ll help you securely transfer your membership.</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<button class="faq-question">
+								What is the refund policy?
+								<span class="icon">
+									<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
+								?>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<p>Refunds are available within 14 days of purchase, depending on your plan’s terms.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-contact">
+						<div class="contact-box">
+							<div class="icon">
+								<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/mail-icon.svg">';
+								?>
+							</div>
+							<h4>Email Us</h4>
+							<p>Have questions or need assistance? Reach out to us via email. We're here to help!</p>
+						</div>
+
+						<div class="contact-box">
+							<div class="icon">
+								<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/phone-icon.svg">';
+								?>
+							</div>
+							<h4>Call Us</h4>
+							<p>Need help or have inquiries? Call us anytime. We’re here for you.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="am-s96"></div>
+
+			<script>
+				const faqItems = document.querySelectorAll('.faq-item');
+				const searchInput = document.getElementById('faqSearch');
+
+				faqItems.forEach((item) => {
+					const button = item.querySelector('.faq-question');
+					button.addEventListener('click', () => {
+						faqItems.forEach((i) => {
+							if (i !== item) {
+								i.classList.remove('active');
+							}
+						});
+						item.classList.toggle('active');
+					});
+				});
+
+				searchInput.addEventListener('input', () => {
+					const query = searchInput.value.toLowerCase().trim();
+
+					faqItems.forEach((item) => {
+						const question = item.querySelector('.faq-question').innerText.toLowerCase();
+						const answer = item.querySelector('.faq-answer p').innerText.toLowerCase();
+
+						// Show item if query matches question or answer
+						if (question.includes(query) || answer.includes(query)) {
+							item.style.display = 'block';
+						} else {
+							item.style.display = 'none';
+						}
+					});
+				});
+			</script>
 	<!-- Content End -->
 </section>
 <?php get_footer(); ?>

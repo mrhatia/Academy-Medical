@@ -1,0 +1,46 @@
+
+.two-columns-tiles-items {
+	gap: 2%;
+
+
+	.two-columns-tiles-item {
+		flex: 1 1 45%;
+		background: linear-gradient(to bottom, #1e90ff, #004aad);
+		color: white;
+		border-radius: 20px;
+		padding: 40px;
+		text-align: center;
+		box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+		min-width: 300px;
+		min-height: 400px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			transform: translateY(-10px) scale(1.03);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+			background: linear-gradient(to bottom, #33a1ff, #003d99);
+		}
+		h2 {
+			font-size: var(--am_font_size_48);
+			width: 60%;
+			margin: 0 auto 20px;
+			letter-spacing: 2px;
+		}
+		p {
+			font-size: 1em;
+			line-height: 1.6;
+			margin-bottom: 30px;
+		}
+		.two-columns-tiles-btn{
+			width: 30%;
+			margin: 0 auto;
+			text-transform: uppercase;
+			&:hover{
+				background: #f0f0f0;
+				color: #002f6c;
+			}
+		}
+	}
+}
+
+
