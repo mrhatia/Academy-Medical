@@ -57,6 +57,7 @@ get_header();
       <div class="shape-circle shape-3"></div>
     </div>
   </div>
+
 </div>
 
 
@@ -98,7 +99,95 @@ document.addEventListener('DOMContentLoaded', function () {
 			  </div>
 
 			</section>
+			<section>
+				<div class="wrapper">
+					<div class="numbers-stats d-flex align-items-center justify-content-between">
+						<div class="numbers-content d-flex flex-column justify-content-center gap-30">
 
+							<?php
+									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/usa-flag.webp">';
+								?>
+							<p>
+								PCSI is a nationwide, values-based, mission-driven contractor that proudly
+								serves the private and public sector.
+							</p>
+							<a href="#" class="about-link">ABOUT PCSI</a>
+						</div>
+						<div class="numbers-items">
+							<div class="number-item">
+								<p class="label">Improved Efficiency</p>
+								<h3 class="heading-1">93%</h3>
+								<p>Orders processed within 24 hours</p>
+							</div>
+							<div class="number-item">
+								<p class="label">Faster Turnaround</p>
+								<h3 class="heading-1">10 days</h3>
+								<p>Average government AR collection</p>
+							</div>
+							<div class="number-item">
+								<p class="label">Accelerated Payments</p>
+								<h3 class="heading-1">24 hours</h3>
+								<p>Vendor payments completed</p>
+							</div>
+							<div class="number-item">
+								<p class="label">Revenue Growth</p>
+								<h3 class="heading-1">$200M+</h3>
+								<p>Annual sales across partners</p>
+							</div>
+							<!-- <div class="number-item">
+								<p class="label">Supplied in Medical Equipment</p>
+								<h3 class="heading-1">$1.3B</h3>
+								<p>Supplied in Medical Equipment</p>
+							</div>
+							<div class="number-item">
+								<p class="label">Federal Facilities Supported</p>
+								<h3 class="heading-1">700+</h3>
+								<p>Serving nationwide</p>
+							</div>
+							<div class="number-item">
+								<p class="label">Equipment & Supply Items</p>
+								<h3 class="heading-1">70,000+</h3>
+								<p>In active distribution</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="am-s128"></div>
+			<section class=" about-us-bg">
+				<div class="wrapper">
+					<div class="about-us">
+						<div class="about-us-inner">
+							<div class="about-us-content">
+								<h3>Founded in Service. Mission Driven. Committed to Better Care.</h3>
+								<p>Academy Medical is a service-disabled veteran-owned business dedicated to redefining
+									healthcare for service members,
+									veterans, and federal healthcare facilities. We combine veteran discipline, federal
+									contracting expertise, and strong
+									supplier partnerships to deliver advanced technologies and medical solutions that
+									strengthen our nation’s healthcare
+									system.</p>
+								<p>For over a decade, Academy Medical has supported the mission of the United States
+									government. From VA hospitals to DoD
+									medical centers and other federal healthcare facilities, our solutions empower care
+									providers with innovative products,
+									faster access, and measurable performance. Every delivery reflects our commitment to
+									accuracy, transparency, and mission
+									success, ensuring innovation reaches those who need it most.</p>
+								<ul>
+									<p>In federal procurement, reliability is everything. That is where we lead.</p>
+									<li>Where others navigate compliance, we master it.</li>
+									<li>Where others transact, we partner.</li>
+								</ul>
+								<div class="about-us-btn d-flex">
+									<a href="#" class="trans-btn" tabindex="0">Partner With Us</a>
+									<a href="#" class="button" tabindex="0">Learn More About Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
