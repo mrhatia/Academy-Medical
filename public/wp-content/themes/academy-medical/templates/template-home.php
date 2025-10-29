@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
 								in the workplace and beyond. Discover how our initiatives empower communities
 								and influence meaningful change.
 							</p>
-							<a href=" #" class="two-columns-tiles-btn cta-white-btn" tabindex="0">Advocacy</a>
+							<a href=" #" class="two-columns-tiles-btn button" tabindex="0">Advocacy</a>
 						</div>
 
 						<div class="two-columns-tiles-item d-flex justify-content-center flex-column">
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
 								and fosters economic empowerment for people with disabilities. Explore how our
 								collaborations make a difference.
 							</p>
-							<a href="#" class="two-columns-tiles-btn cta-white-btn" tabindex="0">Partnership</a>
+							<a href="#" class="two-columns-tiles-btn button" tabindex="0">Partnership</a>
 						</div>
 					</div>
 				</div>
@@ -235,11 +235,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		<section class="credibility-section">
 				<div class="wrapper">
-					<div class="logo-grid-heading">
-						<p class="subtitle">Here comes the credibility</p>
+					<div class="logo-grid-heading section-heading">
+						<div class="kicker">Here comes the credibility</div>
 						<h2 class="main-heading">
 							22 years of <br>
-							<span>design excellence</span>
+							design excellence
 						</h2>
 					</div>
 

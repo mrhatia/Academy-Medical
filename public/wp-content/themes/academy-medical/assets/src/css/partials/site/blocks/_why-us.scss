@@ -6,7 +6,7 @@
 }
 
 .section-heading h2 span {
-	color: var(--am_blue_2);
+	color: var(--am_topbar_bgcolor);
 }
 
 
@@ -75,17 +75,17 @@
 }
 
 .stat.orange {
-	background: #ffe5d4;
+	background: var(--am_blue_4);
 	top: 20%;
 	h4{
-		color: var(--am_signal);
+		color: var(--am_blue_2);
 	}
 }
 
 .stat.purple {
-	background: #e8e6ff;
+	background: var(--am_blue_2);
 	top: 50%;
 	h4{
-		color: var(--am_blue_5);
+		color: var(--am_blue_4);
 	}
 }

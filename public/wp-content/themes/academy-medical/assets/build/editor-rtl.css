@@ -3804,21 +3804,17 @@ Mixin for transition
 }
 .acf-block-preview .two-columns-tiles-items .two-columns-tiles-item {
   flex: 1 1 45%;
-  background: linear-gradient(to bottom, #1e90ff, #004aad);
-  color: white;
+  border: 2px solid var(--am_topbar_bgcolor);
   border-radius: 20px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   min-width: 300px;
   min-height: 400px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .acf-block-preview .two-columns-tiles-items .two-columns-tiles-item:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom, #33a1ff, #003d99);
+  transform: translateY(-2px) scale(1.01);
 }
 .acf-block-preview .two-columns-tiles-items .two-columns-tiles-item h2 {
   font-size: var(--am_font_size_48);
@@ -3832,7 +3828,7 @@ Mixin for transition
   margin-bottom: 30px;
 }
 .acf-block-preview .two-columns-tiles-items .two-columns-tiles-item .two-columns-tiles-btn {
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   text-transform: uppercase;
 }
@@ -3847,7 +3843,7 @@ Mixin for transition
   flex: 1 1 45%;
 }
 .acf-block-preview .section-heading h2 span {
-  color: var(--am_blue_2);
+  color: var(--am_topbar_bgcolor);
 }
 .acf-block-preview .content-block {
   margin-bottom: 40px;
@@ -3903,18 +3899,18 @@ Mixin for transition
   line-height: 1;
 }
 .acf-block-preview .stat.orange {
-  background: #ffe5d4;
+  background: var(--am_blue_4);
   top: 20%;
 }
 .acf-block-preview .stat.orange h4 {
-  color: var(--am_signal);
+  color: var(--am_blue_2);
 }
 .acf-block-preview .stat.purple {
-  background: #e8e6ff;
+  background: var(--am_blue_2);
   top: 50%;
 }
 .acf-block-preview .stat.purple h4 {
-  color: var(--am_blue_5);
+  color: var(--am_blue_4);
 }
 .acf-block-preview .section-heading .highlight {
   background: var(--am_blue_2);
@@ -3978,18 +3974,10 @@ Mixin for transition
 .acf-block-preview .what-we-do-inner .what-we-do-right-content .what-we-do-items .what-we-do-item:hover p strong {
   color: var(--am_white);
 }
-.acf-block-preview .logo-grid-heading .subtitle {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
 .acf-block-preview .logo-grid-heading .main-heading {
   font-size: 72px;
   font-weight: 700;
   line-height: 1.1;
-}
-.acf-block-preview .logo-grid-heading .main-heading span {
-  display: block;
 }
 .acf-block-preview .logo-grid {
   display: grid;
@@ -4034,13 +4022,13 @@ Mixin for transition
   position: absolute;
 }
 .acf-block-preview .faq-item {
-  background: var(--am_blue_4);
+  background: var(--am_topbar_bgcolor);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 .acf-block-preview .faq-item .faq-question {
-  color: black;
+  color: var(--am_white);
   width: 100%;
   background: none;
   border: none;
@@ -4057,6 +4045,7 @@ Mixin for transition
   transform: rotate(-45deg);
 }
 .acf-block-preview .faq-item .faq-question .icon img {
+  filter: invert(1);
   width: 15px;
   height: 15px;
 }
@@ -4069,7 +4058,7 @@ Mixin for transition
 .acf-block-preview .faq-item .faq-answer p {
   margin: 15px 0;
   font-size: 14px;
-  color: #555;
+  color: var(--am_white);
   width: 75%;
 }
 .acf-block-preview .faq-item.active .faq-answer {
@@ -4099,7 +4088,8 @@ Mixin for transition
 }
 .acf-block-preview .faq-contact .contact-box {
   flex: 1 1 300px;
-  background: var(--am_blue_4);
+  background: var(--am_topbar_bgcolor);
+  color: var(--am_white);
   border-radius: 12px;
   text-align: center;
   padding: 25px;
@@ -4109,6 +4099,7 @@ Mixin for transition
   font-size: 24px;
 }
 .acf-block-preview .faq-contact .contact-box .icon img {
+  filter: invert(1);
   width: 30px;
   height: 30px;
 }
@@ -4118,7 +4109,6 @@ Mixin for transition
   font-weight: 600;
 }
 .acf-block-preview .faq-contact .contact-box p {
-  color: #555;
   font-size: 14px;
 }
 .acf-block-preview form {

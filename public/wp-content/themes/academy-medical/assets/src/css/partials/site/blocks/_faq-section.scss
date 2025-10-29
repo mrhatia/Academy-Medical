@@ -19,13 +19,13 @@
 
 
 .faq-item {
-	background: var(--am_blue_4);
+	background: var(--am_topbar_bgcolor);
 	border-radius: 12px;
 	overflow: hidden;
 	transition: all 0.3s ease;
 
 	.faq-question {
-		color: black;
+		color: var(--am_white);
 		width: 100%;
 		background: none;
 		border: none;
@@ -40,6 +40,7 @@
 		.icon{
 			transform: rotate(45deg);
 			img{
+				filter: invert(1);
 				width: 15px;
 				height: 15px;
 			}
@@ -53,7 +54,7 @@
 		p {
 			margin: 15px 0;
 			font-size: 14px;
-			color: #555;
+			color: var(--am_white);
 			width: 75%;
 		}
 	}
@@ -90,7 +91,8 @@
 
 	.contact-box {
 		flex: 1 1 300px;
-		background: var(--am_blue_4);
+		background: var(--am_topbar_bgcolor);
+		color: var(--am_white);
 		border-radius: 12px;
 		text-align: center;
 		padding: 25px;
@@ -98,6 +100,7 @@
 		.icon {
 			font-size: 24px;
 			img{
+				filter: invert(1);
 				width: 30px;
 				height: 30px;
 			}
@@ -108,7 +111,6 @@
 			font-weight: 600;
 		}
 		p {
-			color: #555;
 			font-size: 14px;
 		}
 	}
