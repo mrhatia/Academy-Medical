@@ -3440,16 +3440,16 @@ Mixin for transition
   background-color: var(--am_white);
   border: 2px solid var(--am_white);
 }
-.acf-block-preview .cta-white-btn {
+.acf-block-preview .cta-btn.cta-white-btn {
   color: var(--am_theme_btn_bgcolor);
   background-color: var(--am_white);
   border: 2px solid var(--am_white);
   transition: all 0.35s ease-in-out;
 }
-.acf-block-preview .cta-white-btn:hover {
-  background-color: var(--am_blue_5);
+.acf-block-preview .cta-btn.cta-white-btn:hover {
+  background-color: transparent;
   color: var(--am_white);
-  border: 2px solid var(--am_blue_5);
+  border: 2px solid var(--am_white);
 }
 .acf-block-preview .event-teaser .event-teaser-heading {
   width: 75%;

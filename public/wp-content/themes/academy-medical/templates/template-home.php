@@ -666,10 +666,8 @@ document.addEventListener('DOMContentLoaded', function () {
 						</div>
 					</div>
 					<div class="faq-contact">
-						<a href=
-"mailto:feedback@geeksforgeeks.org?cc=feedback@xyz.com&bcc=contact@xyz.org&subject=Mail to GeeksForGeeks&body=Demo email"
-      target="_blank">
-						<div class="contact-box">
+						<a href="mailto:info@academymedical.net" tabindex="0">
+							<div class="contact-box">
 							<div class="icon">
 								<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/mail-icon.svg">';

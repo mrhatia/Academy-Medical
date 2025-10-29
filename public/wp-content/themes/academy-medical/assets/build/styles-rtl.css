@@ -5568,16 +5568,16 @@ ul.slick-dots li button:hover {
   border: 2px solid var(--am_white);
 }
 
-.cta-white-btn {
+.cta-btn.cta-white-btn {
   color: var(--am_theme_btn_bgcolor);
   background-color: var(--am_white);
   border: 2px solid var(--am_white);
   transition: all 0.35s ease-in-out;
 }
-.cta-white-btn:hover {
-  background-color: var(--am_blue_5);
+.cta-btn.cta-white-btn:hover {
+  background-color: transparent;
   color: var(--am_white);
-  border: 2px solid var(--am_blue_5);
+  border: 2px solid var(--am_white);
 }
 
 /*-------------------------------------------------
