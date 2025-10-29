@@ -6,7 +6,7 @@
 }
 
 .section-heading h2 span {
-	color: var(--am_topbar_bgcolor);
+	color: #4253b6;
 }
 
 
@@ -25,7 +25,7 @@
 .content-block h3 span {
 	font-weight: 600;
 	margin-right: 10px;
-	color: var(--am_blue_2);
+	color: #4253b6;
 }
 
 .content-block.inactive h3 {
@@ -57,7 +57,7 @@
 	left: 10%;
 	width: 70%;
 	border-radius: 12px;
-	padding: 16px;
+	padding: 16px 16px 20px;
 	color: #0b1f33;
 	font-weight: 600;
 }
@@ -71,6 +71,7 @@
 	width: 33%;
 	p{
 		line-height: 1;
+		margin: 0;
 	}
 }
 
@@ -86,6 +87,9 @@
 	background: var(--am_blue_2);
 	top: 50%;
 	h4{
-		color: var(--am_blue_4);
+		color: white;
+	}
+	p{
+		color: white;
 	}
 }

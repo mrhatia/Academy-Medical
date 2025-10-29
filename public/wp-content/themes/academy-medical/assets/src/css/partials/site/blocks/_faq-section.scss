@@ -29,7 +29,8 @@
 		width: 100%;
 		background: none;
 		border: none;
-		padding: 18px 20px;
+		padding: 18px 20px 8px;
+		height: auto;
 		text-align: left;
 		font-size: 16px;
 		font-weight: 500;
@@ -91,18 +92,27 @@
 
 	.contact-box {
 		flex: 1 1 300px;
-		background: var(--am_topbar_bgcolor);
-		color: var(--am_white);
 		border-radius: 12px;
 		text-align: center;
 		padding: 25px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+		border: 2px solid var(--am_topbar_bgcolor);
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			background: var(--am_topbar_bgcolor);
+			color: var(--am_white);
+			.icon{
+				img{
+					filter: invert(1);
+				}
+			}
+
+		}
 		.icon {
 			font-size: 24px;
 			img{
-				filter: invert(1);
 				width: 30px;
 				height: 30px;
+				transition: all 0.3s ease-in-out;
 			}
 		}
 		h4 {

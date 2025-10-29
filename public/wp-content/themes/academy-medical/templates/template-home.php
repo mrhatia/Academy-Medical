@@ -582,9 +582,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						<h2>Frequently Asked Questions</h2>
 					</div>
 
-					<div class="faq-search">
-						<input type="text" placeholder="Search for a question">
-					</div>
+
 
 					<div class="faq-container d-flex flex-column gap-10">
 						<div class="faq-item active">

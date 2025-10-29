@@ -264,7 +264,7 @@ Mixin for transition
   --am_reset_button_bgcolor: var(--am_button_bgcolor);
   --am_reset_button_color: var(--am_white_text);
   --am_theme_btn_color: var(--am_button_color);
-  --am_theme_btn_bgcolor: var(--am_button_bgcolor);
+  --am_theme_btn_bgcolor: var(--am_color_primary);
   --am_theme_btn_color_hover: var(--am_button_color_hover);
   --am_theme_btn_bgcolor_hover: var(--am_button_bgcolor_hover);
   --am_theme_btn_border_color: var(--am_button_border_color);
@@ -4469,7 +4469,7 @@ span.button,
   padding: 8px 22px;
   text-decoration: none;
   color: var(--am_theme_btn_color);
-  background-color: var(--am_blue_3);
+  background-color: var(--am_theme_btn_bgcolor);
   border: 2px solid var(--am_blue_3);
   transition: all 0.35s ease-in-out;
   margin-left: 9px;
@@ -6019,7 +6019,7 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 }
 
 .section-heading h2 span {
-  color: var(--am_topbar_bgcolor);
+  color: #4253b6;
 }
 
 .content-block {
@@ -6036,7 +6036,7 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 .content-block h3 span {
   font-weight: 600;
   margin-left: 10px;
-  color: var(--am_blue_2);
+  color: #4253b6;
 }
 
 .content-block.inactive h3 {
@@ -6068,7 +6068,7 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   right: 10%;
   width: 70%;
   border-radius: 12px;
-  padding: 16px;
+  padding: 16px 16px 20px;
   color: #0b1f33;
   font-weight: 600;
 }
@@ -6084,6 +6084,7 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 }
 .stat p {
   line-height: 1;
+  margin: 0;
 }
 
 .stat.orange {
@@ -6099,7 +6100,10 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   top: 50%;
 }
 .stat.purple h4 {
-  color: var(--am_blue_4);
+  color: white;
+}
+.stat.purple p {
+  color: white;
 }
 
 /*-------------------------------------------------
@@ -6202,6 +6206,8 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   border-radius: 20px;
   padding: 4px 10px;
   display: inline-block;
+  margin: 0;
+  text-align: center;
 }
 
 /*-------------------------------------------------
@@ -6237,7 +6243,8 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   width: 100%;
   background: none;
   border: none;
-  padding: 18px 20px;
+  padding: 18px 20px 8px;
+  height: auto;
   text-align: right;
   font-size: 16px;
   font-weight: 500;
@@ -6298,20 +6305,26 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 }
 .faq-contact .contact-box {
   flex: 1 1 300px;
-  background: var(--am_topbar_bgcolor);
-  color: var(--am_white);
   border-radius: 12px;
   text-align: center;
   padding: 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--am_topbar_bgcolor);
+  transition: all 0.3s ease-in-out;
+}
+.faq-contact .contact-box:hover {
+  background: var(--am_topbar_bgcolor);
+  color: var(--am_white);
+}
+.faq-contact .contact-box:hover .icon img {
+  filter: invert(1);
 }
 .faq-contact .contact-box .icon {
   font-size: 24px;
 }
 .faq-contact .contact-box .icon img {
-  filter: invert(1);
   width: 30px;
   height: 30px;
+  transition: all 0.3s ease-in-out;
 }
 .faq-contact .contact-box h4 {
   margin-bottom: 8px;
