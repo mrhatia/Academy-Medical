@@ -57,7 +57,6 @@ get_header();
       <div class="shape-circle shape-3"></div>
     </div>
   </div>
-
 </div>
 
 
@@ -99,11 +98,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			  </div>
 
 			</section>
-			<section>
+<section>
 				<div class="wrapper">
 					<div class="numbers-stats d-flex align-items-center justify-content-between">
 						<div class="numbers-content d-flex flex-column justify-content-center gap-30">
-
 							<?php
 									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/uploads/usa-flag.webp">';
 								?>
@@ -154,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				</div>
 			</section>
 			<div class="am-s128"></div>
-			<section class=" about-us-bg">
+				<section class=" about-us-bg">
 				<div class="wrapper">
 					<div class="about-us">
 						<div class="about-us-inner">
@@ -671,16 +669,16 @@ document.addEventListener('DOMContentLoaded', function () {
 						<h2>Frequently Asked Questions</h2>
 					</div>
 
-
+					<div class="faq-search">
+						<input type="text" placeholder="Search for a question">
+					</div>
 
 					<div class="faq-container d-flex flex-column gap-10">
 						<div class="faq-item active">
 							<button class="faq-question">
 								How do I get started?
 								<span class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
+									<img src="../assets/src/images/topbar-cross-icon.svg" alt="">
 								</span>
 							</button>
 							<div class="faq-answer">
@@ -700,9 +698,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							<button class="faq-question">
 								What is included in the Free Plan?
 								<span class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
+									<img src="../assets/src/images/topbar-cross-icon.svg" alt="">
 								</span>
 							</button>
 							<div class="faq-answer">
@@ -714,9 +710,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							<button class="faq-question">
 								How do I cancel my membership?
 								<span class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
+									<img src="../assets/src/images/topbar-cross-icon.svg" alt="">
 								</span>
 							</button>
 							<div class="faq-answer">
@@ -728,9 +722,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							<button class="faq-question">
 								How do I transfer my membership to a different account?
 								<span class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
+									<img src="../assets/src/images/topbar-cross-icon.svg" alt="">
 								</span>
 							</button>
 							<div class="faq-answer">
@@ -742,9 +734,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							<button class="faq-question">
 								What is the refund policy?
 								<span class="icon">
-									<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/topbar-cross-icon.svg">';
-								?>
+									<img src="../assets/src/images/topbar-cross-icon.svg" alt="">
 								</span>
 							</button>
 							<div class="faq-answer">
@@ -755,25 +745,24 @@ document.addEventListener('DOMContentLoaded', function () {
 					<div class="faq-contact">
 						<a href="mailto:info@academymedical.net" tabindex="0">
 							<div class="contact-box">
-							<div class="icon">
-								<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/mail-icon.svg">';
-								?>
+								<div class="icon">
+									<img
+										src="http://academy-medical.local/wp-content/themes/academy-medical/assets/src/images/mail-icon.svg">
+								</div>
+								<h4 tabindex="0">Email Us</h4>
+								<p tabindex="0">Have questions or need assistance? Reach out to us via email. We're here
+									to help!</p>
 							</div>
-							<h4>Email Us</h4>
-							<p>Have questions or need assistance? Reach out to us via email. We're here to help!</p>
-						</div>
-</a>
-						<a href="tel:+4733378901">
-						<div class="contact-box">
-							<div class="icon">
-								<?php
-									echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/src/images/phone-icon.svg">';
-								?>
+						</a>
+						<a href="tel:+4733378901" tabindex="0">
+							<div class="contact-box">
+								<div class="icon">
+									<img
+										src="http://academy-medical.local/wp-content/themes/academy-medical/assets/src/images/phone-icon.svg">
+								</div>
+								<h4 tabindex="0">Call Us</h4>
+								<p tabindex="0">Need help or have inquiries? Call us anytime. We’re here for you.</p>
 							</div>
-							<h4>Call Us</h4>
-							<p>Need help or have inquiries? Call us anytime. We’re here for you.</p>
-						</div>
 						</a>
 					</div>
 				</div>
