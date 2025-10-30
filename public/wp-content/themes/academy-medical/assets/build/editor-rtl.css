@@ -3828,6 +3828,7 @@ Mixin for transition
   justify-content: center;
 }
 .acf-block-preview .about-us-bg {
+  background-image: url(images/doctor-standing-1.2.png);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;

@@ -5992,6 +5992,7 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
 .about-us-bg {
+  background-image: url(images/doctor-standing-1.2.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
