@@ -251,22 +251,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 						<div class="why-us-inner d-flex flex-wrap align-items-center justify-content-between">
 							<div class="why-us-content">
-								<div class="content-block active">
-									<h3><span>01</span> Government</h3>
-									<p>We partner with federal health systems including VA hospitals and DoD medical centers to simplify procurement, accelerate contracting, and enhance care delivery through smarter, compliant solutions that ensure critical resources reach patients on time.</p>
-								</div>
+								<div class="why-us-content-inner">
+									<div class="content-block active">
+										<h3><span>01</span> Government</h3>
+										<p>Empower your team to engage students with timely, multi-channel conversations
+											that drive
+											enrollment completion, reduce melt, and improve outcomes.</p>
+									</div>
 
-								<div class="content-block">
-									<h3 class="inactive"><span>02</span> Manufacturer</h3>
-									<p>We help innovative manufacturers unlock VA and DoD opportunities by simplifying contracts, managing pricing and compliance, and aligning with federal procurement standards. Our veteran-led expertise turns complex government requirements into scalable opportunities for growth across nationwide healthcare systems.</p>
-								</div>
-								<div class="content-block">
-									<h3 class="inactive"><span>03</span> Supplier & Distributor</h3>
-									<p>We help distributors meet government standards, streamline fulfillment, and connect with VA and DoD healthcare systems with confidence and compliance.</p>
+									<div class="content-block">
+										<h3><span>02</span> Manufacturer</h3>
+										<p>Build lifelong alumni relationships and inspire donor action with
+											personalized
+											outreach,
+											backed by data that helps your team drive giving outcomes at scale.</p>
+									</div>
+									<div class="content-block">
+										<h3 class="inactive"><span>03</span> Supplier & Distributor</h3>
+										<p>Build lifelong alumni relationships and inspire donor action with
+											personalized
+											outreach,
+											backed by data that helps your team drive giving outcomes at scale.</p>
 
-								</div>
-								<div class="why-us-btn">
-									<a href="#" class="button">Learn More</a>
+									</div>
+									<div class="why-us-btn">
+										<a href="#" class="button">Learn More</a>
+									</div>
 								</div>
 							</div>
 
@@ -289,7 +299,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 					</div>
 				</div>
+
 			</section>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const container = document.querySelector('.why-us-content-inner');
+					const blocks = document.querySelectorAll('.content-block');
+
+					const observer = new IntersectionObserver(
+						(entries) => {
+							entries.forEach((entry) => {
+								if (entry.isIntersecting) {
+									entry.target.classList.add('visible');
+									// Show text when visible
+									const text = entry.target.querySelector('p');
+									if (text) {
+										text.style.display = 'block';
+									}
+								}
+							});
+						},
+						{
+							root: container,
+							threshold: 0.3, // trigger when 30% visible
+						}
+					);
+
+					// Observe all except first
+					blocks.forEach((block, i) => {
+						if (i !== 0) {
+							observer.observe(block);
+						}
+					});
+				});
+			</script>
 			<div class="am-s128"></div>
 			<section>
 				<div class="wrapper">
