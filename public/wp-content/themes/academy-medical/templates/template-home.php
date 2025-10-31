@@ -821,38 +821,66 @@ document.addEventListener('DOMContentLoaded', function () {
 			</section>
 			<div class="am-s96"></div>
 
-			<script>
-				const faqItems = document.querySelectorAll('.faq-item');
-				const searchInput = document.getElementById('faqSearch');
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const faqItems = document.querySelectorAll(".faq-item");
+	const searchInput = document.getElementById("faqSearch");
 
-				faqItems.forEach((item) => {
-					const button = item.querySelector('.faq-question');
-					button.addEventListener('click', () => {
-						faqItems.forEach((i) => {
-							if (i !== item) {
-								i.classList.remove('active');
-							}
-						});
-						item.classList.toggle('active');
-					});
-				});
+	faqItems.forEach((item) => {
+		const button = item.querySelector(".faq-question");
+		const answer = item.querySelector(".faq-answer");
 
-				searchInput.addEventListener('input', () => {
-					const query = searchInput.value.toLowerCase().trim();
+		button.addEventListener("click", () => {
+			// Close all other items
+			faqItems.forEach((i) => {
+				if (i !== item) {
+					i.classList.remove("active");
+					i.querySelector(".faq-answer").style.maxHeight = null;
+				}
+			});
 
-					faqItems.forEach((item) => {
-						const question = item.querySelector('.faq-question').innerText.toLowerCase();
-						const answer = item.querySelector('.faq-answer p').innerText.toLowerCase();
+			// Toggle current item
+			item.classList.toggle("active");
 
-						// Show item if query matches question or answer
-						if (question.includes(query) || answer.includes(query)) {
-							item.style.display = 'block';
-						} else {
-							item.style.display = 'none';
-						}
-					});
-				});
-			</script>
+			// Smooth expand/collapse height animation
+			if (item.classList.contains("active")) {
+				answer.style.maxHeight = answer.scrollHeight + "px";
+			} else {
+				answer.style.maxHeight = null;
+			}
+
+			// ❌ Remove scrollIntoView to stop auto-scroll
+			// item.scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+	});
+
+	// 🔍 Smooth fade effect during search (optional)
+	if (searchInput) {
+		searchInput.addEventListener("input", () => {
+			const query = searchInput.value.toLowerCase().trim();
+
+			faqItems.forEach((item) => {
+				const question = item.querySelector(".faq-question").innerText.toLowerCase();
+				const answer = item.querySelector(".faq-answer p").innerText.toLowerCase();
+
+				if (question.includes(query) || answer.includes(query)) {
+					item.style.display = "block";
+					item.style.opacity = "1";
+					item.style.transition = "opacity 0.4s ease";
+				} else {
+					item.style.opacity = "0";
+					setTimeout(() => {
+						item.style.display = "none";
+					}, 300);
+				}
+			});
+		});
+	}
+});
+</script>
+
+
+
 	<!-- Content End -->
 </section>
 <?php get_footer(); ?>

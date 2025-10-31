@@ -6361,25 +6361,37 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
   background: var(--am_topbar_bgcolor);
   border-radius: 12px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 .faq-item .faq-question {
   color: var(--am_white);
   width: 100%;
   background: none;
   border: none;
-  padding: 18px 20px 8px;
-  height: auto;
+  padding: 20px 22px;
   text-align: right;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease;
+}
+.faq-item .faq-question:hover {
+  color: rgba(255, 255, 255, 0.8509803922);
 }
 .faq-item .faq-question .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: rotate(-45deg);
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .faq-item .faq-question .icon img {
   filter: invert(1);
@@ -6389,27 +6401,31 @@ section:has(.numbers-section):not(:has(section .numbers-section)) {
 .faq-item .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
-  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: max-height 0.7s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.45s ease, transform 0.45s ease;
+  padding: 0 22px;
 }
 .faq-item .faq-answer p {
-  margin: 15px 0;
-  font-size: 14px;
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--am_white);
-  width: 75%;
 }
 
+.faq-item.active {
+  background: var(--am_topbar_bgcolor);
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
 .faq-item.active .faq-answer {
-  max-height: 200px;
-  padding-bottom: 15px;
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+  padding-bottom: 20px;
 }
-
 .faq-item.active .icon {
-  transform: rotate(0);
-}
-
-.icon {
-  transition: transform 0.3s ease;
+  transform: rotate(0deg);
 }
 
 .faq-contact {
